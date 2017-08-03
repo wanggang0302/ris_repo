@@ -37,7 +37,7 @@ spring:
         encoding: UTF-8
         mode: HTML5
         prefix: classpath:/templates/
-        suffix: .thymeleaf
+        suffix: .html
   #        spring.thymeleaf.cache=false
    #       spring.thymeleaf.check-template=true
     #      spring.thymeleaf.content-type=text/html
