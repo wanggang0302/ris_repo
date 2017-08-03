@@ -22,6 +22,29 @@ spring:
         testOnReturn: false
         poolPreparedStatements: true
         maxOpenPreparedStatements: 20
+        logging:
+          level:
+            org.springframework.web: ERROR
+            com.yiibai: DEBUG
+          pattern:
+            console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+            file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+          file: c:/logs/mylog.log
+    thymeleaf:
+        cache: false
+        check-template: true
+        content-type: text/html
+        encoding: UTF-8
+        mode: HTML5
+        prefix: classpath:/templates/
+        suffix: .thymeleaf
+  #        spring.thymeleaf.cache=false
+   #       spring.thymeleaf.check-template=true
+    #      spring.thymeleaf.content-type=text/html
+     #     spring.thymeleaf.encoding=UTF-8
+      #    spring.thymeleaf.mode=HTML5
+       #   spring.thymeleaf.prefix=classpath:/templates/
+        #  spring.thymeleaf.suffix=.thymeleaf
       #druid:
         #  datasource:
         #    driverClassName: com.mysql.jdbc.Driver

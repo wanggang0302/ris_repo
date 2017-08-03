@@ -1,6 +1,7 @@
 package com.jfsoft;
 
 
+import groovy.util.logging.Slf4j;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -16,6 +17,7 @@ import java.util.List;
 /**
  * Created by JFYT002 on 2017/7/25.
  */
+@Slf4j
 @SpringBootApplication
 @EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
 @MapperScan("com.jfsoft.mapper")
