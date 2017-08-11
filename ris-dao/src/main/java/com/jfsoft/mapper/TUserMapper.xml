@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jfsoft.mapper.TUserMapper" >
+
+	<resultMap id="BaseResultMap" type="com.jfsoft.model.User" >
+		<id column="id" property="id" jdbcType="INTEGER" />
+		<result column="username" property="username" jdbcType="VARCHAR" />
+		<result column="password" property="password" jdbcType="VARCHAR" />
+	</resultMap>
+
+	<sql id="Base_Column_List" >
+		id, username, password
+	</sql>
+
+	<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+		select 
+		<include refid="Base_Column_List" />
+		from t_user
+		where id = #{id,jdbcType=INTEGER}
+	</select>
+
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+		delete from t_user
+		where id = #{id,jdbcType=INTEGER}
+	</delete>
+
+	<insert id="insert" parameterType="com.jfsoft.model.User" >
+		insert into t_user (id, username, password
+			)
+		values (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}
+			)
+	</insert>
+
+	<insert id="insertSelective" parameterType="com.jfsoft.model.User" >
+		insert into t_user
+		<trim prefix="(" suffix=")" suffixOverrides="," >
+			<if test="id != null" >
+				id,
+			</if>
+			<if test="username != null" >
+				username,
+			</if>
+			<if test="password != null" >
+				password,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides="," >
+			<if test="id != null" >
+				#{id,jdbcType=INTEGER},
+			</if>
+			<if test="username != null" >
+				#{username,jdbcType=VARCHAR},
+			</if>
+			<if test="password != null" >
+				#{password,jdbcType=VARCHAR},
+			</if>
+		</trim>
+	</insert>
+
+	<update id="updateByPrimaryKeySelective" parameterType="com.jfsoft.model.User" >
+		update t_user
+		<set >
+			<if test="username != null" >
+				username = #{username,jdbcType=VARCHAR},
+			</if>
+			<if test="password != null" >
+				password = #{password,jdbcType=VARCHAR},
+			</if>
+		</set>
+		where id = #{id,jdbcType=INTEGER}
+	</update>
+
+	<update id="updateByPrimaryKey" parameterType="com.jfsoft.model.User" >
+		update t_user
+		set username = #{username,jdbcType=VARCHAR},
+			password = #{password,jdbcType=VARCHAR}
+		where id = #{id,jdbcType=INTEGER}
+	</update>
+
+	<!-- 查询结果 -->
+	<resultMap id="BaseUserMap" type="com.jfsoft.model.User">
+		<id column="id" property="id"/>
+		<result column="username" property="username"/>
+		<result column="password" property="password"/>
+		<collection property="roleList" ofType="com.jfsoft.model.Role">
+			<result property="rolename" column="rolename"/>
+		</collection>
+	</resultMap>
+
+	<!-- 根据账号查询用户信息 -->
+	<select id="findByName" parameterMap="java.lang.String" resultMap="BaseUserMap">
+		SELECT
+			tu.id,tu.username,tu.password,tr.rolename
+		FROM
+			t_user tu
+		LEFT JOIN t_user_role ur ON tu.id=ur.user_id
+		LEFT JOIN t_role tr ON ur.role_id=tr.id
+		WHERE
+			tu.username=#{username}
+	</select>
+
+</mapper>

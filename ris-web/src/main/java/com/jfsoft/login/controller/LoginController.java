@@ -1,5 +1,6 @@
 package com.jfsoft.login.controller;
 
+import com.base.BaseController;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -12,7 +13,8 @@ import java.util.Map;
  * 2017-08-03 14:08
  */
 @Controller
-public class LoginController {
+@RequestMapping(value = "/template")
+public class LoginController extends BaseController {
 
     /**
      * 到登录页面

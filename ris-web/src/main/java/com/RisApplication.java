@@ -1,4 +1,4 @@
-package com.jfsoft;
+package com;
 
 
 import groovy.util.logging.Slf4j;

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jfsoft.mapper.BaseCheckpartMapper" >
+	<resultMap id="BaseResultMap" type="com.jfsoft.model.BaseCheckpart" >
+		<id column="id" property="id" jdbcType="VARCHAR" />
+		<result column="code" property="code" jdbcType="INTEGER" />
+		<result column="name" property="name" jdbcType="VARCHAR" />
+		<result column="pycode" property="pycode" jdbcType="VARCHAR" />
+		<result column="adapt_sex" property="adaptSex" jdbcType="CHAR" />
+		<result column="is_use" property="isUse" jdbcType="CHAR" />
+		<result column="create_code" property="createCode" jdbcType="INTEGER" />
+		<result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+		<result column="modify_code" property="modifyCode" jdbcType="INTEGER" />
+		<result column="modify_time" property="modifyTime" jdbcType="TIMESTAMP" />
+		<result column="sort_num" property="sortNum" jdbcType="INTEGER" />
+		<result column="memo" property="memo" jdbcType="VARCHAR" />
+		<result column="areacode" property="areacode" jdbcType="VARCHAR" />
+	</resultMap>
+
+	<sql id="Base_Column_List" >
+		id, code, name, pycode, adapt_sex, is_use, create_code, create_time, modify_code, 
+		modify_time, sort_num, memo, areacode
+	</sql>
+
+	<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+		select 
+		<include refid="Base_Column_List" />
+		from base_checkpart
+		where id = #{id,jdbcType=VARCHAR}
+	</select>
+
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+		delete from base_checkpart
+		where id = #{id,jdbcType=VARCHAR}
+	</delete>
+
+	<insert id="insert" parameterType="com.jfsoft.model.BaseCheckpart" >
+		insert into base_checkpart (id, code, name, 
+			pycode, adapt_sex, is_use, create_code, 
+			create_time, modify_code, modify_time, 
+			sort_num, memo, areacode
+			)
+		values (#{id,jdbcType=VARCHAR}, #{code,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, 
+			#{pycode,jdbcType=VARCHAR}, #{adaptSex,jdbcType=CHAR}, #{isUse,jdbcType=CHAR}, #{createCode,jdbcType=INTEGER}, 
+			#{createTime,jdbcType=TIMESTAMP}, #{modifyCode,jdbcType=INTEGER}, #{modifyTime,jdbcType=TIMESTAMP}, 
+			#{sortNum,jdbcType=INTEGER}, #{memo,jdbcType=VARCHAR}, #{areacode,jdbcType=VARCHAR}
+			)
+	</insert>
+
+	<insert id="insertSelective" parameterType="com.jfsoft.model.BaseCheckpart" >
+		insert into base_checkpart
+		<trim prefix="(" suffix=")" suffixOverrides="," >
+			<if test="id != null" >
+				id,
+			</if>
+			<if test="code != null" >
+				code,
+			</if>
+			<if test="name != null" >
+				name,
+			</if>
+			<if test="pycode != null" >
+				pycode,
+			</if>
+			<if test="adaptSex != null" >
+				adapt_sex,
+			</if>
+			<if test="isUse != null" >
+				is_use,
+			</if>
+			<if test="createCode != null" >
+				create_code,
+			</if>
+			<if test="createTime != null" >
+				create_time,
+			</if>
+			<if test="modifyCode != null" >
+				modify_code,
+			</if>
+			<if test="modifyTime != null" >
+				modify_time,
+			</if>
+			<if test="sortNum != null" >
+				sort_num,
+			</if>
+			<if test="memo != null" >
+				memo,
+			</if>
+			<if test="areacode != null" >
+				areacode,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides="," >
+			<if test="id != null" >
+				#{id,jdbcType=VARCHAR},
+			</if>
+			<if test="code != null" >
+				#{code,jdbcType=INTEGER},
+			</if>
+			<if test="name != null" >
+				#{name,jdbcType=VARCHAR},
+			</if>
+			<if test="pycode != null" >
+				#{pycode,jdbcType=VARCHAR},
+			</if>
+			<if test="adaptSex != null" >
+				#{adaptSex,jdbcType=CHAR},
+			</if>
+			<if test="isUse != null" >
+				#{isUse,jdbcType=CHAR},
+			</if>
+			<if test="createCode != null" >
+				#{createCode,jdbcType=INTEGER},
+			</if>
+			<if test="createTime != null" >
+				#{createTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="modifyCode != null" >
+				#{modifyCode,jdbcType=INTEGER},
+			</if>
+			<if test="modifyTime != null" >
+				#{modifyTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="sortNum != null" >
+				#{sortNum,jdbcType=INTEGER},
+			</if>
+			<if test="memo != null" >
+				#{memo,jdbcType=VARCHAR},
+			</if>
+			<if test="areacode != null" >
+				#{areacode,jdbcType=VARCHAR},
+			</if>
+		</trim>
+	</insert>
+
+	<update id="updateByPrimaryKeySelective" parameterType="com.jfsoft.model.BaseCheckpart" >
+		update base_checkpart
+		<set >
+			<if test="code != null" >
+				code = #{code,jdbcType=INTEGER},
+			</if>
+			<if test="name != null" >
+				name = #{name,jdbcType=VARCHAR},
+			</if>
+			<if test="pycode != null" >
+				pycode = #{pycode,jdbcType=VARCHAR},
+			</if>
+			<if test="adaptSex != null" >
+				adapt_sex = #{adaptSex,jdbcType=CHAR},
+			</if>
+			<if test="isUse != null" >
+				is_use = #{isUse,jdbcType=CHAR},
+			</if>
+			<if test="createCode != null" >
+				create_code = #{createCode,jdbcType=INTEGER},
+			</if>
+			<if test="createTime != null" >
+				create_time = #{createTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="modifyCode != null" >
+				modify_code = #{modifyCode,jdbcType=INTEGER},
+			</if>
+			<if test="modifyTime != null" >
+				modify_time = #{modifyTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="sortNum != null" >
+				sort_num = #{sortNum,jdbcType=INTEGER},
+			</if>
+			<if test="memo != null" >
+				memo = #{memo,jdbcType=VARCHAR},
+			</if>
+			<if test="areacode != null" >
+				areacode = #{areacode,jdbcType=VARCHAR},
+			</if>
+		</set>
+		where id = #{id,jdbcType=VARCHAR}
+	</update>
+
+	<update id="updateByPrimaryKey" parameterType="com.jfsoft.model.BaseCheckpart" >
+		update base_checkpart
+		set code = #{code,jdbcType=INTEGER},
+			name = #{name,jdbcType=VARCHAR},
+			pycode = #{pycode,jdbcType=VARCHAR},
+			adapt_sex = #{adaptSex,jdbcType=CHAR},
+			is_use = #{isUse,jdbcType=CHAR},
+			create_code = #{createCode,jdbcType=INTEGER},
+			create_time = #{createTime,jdbcType=TIMESTAMP},
+			modify_code = #{modifyCode,jdbcType=INTEGER},
+			modify_time = #{modifyTime,jdbcType=TIMESTAMP},
+			sort_num = #{sortNum,jdbcType=INTEGER},
+			memo = #{memo,jdbcType=VARCHAR},
+			areacode = #{areacode,jdbcType=VARCHAR}
+		where id = #{id,jdbcType=VARCHAR}
+	</update>
+
+</mapper>
