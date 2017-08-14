@@ -84,19 +84,49 @@
 		<result column="password" property="password"/>
 		<collection property="roleList" ofType="com.jfsoft.model.Role">
 			<result property="rolename" column="rolename"/>
+            <collection property="permissionList" ofType="com.jfsoft.model.TPermission">
+                <result property="permissionname" column="permissionname"/>
+            </collection>
 		</collection>
 	</resultMap>
 
 	<!-- 根据账号查询用户信息 -->
-	<select id="findByName" parameterMap="java.lang.String" resultMap="BaseUserMap">
+	<select id="findByName" parameterType="java.lang.String" resultMap="BaseUserMap">
 		SELECT
-			tu.id,tu.username,tu.password,tr.rolename
+            tu.id,tu.username,tu.password,tr.rolename,tp.permissionname
+		FROM
+		    t_permission tp
+        LEFT JOIN t_user_role ur ON ur.role_id=tp.role_id
+        LEFT JOIN t_role tr ON tr.id=ur.role_id
+        LEFT JOIN t_user tu ON ur.user_id=tu.id
+        WHERE
+            tu.username=#{username}
+        ORDER BY
+            tr.rolename
+	</select>
+
+	<!-- 查询用户分页列表 -->
+	<select id="findPage" resultMap="BaseResultMap" parameterType="java.util.Map">
+		SELECT
+			tu.id,tu.username,tu.password
 		FROM
 			t_user tu
-		LEFT JOIN t_user_role ur ON tu.id=ur.user_id
-		LEFT JOIN t_role tr ON ur.role_id=tr.id
-		WHERE
-			tu.username=#{username}
+		<where>
+			<if test="username!='' and username!=null">
+				AND tu.username LIKE CONCAT('%', #{username},'%')
+			</if>
+		</where>
+	</select>
+	<select id="findPageCount" resultType="java.lang.Integer" parameterType="java.util.Map">
+		SELECT
+			count(*)
+		FROM
+			t_user tu
+		<where>
+			<if test="username!='' and username!=null">
+				AND tu.username LIKE CONCAT('%', #{username},'%')
+			</if>
+		</where>
 	</select>
 
 </mapper>

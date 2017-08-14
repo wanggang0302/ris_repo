@@ -9,6 +9,9 @@ package com.jfsoft.mapper;
 
 import com.jfsoft.model.User;
 
+import java.util.List;
+import java.util.Map;
+
 public interface TUserMapper {
 
     int deleteByPrimaryKey(Integer id);
@@ -29,5 +32,19 @@ public interface TUserMapper {
      * @return
      */
     User findByName(String username);
+
+    /**
+     * 分页查询用户
+     * @param params
+     * @return
+     */
+    List<User> findPage(Map<String, Object> params);
+
+    /**
+     * 查询用户总数
+     * @param params
+     * @return
+     */
+    int findPageCount(Map<String, Object> params);
     
 }

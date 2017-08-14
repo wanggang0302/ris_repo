@@ -36,4 +36,14 @@
 		</trim>
 	</insert>
 
+	<!-- 根据角色查询权限 -->
+	<select id="getPermissions" parameterType="java.lang.String" resultMap="BaseResultMap">
+		SELECT
+			tp.id,tp.permissionname
+		FROM
+			t_permission tp
+		WHERE
+			tp.role_id=#{roleId}
+	</select>
+
 </mapper>

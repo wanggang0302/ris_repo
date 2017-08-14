@@ -8,11 +8,21 @@
 package com.jfsoft.mapper;
 
 import com.jfsoft.model.Role;
+import com.jfsoft.model.TPermission;
+
+import java.util.List;
 
 public interface TRoleMapper {
 
     int insert(Role record);
 
     int insertSelective(Role record);
+
+    /**
+     * 根据角色查询权限
+     * @param roleId
+     * @return
+     */
+    List<TPermission> getPermissions(String roleId);
 
 }

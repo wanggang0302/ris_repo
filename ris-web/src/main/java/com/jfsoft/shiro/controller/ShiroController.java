@@ -18,6 +18,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.validation.Valid;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -99,7 +101,9 @@ public class ShiroController extends BaseController {
 
     @RequestMapping("/user")
     public String getUserList(Map<String, Object> model){
-        //model.put("userList", userDao.getList());
+        Map<String, Object> params = new HashMap<String, Object>();
+        List<User> userList = userDao.findPage(params);
+        model.put("userList", userList);
         return "user";
     }
 
