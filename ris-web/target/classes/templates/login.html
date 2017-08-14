@@ -5,6 +5,15 @@
     <title>Title</title>
 </head>
 <body>
-Hello!
+    <h1>登录页面</h1>
+    <form action="/login" method="post">
+        用户名：<input type="text" name="username" />
+        <errors path="username" cssClass="error" />
+        <br />
+        密码：<input type="password" name="password" />
+        <errors path="password" cssClass="error" />
+        <br />
+        <button name="button">提交</button>
+    </form>
 </body>
 </html>
