@@ -2,20 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b5c15f0-baa4-4867-80cf-71b1fd81b15e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/dictionary/controller/BaseCheckpartController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_ojdbc6_11_2_0_1_0.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_39.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/TRoleMapper.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/TRoleMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/TRoleMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/TRoleMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/TUserMapper.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/TUserMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/TUserMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/TUserMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-web/src/main/java/com/core/MyShiroRealm.java" afterPath="$PROJECT_DIR$/ris-web/src/main/java/com/core/MyShiroRealm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-web/src/main/java/com/core/ShiroConfiguration.java" afterPath="$PROJECT_DIR$/ris-web/src/main/java/com/core/ShiroConfiguration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/dictionary/controller/BaseTemplateController.java" afterPath="$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/dictionary/controller/BaseTemplateController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/shiro/controller/ShiroController.java" afterPath="$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/shiro/controller/ShiroController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-api/ris-api.iml" afterPath="$PROJECT_DIR$/ris-api/ris-api.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-common/ris-common.iml" afterPath="$PROJECT_DIR$/ris-common/ris-common.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/ris-dao.iml" afterPath="$PROJECT_DIR$/ris-dao/ris-dao.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-service/ris-service.iml" afterPath="$PROJECT_DIR$/ris-service/ris-service.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-web/ris-web.iml" afterPath="$PROJECT_DIR$/ris-web/ris-web.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/dictionary/controller/BaseCheckpartController.java" afterPath="$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/dictionary/controller/BaseCheckpartController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-web/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/ris-web/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-web/src/main/resources/templates/user.html" afterPath="$PROJECT_DIR$/ris-web/src/main/resources/templates/user.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-web/src/main/resources/templates/user_edit.html" afterPath="$PROJECT_DIR$/ris-web/src/main/resources/templates/user_edit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-web/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/ris-web/src/main/resources/application.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-web/target/classes/application.properties" afterPath="$PROJECT_DIR$/ris-web/target/classes/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-web/target/classes/application.yml" afterPath="$PROJECT_DIR$/ris-web/target/classes/application.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris/pom.xml" afterPath="$PROJECT_DIR$/ris/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris/ris.iml" afterPath="$PROJECT_DIR$/ris/ris.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/ris-dao/target/" />
     <ignored path="$PROJECT_DIR$/ris-api/target/" />
@@ -36,12 +37,52 @@
       <file leaf-file-name="ShiroController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/shiro/controller/ShiroController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="109" column="4" lean-forward="false" selection-start-line="109" selection-start-column="4" selection-end-line="113" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#4119#4135#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ris/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="346">
+              <caret line="82" column="41" lean-forward="false" selection-start-line="82" selection-start-column="41" selection-end-line="82" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ris-web/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="59" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RisApplication.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/RisApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="251">
+              <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ris-web/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -73,8 +114,8 @@
       <file leaf-file-name="BaseCheckpartController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/dictionary/controller/BaseCheckpartController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+            <state relative-caret-position="422">
+              <caret line="28" column="49" lean-forward="false" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,21 +123,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="user.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ris-web/src/main/resources/templates/user.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
               <caret line="20" column="37" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyShiroRealm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/core/MyShiroRealm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="42" column="52" lean-forward="false" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -183,7 +214,6 @@
         <option value="$PROJECT_DIR$/ris-web/src/main/resources/ehcache-shiro.xml" />
         <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/TUser.java" />
         <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/TRole.java" />
-        <option value="$PROJECT_DIR$/ris/pom.xml" />
         <option value="$PROJECT_DIR$/ris-web/src/main/resources/templates/403.html" />
         <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/TUserRoleMapper.java" />
         <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/TPermissionMapper.java" />
@@ -200,7 +230,6 @@
         <option value="$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/dictionary/controller/BaseTemplateController.java" />
         <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/TUserMapper.java" />
         <option value="$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/shiro/controller/ShiroController.java" />
-        <option value="$PROJECT_DIR$/ris-web/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/TRoleMapper.xml" />
         <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/TRoleMapper.java" />
         <option value="$PROJECT_DIR$/ris-web/src/main/java/com/core/MyShiroRealm.java" />
@@ -209,6 +238,9 @@
         <option value="$PROJECT_DIR$/ris-web/src/main/resources/templates/user_edit.html" />
         <option value="$PROJECT_DIR$/ris-web/src/main/java/com/core/ShiroConfiguration.java" />
         <option value="$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/dictionary/controller/BaseCheckpartController.java" />
+        <option value="$PROJECT_DIR$/ris-web/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/ris-web/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ris/pom.xml" />
       </list>
     </option>
   </component>
@@ -806,7 +838,7 @@
       <workItem from="1502075739630" duration="833000" />
       <workItem from="1502331985887" duration="7500000" />
       <workItem from="1502411304658" duration="13361000" />
-      <workItem from="1502670814249" duration="18925000" />
+      <workItem from="1502670814249" duration="21326000" />
     </task>
     <task id="LOCAL-00001" summary="修改pom">
       <created>1501746763215</created>
@@ -829,11 +861,18 @@
       <option name="project" value="LOCAL" />
       <updated>1502445211335</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="添加shiro">
+      <created>1502700203481</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1502700203481</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57168000" />
+    <option name="totallyTimeSpent" value="59569000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -847,12 +886,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39955357" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850778" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2563966" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2563966" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -860,7 +899,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36525613" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36525613" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -890,13 +929,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ris-service/src/main/java/com/jfsoft/user/service/IUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ris-service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -1046,14 +1078,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ris-web/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.9.RELEASE/spring-web-4.3.9.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
@@ -1144,22 +1168,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ris/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="70" column="26" lean-forward="false" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ris-web/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="31" lean-forward="true" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
@@ -1232,22 +1240,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/TUserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="104" column="23" lean-forward="false" selection-start-line="104" selection-start-column="23" selection-end-line="104" selection-end-column="23" />
-          <folding>
-            <marker date="1502691311348" expanded="true" signature="634:730" ph="select from t_user" />
-            <marker date="1502691311348" expanded="true" signature="814:868" ph="delete from " />
-            <marker date="1502691311348" expanded="true" signature="944:1089" ph="insert into t_user... " />
-            <marker date="1502691311348" expanded="true" signature="1792:2033" ph="update t_use... " />
-            <marker date="1502691311348" expanded="true" signature="2121:2260" ph="update t_use... " />
-            <marker date="1502691311348" expanded="true" signature="2926:3278" ph="SELECT tu.id... t_permission" />
-            <marker date="1502691311348" expanded="true" signature="3392:3583" ph="SELECT tu.id... t_user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/realm/AuthorizingRealm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1264,39 +1256,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/core/ShiroConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="162" column="16" lean-forward="false" selection-start-line="162" selection-start-column="16" selection-end-line="162" selection-end-column="16" />
-          <folding>
-            <element signature="e#4107#4123#0" expanded="true" />
-            <element signature="e#5945#5946#0" expanded="true" />
-            <element signature="e#5986#5987#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/shiro/controller/ShiroController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4119#4135#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/dictionary/controller/BaseCheckpartController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ris-web/src/main/resources/templates/user_edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -1309,6 +1268,87 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="20" column="37" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/TUserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="104" column="23" lean-forward="false" selection-start-line="104" selection-start-column="23" selection-end-line="104" selection-end-column="23" />
+          <folding>
+            <marker date="1502691311348" expanded="true" signature="634:730" ph="select from t_user" />
+            <marker date="1502691311348" expanded="true" signature="814:868" ph="delete from " />
+            <marker date="1502691311348" expanded="true" signature="944:1089" ph="insert into t_user... " />
+            <marker date="1502691311348" expanded="true" signature="1792:2033" ph="update t_use... " />
+            <marker date="1502691311348" expanded="true" signature="2121:2260" ph="update t_use... " />
+            <marker date="1502691311348" expanded="true" signature="2926:3278" ph="SELECT tu.id... t_permission" />
+            <marker date="1502691311348" expanded="true" signature="3392:3583" ph="SELECT tu.id... t_user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/shiro/controller/ShiroController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="109" column="4" lean-forward="false" selection-start-line="109" selection-start-column="4" selection-end-line="113" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4119#4135#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/core/ShiroConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="162" column="16" lean-forward="false" selection-start-line="162" selection-start-column="16" selection-end-line="162" selection-end-column="16" />
+          <folding>
+            <element signature="e#4107#4123#0" expanded="true" />
+            <element signature="e#5945#5946#0" expanded="true" />
+            <element signature="e#5986#5987#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/dictionary/controller/BaseCheckpartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="28" column="49" lean-forward="false" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris-web/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="59" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris-web/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="82" column="41" lean-forward="false" selection-start-line="82" selection-start-column="41" selection-end-line="82" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/RisApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="27" />
           <folding />
         </state>
       </provider>
