@@ -1,5 +1,5 @@
 /**
- * BaseCheckpart.java
+ * BaseIllness.java
  * Copyright© 2017 北京金风易通科技有限公司
  * All rights reserved.
  * -----------------------------------------------
@@ -15,7 +15,7 @@ import java.math.BigDecimal;
  * @author wanggang
  * @version 1.0 2017-08-15
  */
-public class BaseCheckpart {
+public class BaseIllness {
 
     /**
      * GUID
@@ -23,12 +23,12 @@ public class BaseCheckpart {
     private Object id;
 
     /**
-     * 部位编号
+     * 疾病编号
      */
     private BigDecimal code;
 
     /**
-     * 部位名称
+     * 疾病名称
      */
     private Object name;
 
@@ -36,6 +36,11 @@ public class BaseCheckpart {
      * 拼音码
      */
     private Object pycode;
+
+    /**
+     * 疾病描述
+     */
+    private Object description;
 
     /**
      * 适用性别(0:不限,1:男,2:女)
@@ -61,6 +66,11 @@ public class BaseCheckpart {
      * 所属区域号
      */
     private Object areacode;
+
+    /**
+     * 疾病标准
+     */
+    private Object icd10;
 
     public Object getId() {
         return id;
@@ -92,6 +102,14 @@ public class BaseCheckpart {
 
     public void setPycode(Object pycode) {
         this.pycode = pycode;
+    }
+
+    public Object getDescription() {
+        return description;
+    }
+
+    public void setDescription(Object description) {
+        this.description = description;
     }
 
     public Object getAdaptsex() {
@@ -132,6 +150,14 @@ public class BaseCheckpart {
 
     public void setAreacode(Object areacode) {
         this.areacode = areacode;
+    }
+
+    public Object getIcd10() {
+        return icd10;
+    }
+
+    public void setIcd10(Object icd10) {
+        this.icd10 = icd10;
     }
 
 }

@@ -1,5 +1,5 @@
 /**
- * BaseCheckpart.java
+ * BaseDept.java
  * Copyright© 2017 北京金风易通科技有限公司
  * All rights reserved.
  * -----------------------------------------------
@@ -15,7 +15,7 @@ import java.math.BigDecimal;
  * @author wanggang
  * @version 1.0 2017-08-15
  */
-public class BaseCheckpart {
+public class BaseDept {
 
     /**
      * GUID
@@ -23,29 +23,39 @@ public class BaseCheckpart {
     private Object id;
 
     /**
-     * 部位编号
+     * 科室编号
      */
     private BigDecimal code;
 
     /**
-     * 部位名称
+     * 科室名称
      */
     private Object name;
 
     /**
-     * 拼音码
+     * 科室类别
+     */
+    private Object type;
+
+    /**
+     * 收费项目拼音码
      */
     private Object pycode;
 
     /**
      * 适用性别(0:不限,1:男,2:女)
      */
-    private Object adaptsex;
+    private Object adaptSex;
 
     /**
      * 是否使用(0:否,1:是)
      */
     private Short isuse;
+
+    /**
+     * 设备类型code
+     */
+    private BigDecimal equipcode;
 
     /**
      * 排序号
@@ -86,6 +96,14 @@ public class BaseCheckpart {
         this.name = name;
     }
 
+    public Object getType() {
+        return type;
+    }
+
+    public void setType(Object type) {
+        this.type = type;
+    }
+
     public Object getPycode() {
         return pycode;
     }
@@ -94,12 +112,12 @@ public class BaseCheckpart {
         this.pycode = pycode;
     }
 
-    public Object getAdaptsex() {
-        return adaptsex;
+    public Object getAdaptSex() {
+        return adaptSex;
     }
 
-    public void setAdaptsex(Object adaptsex) {
-        this.adaptsex = adaptsex;
+    public void setAdaptSex(Object adaptSex) {
+        this.adaptSex = adaptSex;
     }
 
     public Short getIsuse() {
@@ -108,6 +126,14 @@ public class BaseCheckpart {
 
     public void setIsuse(Short isuse) {
         this.isuse = isuse;
+    }
+
+    public BigDecimal getEquipcode() {
+        return equipcode;
+    }
+
+    public void setEquipcode(BigDecimal equipcode) {
+        this.equipcode = equipcode;
     }
 
     public BigDecimal getSortnum() {

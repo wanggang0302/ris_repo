@@ -1,5 +1,5 @@
 /**
- * BaseCheckpart.java
+ * BaseCheckroom.java
  * Copyright© 2017 北京金风易通科技有限公司
  * All rights reserved.
  * -----------------------------------------------
@@ -15,7 +15,7 @@ import java.math.BigDecimal;
  * @author wanggang
  * @version 1.0 2017-08-15
  */
-public class BaseCheckpart {
+public class BaseCheckroom {
 
     /**
      * GUID
@@ -23,17 +23,22 @@ public class BaseCheckpart {
     private Object id;
 
     /**
-     * 部位编号
+     * 检查室编号（关联科室表）
      */
     private BigDecimal code;
 
     /**
-     * 部位名称
+     * 科室编号
      */
-    private Object name;
+    private BigDecimal deptcode;
 
     /**
-     * 拼音码
+     * 科室名称
+     */
+    private Object deptname;
+
+    /**
+     * 检查室拼音码
      */
     private Object pycode;
 
@@ -78,12 +83,20 @@ public class BaseCheckpart {
         this.code = code;
     }
 
-    public Object getName() {
-        return name;
+    public BigDecimal getDeptcode() {
+        return deptcode;
     }
 
-    public void setName(Object name) {
-        this.name = name;
+    public void setDeptcode(BigDecimal deptcode) {
+        this.deptcode = deptcode;
+    }
+
+    public Object getDeptname() {
+        return deptname;
+    }
+
+    public void setDeptname(Object deptname) {
+        this.deptname = deptname;
     }
 
     public Object getPycode() {

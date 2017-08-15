@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jfsoft.mapper.SysLogMapper" >
+	<resultMap id="BaseResultMap" type="com.jfsoft.model.SysLog" >
+		<id column="ID" property="id" jdbcType="OTHER" />
+		<result column="LOG_LEVEL" property="logLevel" jdbcType="OTHER" />
+		<result column="USERCODE" property="usercode" jdbcType="DECIMAL" />
+		<result column="MESSAGE" property="message" jdbcType="OTHER" />
+		<result column="LOGDATE" property="logdate" jdbcType="TIMESTAMP" />
+		<result column="MODULE" property="module" jdbcType="OTHER" />
+		<result column="EXCEPTION" property="exception" jdbcType="CLOB" />
+		<result column="AREACODE" property="areacode" jdbcType="OTHER" />
+	</resultMap>
+
+	<sql id="Base_Column_List" >
+		ID, LOG_LEVEL, USERCODE, MESSAGE, LOGDATE, MODULE, EXCEPTION, AREACODE
+	</sql>
+
+	<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Object" >
+		select 
+		<include refid="Base_Column_List" />
+		from SYS_LOG
+		where ID = #{id,jdbcType=OTHER}
+	</select>
+
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Object" >
+		delete from SYS_LOG
+		where ID = #{id,jdbcType=OTHER}
+	</delete>
+
+	<insert id="insert" parameterType="com.jfsoft.model.SysLog" >
+		insert into SYS_LOG (ID, LOG_LEVEL, USERCODE, 
+			MESSAGE, LOGDATE, MODULE, 
+			EXCEPTION, AREACODE)
+		values (#{id,jdbcType=OTHER}, #{logLevel,jdbcType=OTHER}, #{usercode,jdbcType=DECIMAL}, 
+			#{message,jdbcType=OTHER}, #{logdate,jdbcType=TIMESTAMP}, #{module,jdbcType=OTHER}, 
+			#{exception,jdbcType=CLOB}, #{areacode,jdbcType=OTHER})
+	</insert>
+
+	<insert id="insertSelective" parameterType="com.jfsoft.model.SysLog" >
+		insert into SYS_LOG
+		<trim prefix="(" suffix=")" suffixOverrides="," >
+			<if test="id != null" >
+				ID,
+			</if>
+			<if test="logLevel != null" >
+				LOG_LEVEL,
+			</if>
+			<if test="usercode != null" >
+				USERCODE,
+			</if>
+			<if test="message != null" >
+				MESSAGE,
+			</if>
+			<if test="logdate != null" >
+				LOGDATE,
+			</if>
+			<if test="module != null" >
+				MODULE,
+			</if>
+			<if test="exception != null" >
+				EXCEPTION,
+			</if>
+			<if test="areacode != null" >
+				AREACODE,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides="," >
+			<if test="id != null" >
+				#{id,jdbcType=OTHER},
+			</if>
+			<if test="logLevel != null" >
+				#{logLevel,jdbcType=OTHER},
+			</if>
+			<if test="usercode != null" >
+				#{usercode,jdbcType=DECIMAL},
+			</if>
+			<if test="message != null" >
+				#{message,jdbcType=OTHER},
+			</if>
+			<if test="logdate != null" >
+				#{logdate,jdbcType=TIMESTAMP},
+			</if>
+			<if test="module != null" >
+				#{module,jdbcType=OTHER},
+			</if>
+			<if test="exception != null" >
+				#{exception,jdbcType=CLOB},
+			</if>
+			<if test="areacode != null" >
+				#{areacode,jdbcType=OTHER},
+			</if>
+		</trim>
+	</insert>
+
+	<update id="updateByPrimaryKeySelective" parameterType="com.jfsoft.model.SysLog" >
+		update SYS_LOG
+		<set >
+			<if test="logLevel != null" >
+				LOG_LEVEL = #{logLevel,jdbcType=OTHER},
+			</if>
+			<if test="usercode != null" >
+				USERCODE = #{usercode,jdbcType=DECIMAL},
+			</if>
+			<if test="message != null" >
+				MESSAGE = #{message,jdbcType=OTHER},
+			</if>
+			<if test="logdate != null" >
+				LOGDATE = #{logdate,jdbcType=TIMESTAMP},
+			</if>
+			<if test="module != null" >
+				MODULE = #{module,jdbcType=OTHER},
+			</if>
+			<if test="exception != null" >
+				EXCEPTION = #{exception,jdbcType=CLOB},
+			</if>
+			<if test="areacode != null" >
+				AREACODE = #{areacode,jdbcType=OTHER},
+			</if>
+		</set>
+		where ID = #{id,jdbcType=OTHER}
+	</update>
+
+	<update id="updateByPrimaryKey" parameterType="com.jfsoft.model.SysLog" >
+		update SYS_LOG
+		set LOG_LEVEL = #{logLevel,jdbcType=OTHER},
+			USERCODE = #{usercode,jdbcType=DECIMAL},
+			MESSAGE = #{message,jdbcType=OTHER},
+			LOGDATE = #{logdate,jdbcType=TIMESTAMP},
+			MODULE = #{module,jdbcType=OTHER},
+			EXCEPTION = #{exception,jdbcType=CLOB},
+			AREACODE = #{areacode,jdbcType=OTHER}
+		where ID = #{id,jdbcType=OTHER}
+	</update>
+
+</mapper>

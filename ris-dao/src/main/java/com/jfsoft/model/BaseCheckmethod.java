@@ -1,5 +1,5 @@
 /**
- * BaseCheckpart.java
+ * BaseCheckmethod.java
  * Copyright© 2017 北京金风易通科技有限公司
  * All rights reserved.
  * -----------------------------------------------
@@ -15,7 +15,7 @@ import java.math.BigDecimal;
  * @author wanggang
  * @version 1.0 2017-08-15
  */
-public class BaseCheckpart {
+public class BaseCheckmethod {
 
     /**
      * GUID
@@ -23,12 +23,12 @@ public class BaseCheckpart {
     private Object id;
 
     /**
-     * 部位编号
+     * 方法编号
      */
     private BigDecimal code;
 
     /**
-     * 部位名称
+     * 方法名称
      */
     private Object name;
 
@@ -38,7 +38,7 @@ public class BaseCheckpart {
     private Object pycode;
 
     /**
-     * 适用性别(0:不限,1:男,2:女)
+     * 适用性别(0:不限,1:男,2:女)(0:不限,1:男,2:女)
      */
     private Object adaptsex;
 
