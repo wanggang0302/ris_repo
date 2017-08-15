@@ -20,7 +20,7 @@ public class InsIllnessmap {
     /**
      * GUID
      */
-    private Object id;
+    private String id;
 
     /**
      * 体检号
@@ -35,13 +35,13 @@ public class InsIllnessmap {
     /**
      * 区域编码
      */
-    private Object areacode;
+    private String areacode;
 
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -61,11 +61,11 @@ public class InsIllnessmap {
         this.illnesscode = illnesscode;
     }
 
-    public Object getAreacode() {
+    public String getAreacode() {
         return areacode;
     }
 
-    public void setAreacode(Object areacode) {
+    public void setAreacode(String areacode) {
         this.areacode = areacode;
     }
 

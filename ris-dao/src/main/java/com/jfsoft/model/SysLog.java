@@ -21,12 +21,12 @@ public class SysLog {
     /**
      * GUID
      */
-    private Object id;
+    private String id;
 
     /**
      * 日志类型
      */
-    private Object logLevel;
+    private String logLevel;
 
     /**
      * 关联Sys_User的Code
@@ -36,7 +36,7 @@ public class SysLog {
     /**
      * 日志内容
      */
-    private Object message;
+    private String message;
 
     /**
      * 创建日期
@@ -46,7 +46,7 @@ public class SysLog {
     /**
      * 模块
      */
-    private Object module;
+    private String module;
 
     /**
      * 报错信息
@@ -56,21 +56,21 @@ public class SysLog {
     /**
      * 所属区域号
      */
-    private Object areacode;
+    private String areacode;
 
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public Object getLogLevel() {
+    public String getLogLevel() {
         return logLevel;
     }
 
-    public void setLogLevel(Object logLevel) {
+    public void setLogLevel(String logLevel) {
         this.logLevel = logLevel;
     }
 
@@ -82,11 +82,11 @@ public class SysLog {
         this.usercode = usercode;
     }
 
-    public Object getMessage() {
+    public String getMessage() {
         return message;
     }
 
-    public void setMessage(Object message) {
+    public void setMessage(String message) {
         this.message = message;
     }
 
@@ -98,11 +98,11 @@ public class SysLog {
         this.logdate = logdate;
     }
 
-    public Object getModule() {
+    public String getModule() {
         return module;
     }
 
-    public void setModule(Object module) {
+    public void setModule(String module) {
         this.module = module;
     }
 
@@ -114,11 +114,11 @@ public class SysLog {
         this.exception = exception == null ? null : exception.trim();
     }
 
-    public Object getAreacode() {
+    public String getAreacode() {
         return areacode;
     }
 
-    public void setAreacode(Object areacode) {
+    public void setAreacode(String areacode) {
         this.areacode = areacode;
     }
 

@@ -9,18 +9,21 @@ package com.jfsoft.mapper;
 
 import com.jfsoft.model.InspectPerinfo;
 
+import java.util.List;
+
 public interface InspectPerinfoMapper {
     
-    int deleteByPrimaryKey(Object id);
+    int deleteByPrimaryKey(String id);
 
     int insert(InspectPerinfo record);
 
     int insertSelective(InspectPerinfo record);
 
-    InspectPerinfo selectByPrimaryKey(Object id);
+    InspectPerinfo selectByPrimaryKey(String id);
 
     int updateByPrimaryKeySelective(InspectPerinfo record);
 
     int updateByPrimaryKey(InspectPerinfo record);
+    List<InspectPerinfo> getPerinfoList();
     
 }

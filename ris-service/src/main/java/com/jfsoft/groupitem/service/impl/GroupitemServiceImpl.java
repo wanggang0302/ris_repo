@@ -30,7 +30,7 @@ public class GroupitemServiceImpl implements IGroupitemService{
         Map<String, Object> map = new HashMap<String, Object>();
         UUID uuid = UUID.randomUUID();
         baseGroupitem.setId(uuid.toString());
-        baseGroupitem.setAreacode(001);
+        baseGroupitem.setAreacode("001");
         baseGroupitem.setCode(new BigDecimal(3));
         int count = baseGroupitemMapper.insert(baseGroupitem);
         if(count>0){
@@ -58,7 +58,7 @@ public class GroupitemServiceImpl implements IGroupitemService{
     @Override
     public Map<String, Object> update(BaseGroupitem baseGroupitem) throws Exception {
         Map<String, Object> map = new HashMap<String, Object>();;
-        baseGroupitem.setAreacode(001);
+        baseGroupitem.setAreacode("002");
         baseGroupitem.setCode(new BigDecimal(3));
         int count = baseGroupitemMapper.updateByPrimaryKey(baseGroupitem);
         if(count>0){

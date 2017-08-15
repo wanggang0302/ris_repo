@@ -19,14 +19,14 @@
 		ID, CODE, NAME, PYCODE, DESCRIPTION, ADAPTSEX, ISUSE, SORTNUM, MEMO, AREACODE, ICD10
 	</sql>
 
-	<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Object" >
+	<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
 		select 
 		<include refid="Base_Column_List" />
 		from BASE_ILLNESS
 		where ID = #{id,jdbcType=VARCHAR}
 	</select>
 
-	<delete id="deleteByPrimaryKey" parameterType="java.lang.Object" >
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
 		delete from BASE_ILLNESS
 		where ID = #{id,jdbcType=VARCHAR}
 	</delete>

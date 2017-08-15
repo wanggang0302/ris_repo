@@ -11,13 +11,13 @@ import com.jfsoft.model.BaseArea;
 
 public interface BaseAreaMapper {
 
-    int deleteByPrimaryKey(Object id);
+    int deleteByPrimaryKey(String id);
 
     int insert(BaseArea record);
 
     int insertSelective(BaseArea record);
 
-    BaseArea selectByPrimaryKey(Object id);
+    BaseArea selectByPrimaryKey(String id);
 
     int updateByPrimaryKeySelective(BaseArea record);
 

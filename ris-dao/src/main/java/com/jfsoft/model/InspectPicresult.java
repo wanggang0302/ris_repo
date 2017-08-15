@@ -21,7 +21,7 @@ public class InspectPicresult {
     /**
      * GUID
      */
-    private Object id;
+    private String id;
 
     /**
      * 检查号(业务唯一)
@@ -31,7 +31,7 @@ public class InspectPicresult {
     /**
      * 图片地址(相对地址)
      */
-    private Object picurl;
+    private String picurl;
 
     /**
      * 创建人code
@@ -61,23 +61,23 @@ public class InspectPicresult {
     /**
      * 备注
      */
-    private Object memo;
+    private String memo;
 
     /**
      * 所属区域号
      */
-    private Object areacode;
+    private String areacode;
 
     /**
      * 是否使用
      */
-    private Object isuse;
+    private String isuse;
 
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -89,11 +89,11 @@ public class InspectPicresult {
         this.inspectno = inspectno;
     }
 
-    public Object getPicurl() {
+    public String getPicurl() {
         return picurl;
     }
 
-    public void setPicurl(Object picurl) {
+    public void setPicurl(String picurl) {
         this.picurl = picurl;
     }
 
@@ -137,27 +137,27 @@ public class InspectPicresult {
         this.sortnum = sortnum;
     }
 
-    public Object getMemo() {
+    public String getMemo() {
         return memo;
     }
 
-    public void setMemo(Object memo) {
+    public void setMemo(String memo) {
         this.memo = memo;
     }
 
-    public Object getAreacode() {
+    public String getAreacode() {
         return areacode;
     }
 
-    public void setAreacode(Object areacode) {
+    public void setAreacode(String areacode) {
         this.areacode = areacode;
     }
 
-    public Object getIsuse() {
+    public String getIsuse() {
         return isuse;
     }
 
-    public void setIsuse(Object isuse) {
+    public void setIsuse(String isuse) {
         this.isuse = isuse;
     }
 

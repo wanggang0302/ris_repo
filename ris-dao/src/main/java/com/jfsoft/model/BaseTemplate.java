@@ -20,12 +20,12 @@ public class BaseTemplate {
     /**
      * GUID
      */
-    private Object id;
+    private String id;
 
     /**
      * 模板类别
      */
-    private Object name;
+    private String name;
 
     /**
      * 模板code
@@ -35,42 +35,42 @@ public class BaseTemplate {
     /**
      * 拼音码
      */
-    private Object pycode;
+    private String pycode;
 
     /**
      * 个人或者公用模板
      */
-    private Object type;
+    private String type;
 
     /**
      * 模板对应人的id
      */
-    private Object pertemplateid;
+    private String pertemplateid;
 
     /**
      * 危急值
      */
-    private Object urgentvalue;
+    private String urgentvalue;
 
     /**
      * 阴性或者阳性体征
      */
-    private Object polarity;
+    private String polarity;
 
     /**
      * 正常模板或者异常模板
      */
-    private Object pathology;
+    private String pathology;
 
     /**
      * 建议
      */
-    private Object suggest;
+    private String suggest;
 
     /**
      * 适用性别(0:不限,1:男,2:女)
      */
-    private Object adaptsex;
+    private String adaptsex;
 
     /**
      * 是否使用(0:否,1:是)
@@ -85,26 +85,26 @@ public class BaseTemplate {
     /**
      * 备注
      */
-    private Object memo;
+    private String memo;
 
     /**
      * 所属区域号
      */
-    private Object areacode;
+    private String areacode;
 
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public Object getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(Object name) {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -116,67 +116,67 @@ public class BaseTemplate {
         this.code = code;
     }
 
-    public Object getPycode() {
+    public String getPycode() {
         return pycode;
     }
 
-    public void setPycode(Object pycode) {
+    public void setPycode(String pycode) {
         this.pycode = pycode;
     }
 
-    public Object getType() {
+    public String getType() {
         return type;
     }
 
-    public void setType(Object type) {
+    public void setType(String type) {
         this.type = type;
     }
 
-    public Object getPertemplateid() {
+    public String getPertemplateid() {
         return pertemplateid;
     }
 
-    public void setPertemplateid(Object pertemplateid) {
+    public void setPertemplateid(String pertemplateid) {
         this.pertemplateid = pertemplateid;
     }
 
-    public Object getUrgentvalue() {
+    public String getUrgentvalue() {
         return urgentvalue;
     }
 
-    public void setUrgentvalue(Object urgentvalue) {
+    public void setUrgentvalue(String urgentvalue) {
         this.urgentvalue = urgentvalue;
     }
 
-    public Object getPolarity() {
+    public String getPolarity() {
         return polarity;
     }
 
-    public void setPolarity(Object polarity) {
+    public void setPolarity(String polarity) {
         this.polarity = polarity;
     }
 
-    public Object getPathology() {
+    public String getPathology() {
         return pathology;
     }
 
-    public void setPathology(Object pathology) {
+    public void setPathology(String pathology) {
         this.pathology = pathology;
     }
 
-    public Object getSuggest() {
+    public String getSuggest() {
         return suggest;
     }
 
-    public void setSuggest(Object suggest) {
+    public void setSuggest(String suggest) {
         this.suggest = suggest;
     }
 
-    public Object getAdaptsex() {
+    public String getAdaptsex() {
         return adaptsex;
     }
 
-    public void setAdaptsex(Object adaptsex) {
+    public void setAdaptsex(String adaptsex) {
         this.adaptsex = adaptsex;
     }
 
@@ -196,19 +196,19 @@ public class BaseTemplate {
         this.sortnum = sortnum;
     }
 
-    public Object getMemo() {
+    public String getMemo() {
         return memo;
     }
 
-    public void setMemo(Object memo) {
+    public void setMemo(String memo) {
         this.memo = memo;
     }
 
-    public Object getAreacode() {
+    public String getAreacode() {
         return areacode;
     }
 
-    public void setAreacode(Object areacode) {
+    public void setAreacode(String areacode) {
         this.areacode = areacode;
     }
 

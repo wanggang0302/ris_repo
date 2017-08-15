@@ -20,14 +20,14 @@
 		AREACODE, ISUSE
 	</sql>
 
-	<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Object" >
+	<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
 		select 
 		<include refid="Base_Column_List" />
 		from INSPECT_PICRESULT
 		where ID = #{id,jdbcType=VARCHAR}
 	</select>
 
-	<delete id="deleteByPrimaryKey" parameterType="java.lang.Object" >
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
 		delete from INSPECT_PICRESULT
 		where ID = #{id,jdbcType=VARCHAR}
 	</delete>

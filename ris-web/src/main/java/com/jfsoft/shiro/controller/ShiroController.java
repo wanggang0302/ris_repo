@@ -101,7 +101,7 @@ public class ShiroController extends BaseController {
 
     @RequestMapping("/user")
     public String getUserList(Map<String, Object> model){
-        Map<String, Object> params = new HashMap<String, Object>();
+        Map<String, String> params = new HashMap<String, String>();
         List<User> userList = userDao.findPage(params);
         model.put("userList", userList);
         return "user";
