@@ -21,7 +21,7 @@ public class SysActor {
     /**
      * GUID主键
      */
-    private Object id;
+    private String id;
 
     /**
      * 编号(业务唯一)
@@ -31,7 +31,7 @@ public class SysActor {
     /**
      * 角色名称
      */
-    private Object name;
+    private String name;
 
     /**
      * 创建人code
@@ -61,22 +61,22 @@ public class SysActor {
     /**
      * 备注
      */
-    private Object memo;
+    private String memo;
 
     /**
      * 区域编码
      */
-    private Object areacode;
+    private String areacode;
 
     /**
      */
-    private Object isuse;
+    private String isuse;
 
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -88,11 +88,11 @@ public class SysActor {
         this.code = code;
     }
 
-    public Object getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(Object name) {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -136,27 +136,27 @@ public class SysActor {
         this.sortnum = sortnum;
     }
 
-    public Object getMemo() {
+    public String getMemo() {
         return memo;
     }
 
-    public void setMemo(Object memo) {
+    public void setMemo(String memo) {
         this.memo = memo;
     }
 
-    public Object getAreacode() {
+    public String getAreacode() {
         return areacode;
     }
 
-    public void setAreacode(Object areacode) {
+    public void setAreacode(String areacode) {
         this.areacode = areacode;
     }
 
-    public Object getIsuse() {
+    public String getIsuse() {
         return isuse;
     }
 
-    public void setIsuse(Object isuse) {
+    public void setIsuse(String isuse) {
         this.isuse = isuse;
     }
 

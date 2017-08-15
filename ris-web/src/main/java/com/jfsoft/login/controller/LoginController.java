@@ -27,7 +27,7 @@ public class LoginController extends BaseController {
      * @return
      */
     @RequestMapping(value = "/login", method = RequestMethod.GET)
-    public String logs(Map<String,Object> map, String upMechName, String upType, String upStatus,
+    public String logs(Map<String,String> map, String upMechName, String upType, String upStatus,
                        String upDateBegin, String upDateEnd) {
 
         try {

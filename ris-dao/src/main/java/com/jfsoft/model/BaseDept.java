@@ -20,7 +20,7 @@ public class BaseDept {
     /**
      * GUID
      */
-    private Object id;
+    private String id;
 
     /**
      * 科室编号
@@ -30,22 +30,22 @@ public class BaseDept {
     /**
      * 科室名称
      */
-    private Object name;
+    private String name;
 
     /**
      * 科室类别
      */
-    private Object type;
+    private String type;
 
     /**
      * 收费项目拼音码
      */
-    private Object pycode;
+    private String pycode;
 
     /**
      * 适用性别(0:不限,1:男,2:女)
      */
-    private Object adaptSex;
+    private String adaptSex;
 
     /**
      * 是否使用(0:否,1:是)
@@ -65,18 +65,18 @@ public class BaseDept {
     /**
      * 备注
      */
-    private Object memo;
+    private String memo;
 
     /**
      * 所属区域号
      */
-    private Object areacode;
+    private String areacode;
 
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -88,35 +88,35 @@ public class BaseDept {
         this.code = code;
     }
 
-    public Object getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(Object name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public Object getType() {
+    public String getType() {
         return type;
     }
 
-    public void setType(Object type) {
+    public void setType(String type) {
         this.type = type;
     }
 
-    public Object getPycode() {
+    public String getPycode() {
         return pycode;
     }
 
-    public void setPycode(Object pycode) {
+    public void setPycode(String pycode) {
         this.pycode = pycode;
     }
 
-    public Object getAdaptSex() {
+    public String getAdaptSex() {
         return adaptSex;
     }
 
-    public void setAdaptSex(Object adaptSex) {
+    public void setAdaptSex(String adaptSex) {
         this.adaptSex = adaptSex;
     }
 
@@ -144,19 +144,19 @@ public class BaseDept {
         this.sortnum = sortnum;
     }
 
-    public Object getMemo() {
+    public String getMemo() {
         return memo;
     }
 
-    public void setMemo(Object memo) {
+    public void setMemo(String memo) {
         this.memo = memo;
     }
 
-    public Object getAreacode() {
+    public String getAreacode() {
         return areacode;
     }
 
-    public void setAreacode(Object areacode) {
+    public void setAreacode(String areacode) {
         this.areacode = areacode;
     }
 

@@ -17,7 +17,7 @@ import java.util.Map;
 public class BaseTemplateController extends BaseController {
 
     @RequestMapping("/toAdd")
-    public static String helloHtml(Map<String, Object> map){
+    public static String helloHtml(Map<String, String> map){
 
         return "add";
     }

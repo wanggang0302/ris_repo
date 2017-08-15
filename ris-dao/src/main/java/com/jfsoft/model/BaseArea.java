@@ -20,22 +20,22 @@ public class BaseArea {
     /**
      * GUID
      */
-    private Object id;
+    private String id;
 
     /**
      * 区域编号
      */
-    private Object code;
+    private String code;
 
     /**
      * 区域名称
      */
-    private Object name;
+    private String name;
 
     /**
      * 区域拼音码
      */
-    private Object pycode;
+    private String pycode;
 
     /**
      * 排序号
@@ -45,42 +45,42 @@ public class BaseArea {
     /**
      * 备注
      */
-    private Object memo;
+    private String memo;
 
     /**
      * 外部数据标识
      */
-    private Object hiscode;
+    private String hiscode;
 
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public Object getCode() {
+    public String getCode() {
         return code;
     }
 
-    public void setCode(Object code) {
+    public void setCode(String code) {
         this.code = code;
     }
 
-    public Object getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(Object name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public Object getPycode() {
+    public String getPycode() {
         return pycode;
     }
 
-    public void setPycode(Object pycode) {
+    public void setPycode(String pycode) {
         this.pycode = pycode;
     }
 
@@ -92,19 +92,19 @@ public class BaseArea {
         this.sortnum = sortnum;
     }
 
-    public Object getMemo() {
+    public String getMemo() {
         return memo;
     }
 
-    public void setMemo(Object memo) {
+    public void setMemo(String memo) {
         this.memo = memo;
     }
 
-    public Object getHiscode() {
+    public String getHiscode() {
         return hiscode;
     }
 
-    public void setHiscode(Object hiscode) {
+    public void setHiscode(String hiscode) {
         this.hiscode = hiscode;
     }
 

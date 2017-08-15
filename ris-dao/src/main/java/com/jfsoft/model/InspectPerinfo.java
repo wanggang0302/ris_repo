@@ -21,7 +21,7 @@ public class InspectPerinfo {
     /**
      * GUID
      */
-    private Object id;
+    private String id;
 
     /**
      * Ris系统检查号(业务唯一)
@@ -31,32 +31,32 @@ public class InspectPerinfo {
     /**
      * 第三方数据标识号
      */
-    private Object infoid;
+    private String infoid;
 
     /**
      * 第三方数据标识号1
      */
-    private Object infoid1;
+    private String infoid1;
 
     /**
      * 第三方数据标识号2
      */
-    private Object infoid2;
+    private String infoid2;
 
     /**
      * 体检者姓名
      */
-    private Object name;
+    private String name;
 
     /**
      * 拼音码
      */
-    private Object pycode;
+    private String pycode;
 
     /**
      * 性别
      */
-    private Object sex;
+    private String sex;
 
     /**
      * 年龄
@@ -66,7 +66,7 @@ public class InspectPerinfo {
     /**
      * 民族
      */
-    private Object nation;
+    private String nation;
 
     /**
      * 生日
@@ -76,47 +76,47 @@ public class InspectPerinfo {
     /**
      * 身份证号
      */
-    private Object ssid;
+    private String ssid;
 
     /**
      * 本人电话
      */
-    private Object tel;
+    private String tel;
 
     /**
      * 紧急联系人电话
      */
-    private Object linktel;
+    private String linktel;
 
     /**
      * 所在单位
      */
-    private Object company;
+    private String company;
 
     /**
      * 体重
      */
-    private Object weight;
+    private String weight;
 
     /**
      * 邮政编码
      */
-    private Object postcode;
+    private String postcode;
 
     /**
      * 职业
      */
-    private Object profession;
+    private String profession;
 
     /**
      * 禁忌症
      */
-    private Object taboos;
+    private String taboos;
 
     /**
      * 疾病史
      */
-    private Object medicalhistory;
+    private String medicalhistory;
 
     /**
      * 医嘱
@@ -126,7 +126,7 @@ public class InspectPerinfo {
     /**
      * 临床诊断
      */
-    private Object diagnosis;
+    private String diagnosis;
 
     /**
      * 是否急诊（1是、0否）
@@ -136,12 +136,12 @@ public class InspectPerinfo {
     /**
      * 选择的部位
      */
-    private Object part;
+    private String part;
 
     /**
      * 检验的状态（1:已登记，2:已诊断，3:已审核，4:已打印）
      */
-    private Object statuscode;
+    private String statuscode;
 
     /**
      * 开单医生code
@@ -151,12 +151,12 @@ public class InspectPerinfo {
     /**
      * 开单医生姓名
      */
-    private Object applydocname;
+    private String applydocname;
 
     /**
      * 开单科室
      */
-    private Object applydept;
+    private String applydept;
 
     /**
      * 开单时间
@@ -176,7 +176,7 @@ public class InspectPerinfo {
     /**
      * 登记医生姓名
      */
-    private Object regdocname;
+    private String regdocname;
 
     /**
      * 打印时间
@@ -191,17 +191,17 @@ public class InspectPerinfo {
     /**
      * 患者类型（住院门诊体检）
      */
-    private Object pertype;
+    private String pertype;
 
     /**
      * 病区号
      */
-    private Object ward;
+    private String ward;
 
     /**
      * 床号
      */
-    private Object bednum;
+    private String bednum;
 
     /**
      * 创建人code
@@ -226,38 +226,38 @@ public class InspectPerinfo {
     /**
      * 备注
      */
-    private Object memo;
+    private String memo;
 
     /**
      * 所属区域号
      */
-    private Object areacode;
+    private String areacode;
 
     /**
      */
-    private Object content1;
+    private String content1;
 
     /**
      */
-    private Object content2;
+    private String content2;
 
     /**
      */
-    private Object content3;
+    private String content3;
 
     /**
      */
-    private Object content4;
+    private String content4;
 
     /**
      */
-    private Object content5;
+    private String content5;
 
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -269,51 +269,51 @@ public class InspectPerinfo {
         this.checkno = checkno;
     }
 
-    public Object getInfoid() {
+    public String getInfoid() {
         return infoid;
     }
 
-    public void setInfoid(Object infoid) {
+    public void setInfoid(String infoid) {
         this.infoid = infoid;
     }
 
-    public Object getInfoid1() {
+    public String getInfoid1() {
         return infoid1;
     }
 
-    public void setInfoid1(Object infoid1) {
+    public void setInfoid1(String infoid1) {
         this.infoid1 = infoid1;
     }
 
-    public Object getInfoid2() {
+    public String getInfoid2() {
         return infoid2;
     }
 
-    public void setInfoid2(Object infoid2) {
+    public void setInfoid2(String infoid2) {
         this.infoid2 = infoid2;
     }
 
-    public Object getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(Object name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public Object getPycode() {
+    public String getPycode() {
         return pycode;
     }
 
-    public void setPycode(Object pycode) {
+    public void setPycode(String pycode) {
         this.pycode = pycode;
     }
 
-    public Object getSex() {
+    public String getSex() {
         return sex;
     }
 
-    public void setSex(Object sex) {
+    public void setSex(String sex) {
         this.sex = sex;
     }
 
@@ -325,11 +325,11 @@ public class InspectPerinfo {
         this.age = age;
     }
 
-    public Object getNation() {
+    public String getNation() {
         return nation;
     }
 
-    public void setNation(Object nation) {
+    public void setNation(String nation) {
         this.nation = nation;
     }
 
@@ -341,75 +341,75 @@ public class InspectPerinfo {
         this.birthday = birthday;
     }
 
-    public Object getSsid() {
+    public String getSsid() {
         return ssid;
     }
 
-    public void setSsid(Object ssid) {
+    public void setSsid(String ssid) {
         this.ssid = ssid;
     }
 
-    public Object getTel() {
+    public String getTel() {
         return tel;
     }
 
-    public void setTel(Object tel) {
+    public void setTel(String tel) {
         this.tel = tel;
     }
 
-    public Object getLinktel() {
+    public String getLinktel() {
         return linktel;
     }
 
-    public void setLinktel(Object linktel) {
+    public void setLinktel(String linktel) {
         this.linktel = linktel;
     }
 
-    public Object getCompany() {
+    public String getCompany() {
         return company;
     }
 
-    public void setCompany(Object company) {
+    public void setCompany(String company) {
         this.company = company;
     }
 
-    public Object getWeight() {
+    public String getWeight() {
         return weight;
     }
 
-    public void setWeight(Object weight) {
+    public void setWeight(String weight) {
         this.weight = weight;
     }
 
-    public Object getPostcode() {
+    public String getPostcode() {
         return postcode;
     }
 
-    public void setPostcode(Object postcode) {
+    public void setPostcode(String postcode) {
         this.postcode = postcode;
     }
 
-    public Object getProfession() {
+    public String getProfession() {
         return profession;
     }
 
-    public void setProfession(Object profession) {
+    public void setProfession(String profession) {
         this.profession = profession;
     }
 
-    public Object getTaboos() {
+    public String getTaboos() {
         return taboos;
     }
 
-    public void setTaboos(Object taboos) {
+    public void setTaboos(String taboos) {
         this.taboos = taboos;
     }
 
-    public Object getMedicalhistory() {
+    public String getMedicalhistory() {
         return medicalhistory;
     }
 
-    public void setMedicalhistory(Object medicalhistory) {
+    public void setMedicalhistory(String medicalhistory) {
         this.medicalhistory = medicalhistory;
     }
 
@@ -421,11 +421,11 @@ public class InspectPerinfo {
         this.docadvice = docadvice == null ? null : docadvice.trim();
     }
 
-    public Object getDiagnosis() {
+    public String getDiagnosis() {
         return diagnosis;
     }
 
-    public void setDiagnosis(Object diagnosis) {
+    public void setDiagnosis(String diagnosis) {
         this.diagnosis = diagnosis;
     }
 
@@ -437,19 +437,19 @@ public class InspectPerinfo {
         this.isemergency = isemergency;
     }
 
-    public Object getPart() {
+    public String getPart() {
         return part;
     }
 
-    public void setPart(Object part) {
+    public void setPart(String part) {
         this.part = part;
     }
 
-    public Object getStatuscode() {
+    public String getStatuscode() {
         return statuscode;
     }
 
-    public void setStatuscode(Object statuscode) {
+    public void setStatuscode(String statuscode) {
         this.statuscode = statuscode;
     }
 
@@ -461,19 +461,19 @@ public class InspectPerinfo {
         this.applydoccode = applydoccode;
     }
 
-    public Object getApplydocname() {
+    public String getApplydocname() {
         return applydocname;
     }
 
-    public void setApplydocname(Object applydocname) {
+    public void setApplydocname(String applydocname) {
         this.applydocname = applydocname;
     }
 
-    public Object getApplydept() {
+    public String getApplydept() {
         return applydept;
     }
 
-    public void setApplydept(Object applydept) {
+    public void setApplydept(String applydept) {
         this.applydept = applydept;
     }
 
@@ -501,11 +501,11 @@ public class InspectPerinfo {
         this.regdoccode = regdoccode;
     }
 
-    public Object getRegdocname() {
+    public String getRegdocname() {
         return regdocname;
     }
 
-    public void setRegdocname(Object regdocname) {
+    public void setRegdocname(String regdocname) {
         this.regdocname = regdocname;
     }
 
@@ -525,27 +525,27 @@ public class InspectPerinfo {
         this.printusercode = printusercode;
     }
 
-    public Object getPertype() {
+    public String getPertype() {
         return pertype;
     }
 
-    public void setPertype(Object pertype) {
+    public void setPertype(String pertype) {
         this.pertype = pertype;
     }
 
-    public Object getWard() {
+    public String getWard() {
         return ward;
     }
 
-    public void setWard(Object ward) {
+    public void setWard(String ward) {
         this.ward = ward;
     }
 
-    public Object getBednum() {
+    public String getBednum() {
         return bednum;
     }
 
-    public void setBednum(Object bednum) {
+    public void setBednum(String bednum) {
         this.bednum = bednum;
     }
 
@@ -581,59 +581,59 @@ public class InspectPerinfo {
         this.modifytime = modifytime;
     }
 
-    public Object getMemo() {
+    public String getMemo() {
         return memo;
     }
 
-    public void setMemo(Object memo) {
+    public void setMemo(String memo) {
         this.memo = memo;
     }
 
-    public Object getAreacode() {
+    public String getAreacode() {
         return areacode;
     }
 
-    public void setAreacode(Object areacode) {
+    public void setAreacode(String areacode) {
         this.areacode = areacode;
     }
 
-    public Object getContent1() {
+    public String getContent1() {
         return content1;
     }
 
-    public void setContent1(Object content1) {
+    public void setContent1(String content1) {
         this.content1 = content1;
     }
 
-    public Object getContent2() {
+    public String getContent2() {
         return content2;
     }
 
-    public void setContent2(Object content2) {
+    public void setContent2(String content2) {
         this.content2 = content2;
     }
 
-    public Object getContent3() {
+    public String getContent3() {
         return content3;
     }
 
-    public void setContent3(Object content3) {
+    public void setContent3(String content3) {
         this.content3 = content3;
     }
 
-    public Object getContent4() {
+    public String getContent4() {
         return content4;
     }
 
-    public void setContent4(Object content4) {
+    public void setContent4(String content4) {
         this.content4 = content4;
     }
 
-    public Object getContent5() {
+    public String getContent5() {
         return content5;
     }
 
-    public void setContent5(Object content5) {
+    public void setContent5(String content5) {
         this.content5 = content5;
     }
 

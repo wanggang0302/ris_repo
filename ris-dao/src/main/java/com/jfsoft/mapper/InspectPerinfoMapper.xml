@@ -61,14 +61,14 @@
 		CONTENT1, CONTENT2, CONTENT3, CONTENT4, CONTENT5
 	</sql>
 
-	<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Object" >
+	<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
 		select 
 		<include refid="Base_Column_List" />
 		from INSPECT_PERINFO
 		where ID = #{id,jdbcType=VARCHAR}
 	</select>
 
-	<delete id="deleteByPrimaryKey" parameterType="java.lang.Object" >
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
 		delete from INSPECT_PERINFO
 		where ID = #{id,jdbcType=VARCHAR}
 	</delete>
@@ -603,5 +603,11 @@
 			CONTENT5 = #{content5,jdbcType=VARCHAR}
 		where ID = #{id,jdbcType=VARCHAR}
 	</update>
+	<select id="getPerinfoList" resultMap="BaseResultMap">
+		select
+		<include refid="Base_Column_List" />
+		from INSPECT_PERINFO
+
+	</select>
 
 </mapper>

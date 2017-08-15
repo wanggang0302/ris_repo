@@ -38,13 +38,13 @@ public interface TUserMapper {
      * @param params
      * @return
      */
-    List<User> findPage(Map<String, Object> params);
+    List<User> findPage(Map<String, String> params);
 
     /**
      * 查询用户总数
      * @param params
      * @return
      */
-    int findPageCount(Map<String, Object> params);
+    int findPageCount(Map<String, String> params);
     
 }

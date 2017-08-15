@@ -12,14 +12,14 @@
 		ID, CHECKNO, ILLNESSCODE, AREACODE
 	</sql>
 
-	<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Object" >
+	<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
 		select 
 		<include refid="Base_Column_List" />
 		from INS_ILLNESSMAP
 		where ID = #{id,jdbcType=VARCHAR}
 	</select>
 
-	<delete id="deleteByPrimaryKey" parameterType="java.lang.Object" >
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
 		delete from INS_ILLNESSMAP
 		where ID = #{id,jdbcType=VARCHAR}
 	</delete>

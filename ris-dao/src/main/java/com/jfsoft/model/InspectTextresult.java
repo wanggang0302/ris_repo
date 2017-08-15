@@ -21,7 +21,7 @@ public class InspectTextresult {
     /**
      * GUID
      */
-    private Object id;
+    private String id;
 
     /**
      * 检查号(业务唯一)
@@ -46,7 +46,7 @@ public class InspectTextresult {
     /**
      * 检查医生姓名
      */
-    private Object checkdocname;
+    private String checkdocname;
 
     /**
      * 检查时间
@@ -61,7 +61,7 @@ public class InspectTextresult {
     /**
      * 审核医生姓名
      */
-    private Object auditdocname;
+    private String auditdocname;
 
     /**
      * 审核时间
@@ -71,7 +71,7 @@ public class InspectTextresult {
     /**
      * 是否阳性报告（正常：阴性   异常 ：阳性）
      */
-    private Object reportnature;
+    private String reportnature;
 
     /**
      * 创建人code
@@ -101,18 +101,18 @@ public class InspectTextresult {
     /**
      * 备注
      */
-    private Object memo;
+    private String memo;
 
     /**
      * 所属区域号
      */
-    private Object areacode;
+    private String areacode;
 
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -148,11 +148,11 @@ public class InspectTextresult {
         this.checkdoccode = checkdoccode;
     }
 
-    public Object getCheckdocname() {
+    public String getCheckdocname() {
         return checkdocname;
     }
 
-    public void setCheckdocname(Object checkdocname) {
+    public void setCheckdocname(String checkdocname) {
         this.checkdocname = checkdocname;
     }
 
@@ -172,11 +172,11 @@ public class InspectTextresult {
         this.auditdoccode = auditdoccode;
     }
 
-    public Object getAuditdocname() {
+    public String getAuditdocname() {
         return auditdocname;
     }
 
-    public void setAuditdocname(Object auditdocname) {
+    public void setAuditdocname(String auditdocname) {
         this.auditdocname = auditdocname;
     }
 
@@ -188,11 +188,11 @@ public class InspectTextresult {
         this.audittime = audittime;
     }
 
-    public Object getReportnature() {
+    public String getReportnature() {
         return reportnature;
     }
 
-    public void setReportnature(Object reportnature) {
+    public void setReportnature(String reportnature) {
         this.reportnature = reportnature;
     }
 
@@ -236,19 +236,19 @@ public class InspectTextresult {
         this.sortnum = sortnum;
     }
 
-    public Object getMemo() {
+    public String getMemo() {
         return memo;
     }
 
-    public void setMemo(Object memo) {
+    public void setMemo(String memo) {
         this.memo = memo;
     }
 
-    public Object getAreacode() {
+    public String getAreacode() {
         return areacode;
     }
 
-    public void setAreacode(Object areacode) {
+    public void setAreacode(String areacode) {
         this.areacode = areacode;
     }
 

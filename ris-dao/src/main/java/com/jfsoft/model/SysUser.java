@@ -22,7 +22,7 @@ public class SysUser {
     /**
      * 主键GUID
      */
-    private Object id;
+    private String id;
 
     /**
      * 编号(业务唯一)
@@ -37,22 +37,22 @@ public class SysUser {
     /**
      * 姓名
      */
-    private Object name;
+    private String name;
 
     /**
      * 账号(登录名)
      */
-    private Object username;
+    private String username;
 
     /**
      * 密码(MD5加密)
      */
-    private Object password;
+    private String password;
 
     /**
      * 邮箱
      */
-    private Object email;
+    private String email;
 
     /**
      * 创建人code
@@ -82,17 +82,17 @@ public class SysUser {
     /**
      * 备注
      */
-    private Object memo;
+    private String memo;
 
     /**
      * 区域编码
      */
-    private Object areacode;
+    private String areacode;
 
     /**
      * 是否使用
      */
-    private Object isuse;
+    private String isuse;
 
     /**
      * 角色code
@@ -114,11 +114,11 @@ public class SysUser {
         this.deptList = deptList;
     }
 
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -138,35 +138,35 @@ public class SysUser {
         this.entrycode = entrycode;
     }
 
-    public Object getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(Object name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public Object getUsername() {
+    public String getUsername() {
         return username;
     }
 
-    public void setUsername(Object username) {
+    public void setUsername(String username) {
         this.username = username;
     }
 
-    public Object getPassword() {
+    public String getPassword() {
         return password;
     }
 
-    public void setPassword(Object password) {
+    public void setPassword(String password) {
         this.password = password;
     }
 
-    public Object getEmail() {
+    public String getEmail() {
         return email;
     }
 
-    public void setEmail(Object email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 
@@ -210,27 +210,27 @@ public class SysUser {
         this.sortnum = sortnum;
     }
 
-    public Object getMemo() {
+    public String getMemo() {
         return memo;
     }
 
-    public void setMemo(Object memo) {
+    public void setMemo(String memo) {
         this.memo = memo;
     }
 
-    public Object getAreacode() {
+    public String getAreacode() {
         return areacode;
     }
 
-    public void setAreacode(Object areacode) {
+    public void setAreacode(String areacode) {
         this.areacode = areacode;
     }
 
-    public Object getIsuse() {
+    public String getIsuse() {
         return isuse;
     }
 
-    public void setIsuse(Object isuse) {
+    public void setIsuse(String isuse) {
         this.isuse = isuse;
     }
 

@@ -20,7 +20,7 @@ public class BaseCheckmethod {
     /**
      * GUID
      */
-    private Object id;
+    private String id;
 
     /**
      * 方法编号
@@ -30,17 +30,17 @@ public class BaseCheckmethod {
     /**
      * 方法名称
      */
-    private Object name;
+    private String name;
 
     /**
      * 拼音码
      */
-    private Object pycode;
+    private String pycode;
 
     /**
      * 适用性别(0:不限,1:男,2:女)(0:不限,1:男,2:女)
      */
-    private Object adaptsex;
+    private String adaptsex;
 
     /**
      * 是否使用(0:否,1:是)
@@ -55,18 +55,18 @@ public class BaseCheckmethod {
     /**
      * 备注
      */
-    private Object memo;
+    private String memo;
 
     /**
      * 所属区域号
      */
-    private Object areacode;
+    private String areacode;
 
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -78,27 +78,27 @@ public class BaseCheckmethod {
         this.code = code;
     }
 
-    public Object getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(Object name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public Object getPycode() {
+    public String getPycode() {
         return pycode;
     }
 
-    public void setPycode(Object pycode) {
+    public void setPycode(String pycode) {
         this.pycode = pycode;
     }
 
-    public Object getAdaptsex() {
+    public String getAdaptsex() {
         return adaptsex;
     }
 
-    public void setAdaptsex(Object adaptsex) {
+    public void setAdaptsex(String adaptsex) {
         this.adaptsex = adaptsex;
     }
 
@@ -118,19 +118,19 @@ public class BaseCheckmethod {
         this.sortnum = sortnum;
     }
 
-    public Object getMemo() {
+    public String getMemo() {
         return memo;
     }
 
-    public void setMemo(Object memo) {
+    public void setMemo(String memo) {
         this.memo = memo;
     }
 
-    public Object getAreacode() {
+    public String getAreacode() {
         return areacode;
     }
 
-    public void setAreacode(Object areacode) {
+    public void setAreacode(String areacode) {
         this.areacode = areacode;
     }
 

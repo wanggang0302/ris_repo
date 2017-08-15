@@ -20,7 +20,7 @@ public class BaseIllness {
     /**
      * GUID
      */
-    private Object id;
+    private String id;
 
     /**
      * 疾病编号
@@ -30,22 +30,22 @@ public class BaseIllness {
     /**
      * 疾病名称
      */
-    private Object name;
+    private String name;
 
     /**
      * 拼音码
      */
-    private Object pycode;
+    private String pycode;
 
     /**
      * 疾病描述
      */
-    private Object description;
+    private String description;
 
     /**
      * 适用性别(0:不限,1:男,2:女)
      */
-    private Object adaptsex;
+    private String adaptsex;
 
     /**
      * 是否使用(0:否,1:是)
@@ -60,23 +60,23 @@ public class BaseIllness {
     /**
      * 备注
      */
-    private Object memo;
+    private String memo;
 
     /**
      * 所属区域号
      */
-    private Object areacode;
+    private String areacode;
 
     /**
      * 疾病标准
      */
-    private Object icd10;
+    private String icd10;
 
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -88,35 +88,35 @@ public class BaseIllness {
         this.code = code;
     }
 
-    public Object getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(Object name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public Object getPycode() {
+    public String getPycode() {
         return pycode;
     }
 
-    public void setPycode(Object pycode) {
+    public void setPycode(String pycode) {
         this.pycode = pycode;
     }
 
-    public Object getDescription() {
+    public String getDescription() {
         return description;
     }
 
-    public void setDescription(Object description) {
+    public void setDescription(String description) {
         this.description = description;
     }
 
-    public Object getAdaptsex() {
+    public String getAdaptsex() {
         return adaptsex;
     }
 
-    public void setAdaptsex(Object adaptsex) {
+    public void setAdaptsex(String adaptsex) {
         this.adaptsex = adaptsex;
     }
 
@@ -136,27 +136,27 @@ public class BaseIllness {
         this.sortnum = sortnum;
     }
 
-    public Object getMemo() {
+    public String getMemo() {
         return memo;
     }
 
-    public void setMemo(Object memo) {
+    public void setMemo(String memo) {
         this.memo = memo;
     }
 
-    public Object getAreacode() {
+    public String getAreacode() {
         return areacode;
     }
 
-    public void setAreacode(Object areacode) {
+    public void setAreacode(String areacode) {
         this.areacode = areacode;
     }
 
-    public Object getIcd10() {
+    public String getIcd10() {
         return icd10;
     }
 
-    public void setIcd10(Object icd10) {
+    public void setIcd10(String icd10) {
         this.icd10 = icd10;
     }
 

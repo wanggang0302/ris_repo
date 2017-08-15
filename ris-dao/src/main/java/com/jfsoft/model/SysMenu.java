@@ -21,7 +21,7 @@ public class SysMenu {
     /**
      * GUID
      */
-    private Object id;
+    private String id;
 
     /**
      * 编号(业务唯一)
@@ -31,12 +31,12 @@ public class SysMenu {
     /**
      * 菜单标题
      */
-    private Object title;
+    private String title;
 
     /**
      * 菜单描述
      */
-    private Object description;
+    private String description;
 
     /**
      * 父菜单code
@@ -46,7 +46,7 @@ public class SysMenu {
     /**
      * 菜单链接地址
      */
-    private Object url;
+    private String url;
 
     /**
      * 创建人code
@@ -76,23 +76,23 @@ public class SysMenu {
     /**
      * 备注
      */
-    private Object memo;
+    private String memo;
 
     /**
      * 区域编码
      */
-    private Object areacode;
+    private String areacode;
 
     /**
      * 是否可用
      */
-    private Object isuse;
+    private String isuse;
 
-    public Object getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Object id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -104,19 +104,19 @@ public class SysMenu {
         this.code = code;
     }
 
-    public Object getTitle() {
+    public String getTitle() {
         return title;
     }
 
-    public void setTitle(Object title) {
+    public void setTitle(String title) {
         this.title = title;
     }
 
-    public Object getDescription() {
+    public String getDescription() {
         return description;
     }
 
-    public void setDescription(Object description) {
+    public void setDescription(String description) {
         this.description = description;
     }
 
@@ -128,11 +128,11 @@ public class SysMenu {
         this.parentcode = parentcode;
     }
 
-    public Object getUrl() {
+    public String getUrl() {
         return url;
     }
 
-    public void setUrl(Object url) {
+    public void setUrl(String url) {
         this.url = url;
     }
 
@@ -176,27 +176,27 @@ public class SysMenu {
         this.sortnum = sortnum;
     }
 
-    public Object getMemo() {
+    public String getMemo() {
         return memo;
     }
 
-    public void setMemo(Object memo) {
+    public void setMemo(String memo) {
         this.memo = memo;
     }
 
-    public Object getAreacode() {
+    public String getAreacode() {
         return areacode;
     }
 
-    public void setAreacode(Object areacode) {
+    public void setAreacode(String areacode) {
         this.areacode = areacode;
     }
 
-    public Object getIsuse() {
+    public String getIsuse() {
         return isuse;
     }
 
-    public void setIsuse(Object isuse) {
+    public void setIsuse(String isuse) {
         this.isuse = isuse;
     }
 
