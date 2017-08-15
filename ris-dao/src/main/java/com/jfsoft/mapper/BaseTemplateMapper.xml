@@ -2,21 +2,21 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.jfsoft.mapper.BaseTemplateMapper" >
 	<resultMap id="BaseResultMap" type="com.jfsoft.model.BaseTemplate" >
-		<id column="ID" property="id" jdbcType="OTHER" />
-		<result column="NAME" property="name" jdbcType="OTHER" />
+		<id column="ID" property="id" jdbcType="VARCHAR" />
+		<result column="NAME" property="name" jdbcType="VARCHAR" />
 		<result column="CODE" property="code" jdbcType="DECIMAL" />
-		<result column="PYCODE" property="pycode" jdbcType="OTHER" />
-		<result column="TYPE" property="type" jdbcType="OTHER" />
-		<result column="PERTEMPLATEID" property="pertemplateid" jdbcType="OTHER" />
-		<result column="URGENTVALUE" property="urgentvalue" jdbcType="OTHER" />
-		<result column="POLARITY" property="polarity" jdbcType="OTHER" />
-		<result column="PATHOLOGY" property="pathology" jdbcType="OTHER" />
-		<result column="SUGGEST" property="suggest" jdbcType="OTHER" />
-		<result column="ADAPTSEX" property="adaptsex" jdbcType="OTHER" />
+		<result column="PYCODE" property="pycode" jdbcType="VARCHAR" />
+		<result column="TYPE" property="type" jdbcType="VARCHAR" />
+		<result column="PERTEMPLATEID" property="pertemplateid" jdbcType="VARCHAR" />
+		<result column="URGENTVALUE" property="urgentvalue" jdbcType="VARCHAR" />
+		<result column="POLARITY" property="polarity" jdbcType="VARCHAR" />
+		<result column="PATHOLOGY" property="pathology" jdbcType="VARCHAR" />
+		<result column="SUGGEST" property="suggest" jdbcType="VARCHAR" />
+		<result column="ADAPTSEX" property="adaptsex" jdbcType="VARCHAR" />
 		<result column="ISUSE" property="isuse" jdbcType="DECIMAL" />
 		<result column="SORTNUM" property="sortnum" jdbcType="DECIMAL" />
-		<result column="MEMO" property="memo" jdbcType="OTHER" />
-		<result column="AREACODE" property="areacode" jdbcType="OTHER" />
+		<result column="MEMO" property="memo" jdbcType="VARCHAR" />
+		<result column="AREACODE" property="areacode" jdbcType="VARCHAR" />
 	</resultMap>
 
 	<sql id="Base_Column_List" >
@@ -28,12 +28,12 @@
 		select 
 		<include refid="Base_Column_List" />
 		from BASE_TEMPLATE
-		where ID = #{id,jdbcType=OTHER}
+		where ID = #{id,jdbcType=VARCHAR}
 	</select>
 
 	<delete id="deleteByPrimaryKey" parameterType="java.lang.Object" >
 		delete from BASE_TEMPLATE
-		where ID = #{id,jdbcType=OTHER}
+		where ID = #{id,jdbcType=VARCHAR}
 	</delete>
 
 	<insert id="insert" parameterType="com.jfsoft.model.BaseTemplate" >
@@ -42,11 +42,11 @@
 			POLARITY, PATHOLOGY, SUGGEST, 
 			ADAPTSEX, ISUSE, SORTNUM, 
 			MEMO, AREACODE)
-		values (#{id,jdbcType=OTHER}, #{name,jdbcType=OTHER}, #{code,jdbcType=DECIMAL}, #{pycode,jdbcType=OTHER}, 
-			#{type,jdbcType=OTHER}, #{pertemplateid,jdbcType=OTHER}, #{urgentvalue,jdbcType=OTHER}, 
-			#{polarity,jdbcType=OTHER}, #{pathology,jdbcType=OTHER}, #{suggest,jdbcType=OTHER}, 
-			#{adaptsex,jdbcType=OTHER}, #{isuse,jdbcType=DECIMAL}, #{sortnum,jdbcType=DECIMAL}, 
-			#{memo,jdbcType=OTHER}, #{areacode,jdbcType=OTHER})
+		values (#{id,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{code,jdbcType=DECIMAL}, #{pycode,jdbcType=VARCHAR},
+			#{type,jdbcType=VARCHAR}, #{pertemplateid,jdbcType=VARCHAR}, #{urgentvalue,jdbcType=VARCHAR},
+			#{polarity,jdbcType=VARCHAR}, #{pathology,jdbcType=VARCHAR}, #{suggest,jdbcType=VARCHAR},
+			#{adaptsex,jdbcType=VARCHAR}, #{isuse,jdbcType=DECIMAL}, #{sortnum,jdbcType=DECIMAL},
+			#{memo,jdbcType=VARCHAR}, #{areacode,jdbcType=VARCHAR})
 	</insert>
 
 	<insert id="insertSelective" parameterType="com.jfsoft.model.BaseTemplate" >
@@ -100,37 +100,37 @@
 		</trim>
 		<trim prefix="values (" suffix=")" suffixOverrides="," >
 			<if test="id != null" >
-				#{id,jdbcType=OTHER},
+				#{id,jdbcType=VARCHAR},
 			</if>
 			<if test="name != null" >
-				#{name,jdbcType=OTHER},
+				#{name,jdbcType=VARCHAR},
 			</if>
 			<if test="code != null" >
 				#{code,jdbcType=DECIMAL},
 			</if>
 			<if test="pycode != null" >
-				#{pycode,jdbcType=OTHER},
+				#{pycode,jdbcType=VARCHAR},
 			</if>
 			<if test="type != null" >
-				#{type,jdbcType=OTHER},
+				#{type,jdbcType=VARCHAR},
 			</if>
 			<if test="pertemplateid != null" >
-				#{pertemplateid,jdbcType=OTHER},
+				#{pertemplateid,jdbcType=VARCHAR},
 			</if>
 			<if test="urgentvalue != null" >
-				#{urgentvalue,jdbcType=OTHER},
+				#{urgentvalue,jdbcType=VARCHAR},
 			</if>
 			<if test="polarity != null" >
-				#{polarity,jdbcType=OTHER},
+				#{polarity,jdbcType=VARCHAR},
 			</if>
 			<if test="pathology != null" >
-				#{pathology,jdbcType=OTHER},
+				#{pathology,jdbcType=VARCHAR},
 			</if>
 			<if test="suggest != null" >
-				#{suggest,jdbcType=OTHER},
+				#{suggest,jdbcType=VARCHAR},
 			</if>
 			<if test="adaptsex != null" >
-				#{adaptsex,jdbcType=OTHER},
+				#{adaptsex,jdbcType=VARCHAR},
 			</if>
 			<if test="isuse != null" >
 				#{isuse,jdbcType=DECIMAL},
@@ -139,10 +139,10 @@
 				#{sortnum,jdbcType=DECIMAL},
 			</if>
 			<if test="memo != null" >
-				#{memo,jdbcType=OTHER},
+				#{memo,jdbcType=VARCHAR},
 			</if>
 			<if test="areacode != null" >
-				#{areacode,jdbcType=OTHER},
+				#{areacode,jdbcType=VARCHAR},
 			</if>
 		</trim>
 	</insert>
@@ -151,34 +151,34 @@
 		update BASE_TEMPLATE
 		<set >
 			<if test="name != null" >
-				NAME = #{name,jdbcType=OTHER},
+				NAME = #{name,jdbcType=VARCHAR},
 			</if>
 			<if test="code != null" >
 				CODE = #{code,jdbcType=DECIMAL},
 			</if>
 			<if test="pycode != null" >
-				PYCODE = #{pycode,jdbcType=OTHER},
+				PYCODE = #{pycode,jdbcType=VARCHAR},
 			</if>
 			<if test="type != null" >
-				TYPE = #{type,jdbcType=OTHER},
+				TYPE = #{type,jdbcType=VARCHAR},
 			</if>
 			<if test="pertemplateid != null" >
-				PERTEMPLATEID = #{pertemplateid,jdbcType=OTHER},
+				PERTEMPLATEID = #{pertemplateid,jdbcType=VARCHAR},
 			</if>
 			<if test="urgentvalue != null" >
-				URGENTVALUE = #{urgentvalue,jdbcType=OTHER},
+				URGENTVALUE = #{urgentvalue,jdbcType=VARCHAR},
 			</if>
 			<if test="polarity != null" >
-				POLARITY = #{polarity,jdbcType=OTHER},
+				POLARITY = #{polarity,jdbcType=VARCHAR},
 			</if>
 			<if test="pathology != null" >
-				PATHOLOGY = #{pathology,jdbcType=OTHER},
+				PATHOLOGY = #{pathology,jdbcType=VARCHAR},
 			</if>
 			<if test="suggest != null" >
-				SUGGEST = #{suggest,jdbcType=OTHER},
+				SUGGEST = #{suggest,jdbcType=VARCHAR},
 			</if>
 			<if test="adaptsex != null" >
-				ADAPTSEX = #{adaptsex,jdbcType=OTHER},
+				ADAPTSEX = #{adaptsex,jdbcType=VARCHAR},
 			</if>
 			<if test="isuse != null" >
 				ISUSE = #{isuse,jdbcType=DECIMAL},
@@ -187,32 +187,32 @@
 				SORTNUM = #{sortnum,jdbcType=DECIMAL},
 			</if>
 			<if test="memo != null" >
-				MEMO = #{memo,jdbcType=OTHER},
+				MEMO = #{memo,jdbcType=VARCHAR},
 			</if>
 			<if test="areacode != null" >
-				AREACODE = #{areacode,jdbcType=OTHER},
+				AREACODE = #{areacode,jdbcType=VARCHAR},
 			</if>
 		</set>
-		where ID = #{id,jdbcType=OTHER}
+		where ID = #{id,jdbcType=VARCHAR}
 	</update>
 
 	<update id="updateByPrimaryKey" parameterType="com.jfsoft.model.BaseTemplate" >
 		update BASE_TEMPLATE
-		set NAME = #{name,jdbcType=OTHER},
+		set NAME = #{name,jdbcType=VARCHAR},
 			CODE = #{code,jdbcType=DECIMAL},
-			PYCODE = #{pycode,jdbcType=OTHER},
-			TYPE = #{type,jdbcType=OTHER},
-			PERTEMPLATEID = #{pertemplateid,jdbcType=OTHER},
-			URGENTVALUE = #{urgentvalue,jdbcType=OTHER},
-			POLARITY = #{polarity,jdbcType=OTHER},
-			PATHOLOGY = #{pathology,jdbcType=OTHER},
-			SUGGEST = #{suggest,jdbcType=OTHER},
-			ADAPTSEX = #{adaptsex,jdbcType=OTHER},
+			PYCODE = #{pycode,jdbcType=VARCHAR},
+			TYPE = #{type,jdbcType=VARCHAR},
+			PERTEMPLATEID = #{pertemplateid,jdbcType=VARCHAR},
+			URGENTVALUE = #{urgentvalue,jdbcType=VARCHAR},
+			POLARITY = #{polarity,jdbcType=VARCHAR},
+			PATHOLOGY = #{pathology,jdbcType=VARCHAR},
+			SUGGEST = #{suggest,jdbcType=VARCHAR},
+			ADAPTSEX = #{adaptsex,jdbcType=VARCHAR},
 			ISUSE = #{isuse,jdbcType=DECIMAL},
 			SORTNUM = #{sortnum,jdbcType=DECIMAL},
-			MEMO = #{memo,jdbcType=OTHER},
-			AREACODE = #{areacode,jdbcType=OTHER}
-		where ID = #{id,jdbcType=OTHER}
+			MEMO = #{memo,jdbcType=VARCHAR},
+			AREACODE = #{areacode,jdbcType=VARCHAR}
+		where ID = #{id,jdbcType=VARCHAR}
 	</update>
 
 </mapper>

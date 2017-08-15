@@ -1,88 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b5c15f0-baa4-4867-80cf-71b1fd81b15e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_39.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseAreaMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseAreaMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckmethodMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckmethodMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckroomMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckroomMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseDeptMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseDeptMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseEquipmentMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseEquipmentMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseGroupitemMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseGroupitemMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseIllnessMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseIllnessMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseItempartmapMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseItempartmapMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseTempillmapMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseTempillmapMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseTemplateMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseTemplateMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InsAreamapMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InsAreamapMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InsGroupitemmapMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InsGroupitemmapMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InsIllnessmapMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InsIllnessmapMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InspectPicresultMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InspectPicresultMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InspectTextresultMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InspectTextresultMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/OutPerinfoMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/OutPerinfoMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysActorMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysActorMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysActordeptmapMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysActordeptmapMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysActormenumapMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysActormenumapMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysLogMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysLogMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysMenuMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysMenuMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysUserMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysUserMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseArea.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseCheckmethod.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseCheckroom.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseDept.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseEquipment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseGroupitem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseIllness.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseItempartmap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseTempillmap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseTemplate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/InsAreamap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/InsGroupitemmap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/InsIllnessmap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/InspectPicresult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/InspectTextresult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/OutPerinfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/PersonInspectinfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/SysActor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/SysActordeptmap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/SysActormenumap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/SysLog.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/SysMenu.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/SysUser.java" />
+    <list default="true" id="6b5c15f0-baa4-4867-80cf-71b1fd81b15e" name="Default" comment="添加shiro">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InspectPerinfoMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InspectPerinfoMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-service/src/main/java/com/jfsoft/groupitem/service/IGroupitemService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-service/src/main/java/com/jfsoft/groupitem/service/impl/GroupitemServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/dictionary/controller/BaseGroupitemController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/perinfo/controller/PerinfoController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-api/ris-api.iml" afterPath="$PROJECT_DIR$/ris-api/ris-api.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE" afterPath="$PROJECT_DIR$/LICENSE" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-common/ris-common.iml" afterPath="$PROJECT_DIR$/ris-common/ris-common.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/ris-dao.iml" afterPath="$PROJECT_DIR$/ris-dao/ris-dao.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckpartMapper.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckpartMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseAreaMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseAreaMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckmethodMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckmethodMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckpartMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckpartMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseCheckpart.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseCheckpart.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-service/ris-service.iml" afterPath="$PROJECT_DIR$/ris-service/ris-service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-web/ris-web.iml" afterPath="$PROJECT_DIR$/ris-web/ris-web.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckroomMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckroomMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseDeptMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseDeptMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseEquipmentMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseEquipmentMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseGroupitemMapper.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseGroupitemMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseGroupitemMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseGroupitemMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseIllnessMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseIllnessMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseItempartmapMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseItempartmapMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseTempillmapMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseTempillmapMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseTemplateMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseTemplateMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InsAreamapMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InsAreamapMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InsGroupitemmapMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InsGroupitemmapMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InsIllnessmapMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InsIllnessmapMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InspectPicresultMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InspectPicresultMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InspectTextresultMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InspectTextresultMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/OutPerinfoMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/OutPerinfoMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysActorMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysActorMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysActordeptmapMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysActordeptmapMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysActormenumapMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysActormenumapMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysLogMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysLogMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysMenuMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysMenuMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysUserMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysUserMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-web/src/main/java/com/RisApplication.java" afterPath="$PROJECT_DIR$/ris-web/src/main/java/com/RisApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-web/src/main/java/com/core/ShiroConfiguration.java" afterPath="$PROJECT_DIR$/ris-web/src/main/java/com/core/ShiroConfiguration.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-web/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/ris-web/src/main/resources/application.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-web/target/classes/application.properties" afterPath="$PROJECT_DIR$/ris-web/target/classes/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris/pom.xml" afterPath="$PROJECT_DIR$/ris/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris/ris.iml" afterPath="$PROJECT_DIR$/ris/ris.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/PersonInspectinfo.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/InspectPerinfo.java" />
     </list>
     <ignored path="$PROJECT_DIR$/ris-dao/target/" />
     <ignored path="$PROJECT_DIR$/ris-api/target/" />
@@ -98,82 +55,93 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TUserMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/TUserMapper.xml">
+      <file leaf-file-name="ShiroController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/shiro/controller/ShiroController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="622">
-              <caret line="105" column="13" lean-forward="true" selection-start-line="79" selection-start-column="4" selection-end-line="105" selection-end-column="13" />
-              <folding>
-                <marker date="1502691311348" expanded="true" signature="634:730" ph="select from t_user" />
-                <marker date="1502691311348" expanded="true" signature="814:868" ph="delete from " />
-                <marker date="1502691311348" expanded="true" signature="944:1089" ph="insert into t_user... " />
-                <marker date="1502691311348" expanded="true" signature="1792:2033" ph="update t_use... " />
-                <marker date="1502691311348" expanded="true" signature="2121:2260" ph="update t_use... " />
-                <marker date="1502691311348" expanded="true" signature="2926:3278" ph="SELECT tu.id... t_permission" />
-                <marker date="1502691311348" expanded="true" signature="3392:3583" ph="SELECT tu.id... t_user" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SysUserMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysUserMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="676">
-              <caret line="251" column="23" lean-forward="false" selection-start-line="251" selection-start-column="15" selection-end-line="251" selection-end-column="23" />
-              <folding>
-                <marker date="1502761221184" expanded="true" signature="1641:1737" ph="select from SYS_USER" />
-                <marker date="1502761221184" expanded="true" signature="1820:1874" ph="delete from " />
-                <marker date="1502761221184" expanded="true" signature="1953:2622" ph="insert into SYS_USER... " />
-                <marker date="1502761221184" expanded="true" signature="5001:6336" ph="update SYS_U... " />
-                <marker date="1502761221184" expanded="true" signature="6427:7110" ph="update SYS_U... " />
-                <marker date="1502761221184" expanded="true" signature="7609:7943" ph="select su.co... sys_actordeptmap" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ris-web/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="22" selection-end-column="29" />
+            <state relative-caret-position="546">
+              <caret line="49" column="63" lean-forward="false" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="63" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SysUser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/SysUser.java">
+      <file leaf-file-name="BaseGroupitemController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/dictionary/controller/BaseGroupitemController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="108" column="48" lean-forward="false" selection-start-line="108" selection-start-column="48" selection-end-line="108" selection-end-column="48" />
+            <state relative-caret-position="189">
+              <caret line="37" column="64" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="64" />
               <folding>
-                <element signature="e#1496#1497#0" expanded="true" />
-                <element signature="e#1559#1560#0" expanded="true" />
-                <element signature="e#1599#1600#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1149#1165#0" expanded="true" />
+                <element signature="e#1794#1810#0" expanded="true" />
+                <element signature="e#2247#2263#0" expanded="true" />
+                <element signature="e#2628#2644#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShiroConfiguration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/core/ShiroConfiguration.java">
+      <file leaf-file-name="IGroupitemService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ris-service/src/main/java/com/jfsoft/groupitem/service/IGroupitemService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2712">
-              <caret line="162" column="16" lean-forward="false" selection-start-line="162" selection-start-column="16" selection-end-line="162" selection-end-column="16" />
+            <state relative-caret-position="176">
+              <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GroupitemServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ris-service/src/main/java/com/jfsoft/groupitem/service/impl/GroupitemServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#969#985#0" expanded="true" />
+                <element signature="e#1523#1539#0" expanded="true" />
+                <element signature="e#1916#1932#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RisApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/RisApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-142">
+              <caret line="36" column="24" lean-forward="false" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyShiroRealm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/core/MyShiroRealm.java">
+      <file leaf-file-name="PerinfoController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/perinfo/controller/PerinfoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-195">
-              <caret line="42" column="52" lean-forward="false" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
+            <state relative-caret-position="378">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#445#461#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InspectPerinfoMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InspectPerinfoMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -210,13 +178,23 @@
       <find>userInfo:add</find>
       <find>AuthorizationAttributeSourceAdvisor</find>
       <find>dialect</find>
+      <find>MyShiroRealm</find>
+      <find>OTHER</find>
+      <find>O</find>
+      <find>Ob</find>
+      <find>Obje</find>
+      <find>Objec</find>
+      <find>Object</find>
     </findStrings>
     <replaceStrings>
       <replace>User</replace>
       <replace>Role</replace>
+      <replace>VARCHAR</replace>
+      <replace>String</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -227,13 +205,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ris-api/pom.xml" />
-        <option value="$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/RisApplication.java" />
-        <option value="$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/TemplateController.java" />
-        <option value="$PROJECT_DIR$/ris-web/src/main/resources/templates/helloHtml.html" />
-        <option value="$PROJECT_DIR$/ris-web/src/main/java/com/RisApplication.java" />
-        <option value="$PROJECT_DIR$/ris-web/src/main/java/com/base/BaseController.java" />
-        <option value="$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/sysactor/controller/SysActorController.java" />
         <option value="$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/sysuser/controller/SysUserController.java" />
         <option value="$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/login/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/TPermission.java" />
@@ -242,11 +213,13 @@
         <option value="$PROJECT_DIR$/ris-web/src/main/resources/ehcache-shiro.xml" />
         <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/TUser.java" />
         <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/TRole.java" />
+        <option value="$PROJECT_DIR$/ris/pom.xml" />
         <option value="$PROJECT_DIR$/ris-web/src/main/resources/templates/403.html" />
         <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/TUserRoleMapper.java" />
         <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/TPermissionMapper.java" />
         <option value="$PROJECT_DIR$/ris-service/pom.xml" />
         <option value="$PROJECT_DIR$/ris-service/src/main/java/com/jfsoft/user/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseCheckpart.java" />
         <option value="$PROJECT_DIR$/ris-web/pom.xml" />
         <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckpartMapper.java" />
         <option value="$PROJECT_DIR$/ris-web/src/main/resources/templates/login.html" />
@@ -263,21 +236,26 @@
         <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/TUserMapper.xml" />
         <option value="$PROJECT_DIR$/ris-web/src/main/resources/templates/user.html" />
         <option value="$PROJECT_DIR$/ris-web/src/main/resources/templates/user_edit.html" />
-        <option value="$PROJECT_DIR$/ris-web/src/main/java/com/core/ShiroConfiguration.java" />
         <option value="$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/dictionary/controller/BaseCheckpartController.java" />
-        <option value="$PROJECT_DIR$/ris-web/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ris-web/src/main/java/com/RisApplication.java" />
+        <option value="$PROJECT_DIR$/ris-web/src/main/java/com/core/ShiroConfiguration.java" />
+        <option value="$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.9.RELEASE/spring-context-4.3.9.RELEASE.jar!/org/springframework/context/annotation/Configuration.class" />
+        <option value="$PROJECT_DIR$/ris-service/src/main/java/com/jfsoft/groupitem/service/IGroupitemServiceImpl.java" />
+        <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseGroupitemMapper.java" />
+        <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseGroupitemMapper.xml" />
         <option value="$PROJECT_DIR$/ris-web/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/ris/pom.xml" />
-        <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseCheckpart.java" />
-        <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseArea.java" />
-        <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseCheckmethod.java" />
-        <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseCheckroom.java" />
-        <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseDept.java" />
-        <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseEquipment.java" />
-        <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseGroupitem.java" />
-        <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseAreaMapper.java" />
-        <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysUserMapper.xml" />
-        <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/SysUser.java" />
+        <option value="$PROJECT_DIR$/LICENSE" />
+        <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseAreaMapper.xml" />
+        <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckmethodMapper.xml" />
+        <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckpartMapper.xml" />
+        <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckroomMapper.xml" />
+        <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseDeptMapper.xml" />
+        <option value="$PROJECT_DIR$/ris-service/src/main/java/com/jfsoft/groupitem/service/IGroupitemService.java" />
+        <option value="$PROJECT_DIR$/ris-service/src/main/java/com/jfsoft/groupitem/service/impl/GroupitemServiceImpl.java" />
+        <option value="$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/dictionary/controller/BaseGroupitemController.java" />
+        <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/InspectPerinfo.java" />
+        <option value="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InspectPerinfoMapper.java" />
+        <option value="$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/perinfo/controller/PerinfoController.java" />
       </list>
     </option>
   </component>
@@ -290,9 +268,8 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="D:\maven_dep\repository" />
-        <option name="mavenHome" value="D:/apache-maven-3.5.0" />
-        <option name="userSettingsFile" value="D:\apache-maven-3.5.0\conf\settings.xml" />
+        <option name="mavenHome" value="E:/matq/maven/apache-maven-3.0.5" />
+        <option name="userSettingsFile" value="E:\matq\maven\apache-maven-3.0.5\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -338,11 +315,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="275" />
-    <option name="y" value="73" />
-    <option name="width" value="1417" />
-    <option name="height" value="864" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -391,297 +368,308 @@
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <expand>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ris_repo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ris_repo" type="462c0819:PsiDirectoryNode" />
-              <item name="ris" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ris_repo" type="462c0819:PsiDirectoryNode" />
-              <item name="ris-dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ris_repo" type="462c0819:PsiDirectoryNode" />
-              <item name="ris-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ris_repo" type="462c0819:PsiDirectoryNode" />
-              <item name="ris-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ris_repo" type="462c0819:PsiDirectoryNode" />
-              <item name="ris-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ris_repo" type="462c0819:PsiDirectoryNode" />
-              <item name="ris-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ris_repo" type="462c0819:PsiDirectoryNode" />
-              <item name="ris-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="jfsoft" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ris_repo" type="462c0819:PsiDirectoryNode" />
-              <item name="ris-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="jfsoft" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ris_repo" type="462c0819:PsiDirectoryNode" />
-              <item name="ris-web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ris_repo" type="462c0819:PsiDirectoryNode" />
-              <item name="ris-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ris_repo" type="462c0819:PsiDirectoryNode" />
-              <item name="ris-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ris_repo" type="462c0819:PsiDirectoryNode" />
-              <item name="ris-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ris_repo" type="462c0819:PsiDirectoryNode" />
-              <item name="ris-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ris_repo" type="462c0819:PsiDirectoryNode" />
-              <item name="ris-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ris_repo" type="462c0819:PsiDirectoryNode" />
-              <item name="ris-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="jfsoft" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ris_repo" type="462c0819:PsiDirectoryNode" />
-              <item name="ris-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="jfsoft" type="462c0819:PsiDirectoryNode" />
-              <item name="dictionary" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ris_repo" type="462c0819:PsiDirectoryNode" />
-              <item name="ris-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="jfsoft" type="462c0819:PsiDirectoryNode" />
-              <item name="dictionary" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ris_repo" type="462c0819:PsiDirectoryNode" />
-              <item name="ris-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="jfsoft" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ris_repo" type="462c0819:PsiDirectoryNode" />
-              <item name="ris-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="jfsoft" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ris_repo" type="462c0819:PsiDirectoryNode" />
-              <item name="ris-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ris_repo" type="462c0819:PsiDirectoryNode" />
-              <item name="ris-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.shiro:shiro-core:1.4.0" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.shiro:shiro-core:1.4.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="shiro-core-1.4.0.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.shiro:shiro-core:1.4.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="shiro-core-1.4.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.shiro:shiro-core:1.4.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="shiro-core-1.4.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="apache" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.shiro:shiro-core:1.4.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="shiro-core-1.4.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="apache" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.shiro:shiro-core:1.4.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="shiro-core-1.4.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="apache" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="realm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.shiro:shiro-web:1.4.0" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.shiro:shiro-web:1.4.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="shiro-web-1.4.0.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.shiro:shiro-web:1.4.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="shiro-web-1.4.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.shiro:shiro-web:1.4.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="shiro-web-1.4.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="apache" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.shiro:shiro-web:1.4.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="shiro-web-1.4.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="apache" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.shiro:shiro-web:1.4.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="shiro-web-1.4.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="apache" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ris_repo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.shiro:shiro-web:1.4.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="shiro-web-1.4.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="apache" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris_repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris_repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris_repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris_repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris_repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris_repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris_repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris_repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris_repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris_repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris_repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris_repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jfsoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris_repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris_repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jfsoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris_repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris_repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jfsoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris_repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris_repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris-dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris_repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris_repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris-dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jfsoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris_repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris_repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris-dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jfsoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mapper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -691,7 +679,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -702,13 +690,205 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RequestMappingsPanelOrder2" value="2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../0629/cloud" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\ris_repo\ris-dao\src\main\java\com\jfsoft\mapper" />
+      <recent name="D:\work\ris_repo\ris-dao\src\main\java\com\jfsoft\model" />
       <recent name="D:\IdeaProjects\0810\ris_repo\ris-dao\src\main\java\com\jfsoft\mapper" />
       <recent name="D:\IdeaProjects\0810\ris_repo\ris-dao\src\main\java\com\jfsoft\model" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-api/ris-api.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-common/ris-common.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/ris-dao.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckpartMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckpartMapper.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseCheckpart.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-service/ris-service.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-web/ris-web.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-web/src/main/resources/application.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-web/target/classes/application.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris/pom.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris/ris.iml</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_39.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseAreaMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseAreaMapper.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckmethodMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckmethodMapper.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckroomMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckroomMapper.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseDeptMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseDeptMapper.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseEquipmentMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseEquipmentMapper.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseGroupitemMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseGroupitemMapper.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseIllnessMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseIllnessMapper.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseItempartmapMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseItempartmapMapper.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseTempillmapMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseTempillmapMapper.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseTemplateMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseTemplateMapper.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InsAreamapMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InsAreamapMapper.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InsGroupitemmapMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InsGroupitemmapMapper.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InsIllnessmapMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InsIllnessmapMapper.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InspectPicresultMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InspectPicresultMapper.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InspectTextresultMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InspectTextresultMapper.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/OutPerinfoMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/OutPerinfoMapper.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysActorMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysActorMapper.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysActordeptmapMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysActordeptmapMapper.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysActormenumapMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysActormenumapMapper.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysLogMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysLogMapper.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysMenuMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysMenuMapper.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysUserMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysUserMapper.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseArea.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseCheckmethod.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseCheckroom.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseDept.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseEquipment.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseGroupitem.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseIllness.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseItempartmap.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseTempillmap.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseTemplate.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/InsAreamap.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/InsGroupitemmap.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/InsIllnessmap.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/InspectPicresult.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/InspectTextresult.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/OutPerinfo.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/PersonInspectinfo.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/SysActor.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/SysActordeptmap.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/SysActormenumap.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/SysLog.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/SysMenu.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/SysUser.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -723,7 +903,19 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.RisApplication">
-    <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="RisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.RisApplication" />
+      <module name="ris-web" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.jfsoft.*" />
@@ -741,17 +933,69 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="ris-api" />
       <envs />
+      <method />
     </configuration>
-    <configuration name="RisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.RisApplication" />
-      <module name="ris-web" />
-      <envs />
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
@@ -759,6 +1003,7 @@
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
+      <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -773,6 +1018,162 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -793,12 +1194,69 @@
       </option>
       <envs />
       <patterns />
+      <method />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="ris" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
@@ -806,6 +1264,13 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -833,6 +1298,29 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
     </configuration>
     <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Spring Boot.RisApplication" />
@@ -864,8 +1352,10 @@
       <workItem from="1502075739630" duration="833000" />
       <workItem from="1502331985887" duration="7500000" />
       <workItem from="1502411304658" duration="13361000" />
-      <workItem from="1502670814249" duration="22274000" />
-      <workItem from="1502757209199" duration="5805000" />
+      <workItem from="1502670814249" duration="18925000" />
+      <workItem from="1502703793147" duration="718000" />
+      <workItem from="1502759497511" duration="71000" />
+      <workItem from="1502760433811" duration="18859000" />
     </task>
     <task id="LOCAL-00001" summary="修改pom">
       <created>1501746763215</created>
@@ -888,62 +1378,52 @@
       <option name="project" value="LOCAL" />
       <updated>1502445211335</updated>
     </task>
-    <task id="LOCAL-00004" summary="添加shiro">
-      <created>1502700203481</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1502700203481</updated>
-    </task>
-    <task id="LOCAL-00005" summary="修改数据库连接为oracle的">
-      <created>1502703620878</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1502703620878</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66322000" />
+    <option name="totallyTimeSpent" value="76816000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39955357" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850778" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25906184" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36511377" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25785482" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850778" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22441365" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36525613" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2583519" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="processedProjectFiles" value="true" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -951,152 +1431,37 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="修改pom" />
     <MESSAGE value="添加shiro" />
-    <MESSAGE value="修改数据库连接为oracle的" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改数据库连接为oracle的" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加shiro" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="11" />
+      <option name="time" value="28" />
     </breakpoint-manager>
     <watches-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ris-web/src/main/resources/ehcache-shiro.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/subject/support/DelegatingSubject.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/mgt/DefaultSecurityManager.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/mgt/AuthenticatingSecurityManager.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/authc/AbstractAuthenticator.java" />
+    <entry file="file://$PROJECT_DIR$/ris/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="10" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-          <folding />
+        <state relative-caret-position="272">
+          <caret line="70" column="26" lean-forward="false" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/subject/support/DelegatingSubject.class">
+    <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="182" column="16" lean-forward="false" selection-start-line="182" selection-start-column="16" selection-end-line="182" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/authc/AbstractAuthenticator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ris/ris.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ris-api/src/main/java/com/jfsoft/Car.java" />
-    <entry file="file://$PROJECT_DIR$/ris-api/src/main/java/com/jfsoft/HelloWorld.java" />
-    <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/sysactor/controller/SysActorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/TemplateController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/dictionary/controller/BaseTemplateController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.9.RELEASE/spring-web-4.3.9.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/sysuser/controller/SysUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/TUserRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/TUserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="33" column="9" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/authc/SimpleAuthenticationInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="72" column="11" lean-forward="false" selection-start-line="72" selection-start-column="11" selection-end-line="72" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/authc/pam/ModularRealmAuthenticator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="266" column="0" lean-forward="false" selection-start-line="266" selection-start-column="0" selection-end-line="266" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/subject/support/DelegatingSubject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="257" column="16" lean-forward="false" selection-start-line="257" selection-start-column="16" selection-end-line="257" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/mgt/DefaultSecurityManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="290" column="0" lean-forward="false" selection-start-line="290" selection-start-column="0" selection-end-line="290" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/mgt/AuthenticatingSecurityManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/authc/AbstractAuthenticator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="236" column="0" lean-forward="false" selection-start-line="236" selection-start-column="0" selection-end-line="236" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ris-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1515">
-          <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="484">
+          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1104,9 +1469,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1114,40 +1476,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="627">
           <caret line="39" column="30" lean-forward="false" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="30" />
-          <folding>
-            <marker date="1502677267981" expanded="true" signature="525:622" ph="insert into t_role... " />
-            <marker date="1502677267981" expanded="true" signature="1219:1310" ph="SELECT tp.id... t_permission" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/realm/AuthenticatingRealm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="570" column="0" lean-forward="false" selection-start-line="570" selection-start-column="0" selection-end-line="570" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/core/MShiroFilterFactoryBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="68" column="13" lean-forward="false" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0.jar!/org/apache/shiro/web/servlet/AdviceFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/realm/AuthenticatingRealm.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0.jar!/org/apache/shiro/web/servlet/AdviceFilter.class" />
     <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/Role.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="332">
           <caret line="29" column="44" lean-forward="false" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1155,47 +1492,154 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/TUserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2184">
+          <caret line="104" column="23" lean-forward="false" selection-start-line="104" selection-start-column="23" selection-end-line="104" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/realm/AuthorizingRealm.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/realm/AuthorizingRealm.java" />
+    <entry file="file://$PROJECT_DIR$/ris-web/src/main/resources/ehcache-shiro.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="340" column="0" lean-forward="false" selection-start-line="340" selection-start-column="0" selection-end-line="340" selection-end-column="0" />
+        <state relative-caret-position="252">
+          <caret line="12" column="10" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ris-web/src/main/resources/templates/user_edit.html">
+    <entry file="file://$PROJECT_DIR$/ris-web/src/main/resources/templates/helloHtml.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris-web/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ris-web/src/main/resources/templates/user.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="37" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="37" />
+        <state relative-caret-position="216">
+          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/shiro/controller/ShiroController.java">
+    <entry file="file://$PROJECT_DIR$/ris-web/src/main/resources/templates/user_edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1691">
-          <caret line="109" column="4" lean-forward="false" selection-start-line="109" selection-start-column="4" selection-end-line="113" selection-end-column="5" />
+        <state relative-caret-position="189">
+          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/core/MShiroFilterFactoryBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="75" column="17" lean-forward="true" selection-start-line="75" selection-start-column="17" selection-end-line="76" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.9.RELEASE/spring-context-4.3.9.RELEASE.jar!/org/springframework/context/annotation/Configuration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/core/ShiroConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1449">
+          <caret line="80" column="78" lean-forward="false" selection-start-line="80" selection-start-column="66" selection-end-line="80" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/core/MyShiroRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="42" column="52" lean-forward="false" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/dictionary/controller/BaseTemplateController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/dictionary/controller/BaseCheckpartController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="28" column="49" lean-forward="false" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+        <state relative-caret-position="336">
+          <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding>
+            <marker date="1502704068642" expanded="true" signature="2206:2214" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-classic/1.1.11/logback-classic-1.1.11.jar!/ch/qos/logback/classic/Logger.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="343" column="0" lean-forward="false" selection-start-line="343" selection-start-column="0" selection-end-line="343" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Program Files/Java/jdk1.8.0_31/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris-service/src/main/java/com/jfsoft/user/service/IUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris-service/src/main/java/com/jfsoft/user/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="12" column="39" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-142">
+          <caret line="54" column="31" lean-forward="false" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseGroupitemMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="50" column="39" lean-forward="false" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
@@ -1204,172 +1648,208 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ris-web/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/RisApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="33" column="25" lean-forward="false" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ris/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="73" column="21" lean-forward="false" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseCheckpart.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseArea.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseCheckmethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseCheckroom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseDept.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseEquipment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseGroupitem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseAreaMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckpartMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/TUserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="105" column="13" lean-forward="true" selection-start-line="79" selection-start-column="4" selection-end-line="105" selection-end-column="13" />
-          <folding>
-            <marker date="1502691311348" expanded="true" signature="634:730" ph="select from t_user" />
-            <marker date="1502691311348" expanded="true" signature="814:868" ph="delete from " />
-            <marker date="1502691311348" expanded="true" signature="944:1089" ph="insert into t_user... " />
-            <marker date="1502691311348" expanded="true" signature="1792:2033" ph="update t_use... " />
-            <marker date="1502691311348" expanded="true" signature="2121:2260" ph="update t_use... " />
-            <marker date="1502691311348" expanded="true" signature="2926:3278" ph="SELECT tu.id... t_permission" />
-            <marker date="1502691311348" expanded="true" signature="3392:3583" ph="SELECT tu.id... t_user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/SysUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="108" column="48" lean-forward="false" selection-start-line="108" selection-start-column="48" selection-end-line="108" selection-end-column="48" />
-          <folding>
-            <element signature="e#1496#1497#0" expanded="true" />
-            <element signature="e#1559#1560#0" expanded="true" />
-            <element signature="e#1599#1600#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysUserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="251" column="23" lean-forward="false" selection-start-line="251" selection-start-column="15" selection-end-line="251" selection-end-column="23" />
-          <folding>
-            <marker date="1502761221184" expanded="true" signature="1641:1737" ph="select from SYS_USER" />
-            <marker date="1502761221184" expanded="true" signature="1820:1874" ph="delete from " />
-            <marker date="1502761221184" expanded="true" signature="1953:2622" ph="insert into SYS_USER... " />
-            <marker date="1502761221184" expanded="true" signature="5001:6336" ph="update SYS_U... " />
-            <marker date="1502761221184" expanded="true" signature="6427:7110" ph="update SYS_U... " />
-            <marker date="1502761221184" expanded="true" signature="7609:7943" ph="select su.co... sys_actordeptmap" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/core/ShiroConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2712">
-          <caret line="162" column="16" lean-forward="false" selection-start-line="162" selection-start-column="16" selection-end-line="162" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/core/MyShiroRealm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-195">
-          <caret line="42" column="52" lean-forward="false" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ris-web/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="22" selection-end-column="29" />
+        <state relative-caret-position="252">
+          <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/login/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="30" column="59" lean-forward="false" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckroomMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="48" lean-forward="false" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseAreaMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="56" lean-forward="false" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
+          <folding>
+            <marker date="1502780190110" expanded="true" signature="911:1010" ph="select from BASE_AREA" />
+            <marker date="1502780190110" expanded="true" signature="1093:1150" ph="delete from " />
+            <marker date="1502780190110" expanded="true" signature="1230:1505" ph="insert into BASE_AREA... " />
+            <marker date="1502780190110" expanded="true" signature="2683:3227" ph="update BASE_... " />
+            <marker date="1502780190110" expanded="true" signature="3319:3605" ph="update BASE_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckmethodMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="48" lean-forward="false" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
+          <folding>
+            <marker date="1502780189303" expanded="true" signature="1079:1185" ph="select from BASE_CHECKMETHOD" />
+            <marker date="1502780189303" expanded="true" signature="1268:1332" ph="delete from " />
+            <marker date="1502780189303" expanded="true" signature="1419:1784" ph="insert into BASE_CHECKMETHOD... " />
+            <marker date="1502780189303" expanded="true" signature="3239:3958" ph="update BASE_... " />
+            <marker date="1502780189303" expanded="true" signature="4057:4434" ph="update BASE_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckpartMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="48" lean-forward="false" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
+          <folding>
+            <marker date="1502780188636" expanded="true" signature="1075:1179" ph="select from BASE_CHECKPART" />
+            <marker date="1502780188636" expanded="true" signature="1262:1324" ph="delete from " />
+            <marker date="1502780188636" expanded="true" signature="1409:1772" ph="insert into BASE_CHECKPART... " />
+            <marker date="1502780188636" expanded="true" signature="3221:3938" ph="update BASE_... " />
+            <marker date="1502780188636" expanded="true" signature="4035:4410" ph="update BASE_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseDeptMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2163">
+          <caret line="103" column="42" lean-forward="true" selection-start-line="103" selection-start-column="42" selection-end-line="103" selection-end-column="42" />
+          <folding>
+            <marker date="1502780189027" expanded="true" signature="1218:1317" ph="select from BASE_DEPT" />
+            <marker date="1502780189027" expanded="true" signature="1400:1457" ph="delete from " />
+            <marker date="1502780189027" expanded="true" signature="1537:1977" ph="insert into BASE_DEPT... " />
+            <marker date="1502780189027" expanded="true" signature="3664:4542" ph="update BASE_... " />
+            <marker date="1502780189027" expanded="true" signature="4634:5087" ph="update BASE_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseGroupitemMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="65" lean-forward="false" selection-start-line="1" selection-start-column="65" selection-end-line="1" selection-end-column="65" />
+          <folding>
+            <marker date="1502780190190" expanded="true" signature="1241:1345" ph="select from BASE_GROUPITEM" />
+            <marker date="1502780190190" expanded="true" signature="1428:1490" ph="delete from " />
+            <marker date="1502780190190" expanded="true" signature="1575:2029" ph="insert into BASE_GROUPITEM... " />
+            <marker date="1502780190190" expanded="true" signature="3750:4647" ph="update BASE_... " />
+            <marker date="1502780190190" expanded="true" signature="4744:5211" ph="update BASE_... " />
+            <marker date="1502780190190" expanded="true" signature="5279:5346" ph="select from BASE_GROUPITEM" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/shiro/controller/ShiroController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="49" column="63" lean-forward="false" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/RisApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-142">
+          <caret line="36" column="24" lean-forward="false" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris-service/src/main/java/com/jfsoft/groupitem/service/IGroupitemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.9.RELEASE/spring-web-4.3.9.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/TemplateController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris-service/src/main/java/com/jfsoft/groupitem/service/impl/GroupitemServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#969#985#0" expanded="true" />
+            <element signature="e#1523#1539#0" expanded="true" />
+            <element signature="e#1916#1932#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/dictionary/controller/BaseGroupitemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="37" column="64" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1149#1165#0" expanded="true" />
+            <element signature="e#1794#1810#0" expanded="true" />
+            <element signature="e#2247#2263#0" expanded="true" />
+            <element signature="e#2628#2644#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InspectPerinfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/InspectPerinfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1491">
+          <caret line="78" column="18" lean-forward="false" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="34" column="68" lean-forward="true" selection-start-line="34" selection-start-column="68" selection-end-line="34" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/perinfo/controller/PerinfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#445#461#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

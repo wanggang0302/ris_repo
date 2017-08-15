@@ -1,5 +1,5 @@
 /**
- * PersonInspectinfo.java
+ * InspectPerinfo.java
  * Copyright© 2017 北京金风易通科技有限公司
  * All rights reserved.
  * -----------------------------------------------
@@ -11,12 +11,12 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 /**
- * null
+ * 个人信息表
  * 
  * @author wanggang
  * @version 1.0 2017-08-15
  */
-public class PersonInspectinfo {
+public class InspectPerinfo {
 
     /**
      * GUID
