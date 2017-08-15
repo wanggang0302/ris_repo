@@ -23,6 +23,7 @@ import java.util.Map;
  * wanggang
  * 2017-08-10 17:08
  */
+
 @Configuration
 public class ShiroConfiguration {
 

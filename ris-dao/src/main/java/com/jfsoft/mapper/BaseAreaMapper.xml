@@ -2,13 +2,13 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.jfsoft.mapper.BaseAreaMapper" >
 	<resultMap id="BaseResultMap" type="com.jfsoft.model.BaseArea" >
-		<id column="ID" property="id" jdbcType="OTHER" />
-		<result column="CODE" property="code" jdbcType="OTHER" />
-		<result column="NAME" property="name" jdbcType="OTHER" />
-		<result column="PYCODE" property="pycode" jdbcType="OTHER" />
+		<id column="ID" property="id" jdbcType="VARCHAR" />
+		<result column="CODE" property="code" jdbcType="VARCHAR" />
+		<result column="NAME" property="name" jdbcType="VARCHAR" />
+		<result column="PYCODE" property="pycode" jdbcType="VARCHAR" />
 		<result column="SORTNUM" property="sortnum" jdbcType="DECIMAL" />
-		<result column="MEMO" property="memo" jdbcType="OTHER" />
-		<result column="HISCODE" property="hiscode" jdbcType="OTHER" />
+		<result column="MEMO" property="memo" jdbcType="VARCHAR" />
+		<result column="HISCODE" property="hiscode" jdbcType="VARCHAR" />
 	</resultMap>
 
 	<sql id="Base_Column_List" >
@@ -19,19 +19,19 @@
 		select 
 		<include refid="Base_Column_List" />
 		from BASE_AREA
-		where ID = #{id,jdbcType=OTHER}
+		where ID = #{id,jdbcType=VARCHAR}
 	</select>
 
 	<delete id="deleteByPrimaryKey" parameterType="java.lang.Object" >
 		delete from BASE_AREA
-		where ID = #{id,jdbcType=OTHER}
+		where ID = #{id,jdbcType=VARCHAR}
 	</delete>
 
 	<insert id="insert" parameterType="com.jfsoft.model.BaseArea" >
 		insert into BASE_AREA (ID, CODE, NAME, PYCODE, 
 			SORTNUM, MEMO, HISCODE)
-		values (#{id,jdbcType=OTHER}, #{code,jdbcType=OTHER}, #{name,jdbcType=OTHER}, #{pycode,jdbcType=OTHER}, 
-			#{sortnum,jdbcType=DECIMAL}, #{memo,jdbcType=OTHER}, #{hiscode,jdbcType=OTHER})
+		values (#{id,jdbcType=VARCHAR}, #{code,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{pycode,jdbcType=VARCHAR},
+			#{sortnum,jdbcType=DECIMAL}, #{memo,jdbcType=VARCHAR}, #{hiscode,jdbcType=VARCHAR})
 	</insert>
 
 	<insert id="insertSelective" parameterType="com.jfsoft.model.BaseArea" >
@@ -61,25 +61,25 @@
 		</trim>
 		<trim prefix="values (" suffix=")" suffixOverrides="," >
 			<if test="id != null" >
-				#{id,jdbcType=OTHER},
+				#{id,jdbcType=VARCHAR},
 			</if>
 			<if test="code != null" >
-				#{code,jdbcType=OTHER},
+				#{code,jdbcType=VARCHAR},
 			</if>
 			<if test="name != null" >
-				#{name,jdbcType=OTHER},
+				#{name,jdbcType=VARCHAR},
 			</if>
 			<if test="pycode != null" >
-				#{pycode,jdbcType=OTHER},
+				#{pycode,jdbcType=VARCHAR},
 			</if>
 			<if test="sortnum != null" >
 				#{sortnum,jdbcType=DECIMAL},
 			</if>
 			<if test="memo != null" >
-				#{memo,jdbcType=OTHER},
+				#{memo,jdbcType=VARCHAR},
 			</if>
 			<if test="hiscode != null" >
-				#{hiscode,jdbcType=OTHER},
+				#{hiscode,jdbcType=VARCHAR},
 			</if>
 		</trim>
 	</insert>
@@ -88,36 +88,36 @@
 		update BASE_AREA
 		<set >
 			<if test="code != null" >
-				CODE = #{code,jdbcType=OTHER},
+				CODE = #{code,jdbcType=VARCHAR},
 			</if>
 			<if test="name != null" >
-				NAME = #{name,jdbcType=OTHER},
+				NAME = #{name,jdbcType=VARCHAR},
 			</if>
 			<if test="pycode != null" >
-				PYCODE = #{pycode,jdbcType=OTHER},
+				PYCODE = #{pycode,jdbcType=VARCHAR},
 			</if>
 			<if test="sortnum != null" >
 				SORTNUM = #{sortnum,jdbcType=DECIMAL},
 			</if>
 			<if test="memo != null" >
-				MEMO = #{memo,jdbcType=OTHER},
+				MEMO = #{memo,jdbcType=VARCHAR},
 			</if>
 			<if test="hiscode != null" >
-				HISCODE = #{hiscode,jdbcType=OTHER},
+				HISCODE = #{hiscode,jdbcType=VARCHAR},
 			</if>
 		</set>
-		where ID = #{id,jdbcType=OTHER}
+		where ID = #{id,jdbcType=VARCHAR}
 	</update>
 
 	<update id="updateByPrimaryKey" parameterType="com.jfsoft.model.BaseArea" >
 		update BASE_AREA
-		set CODE = #{code,jdbcType=OTHER},
-			NAME = #{name,jdbcType=OTHER},
-			PYCODE = #{pycode,jdbcType=OTHER},
+		set CODE = #{code,jdbcType=VARCHAR},
+			NAME = #{name,jdbcType=VARCHAR},
+			PYCODE = #{pycode,jdbcType=VARCHAR},
 			SORTNUM = #{sortnum,jdbcType=DECIMAL},
-			MEMO = #{memo,jdbcType=OTHER},
-			HISCODE = #{hiscode,jdbcType=OTHER}
-		where ID = #{id,jdbcType=OTHER}
+			MEMO = #{memo,jdbcType=VARCHAR},
+			HISCODE = #{hiscode,jdbcType=VARCHAR}
+		where ID = #{id,jdbcType=VARCHAR}
 	</update>
 
 </mapper>

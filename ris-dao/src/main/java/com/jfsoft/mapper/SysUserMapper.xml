@@ -2,21 +2,21 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.jfsoft.mapper.SysUserMapper" >
 	<resultMap id="BaseResultMap" type="com.jfsoft.model.SysUser" >
-		<id column="ID" property="id" jdbcType="OTHER" />
+		<id column="ID" property="id" jdbcType="VARCHAR" />
 		<result column="CODE" property="code" jdbcType="DECIMAL" />
 		<result column="ENTRYCODE" property="entrycode" jdbcType="DECIMAL" />
-		<result column="NAME" property="name" jdbcType="OTHER" />
-		<result column="USERNAME" property="username" jdbcType="OTHER" />
-		<result column="PASSWORD" property="password" jdbcType="OTHER" />
-		<result column="EMAIL" property="email" jdbcType="OTHER" />
+		<result column="NAME" property="name" jdbcType="VARCHAR" />
+		<result column="USERNAME" property="username" jdbcType="VARCHAR" />
+		<result column="PASSWORD" property="password" jdbcType="VARCHAR" />
+		<result column="EMAIL" property="email" jdbcType="VARCHAR" />
 		<result column="CREATECODE" property="createcode" jdbcType="DECIMAL" />
 		<result column="CREATETIME" property="createtime" jdbcType="TIMESTAMP" />
 		<result column="MODIFYCODE" property="modifycode" jdbcType="DECIMAL" />
 		<result column="MODIFYTIME" property="modifytime" jdbcType="TIMESTAMP" />
 		<result column="SORTNUM" property="sortnum" jdbcType="DECIMAL" />
-		<result column="MEMO" property="memo" jdbcType="OTHER" />
-		<result column="AREACODE" property="areacode" jdbcType="OTHER" />
-		<result column="ISUSE" property="isuse" jdbcType="OTHER" />
+		<result column="MEMO" property="memo" jdbcType="VARCHAR" />
+		<result column="AREACODE" property="areacode" jdbcType="VARCHAR" />
+		<result column="ISUSE" property="isuse" jdbcType="VARCHAR" />
 		<result column="ACTORCODE" property="actorcode" jdbcType="DECIMAL" />
 	</resultMap>
 
@@ -29,12 +29,12 @@
 		select 
 		<include refid="Base_Column_List" />
 		from SYS_USER
-		where ID = #{id,jdbcType=OTHER}
+		where ID = #{id,jdbcType=VARCHAR}
 	</select>
 
 	<delete id="deleteByPrimaryKey" parameterType="java.lang.Object" >
 		delete from SYS_USER
-		where ID = #{id,jdbcType=OTHER}
+		where ID = #{id,jdbcType=VARCHAR}
 	</delete>
 
 	<insert id="insert" parameterType="com.jfsoft.model.SysUser" >
@@ -44,11 +44,11 @@
 			MODIFYCODE, MODIFYTIME, SORTNUM, 
 			MEMO, AREACODE, ISUSE, ACTORCODE
 			)
-		values (#{id,jdbcType=OTHER}, #{code,jdbcType=DECIMAL}, #{entrycode,jdbcType=DECIMAL}, 
-			#{name,jdbcType=OTHER}, #{username,jdbcType=OTHER}, #{password,jdbcType=OTHER}, 
-			#{email,jdbcType=OTHER}, #{createcode,jdbcType=DECIMAL}, #{createtime,jdbcType=TIMESTAMP}, 
+		values (#{id,jdbcType=VARCHAR}, #{code,jdbcType=DECIMAL}, #{entrycode,jdbcType=DECIMAL},
+			#{name,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR},
+			#{email,jdbcType=VARCHAR}, #{createcode,jdbcType=DECIMAL}, #{createtime,jdbcType=TIMESTAMP},
 			#{modifycode,jdbcType=DECIMAL}, #{modifytime,jdbcType=TIMESTAMP}, #{sortnum,jdbcType=DECIMAL}, 
-			#{memo,jdbcType=OTHER}, #{areacode,jdbcType=OTHER}, #{isuse,jdbcType=OTHER}, #{actorcode,jdbcType=DECIMAL}
+			#{memo,jdbcType=VARCHAR}, #{areacode,jdbcType=VARCHAR}, #{isuse,jdbcType=VARCHAR}, #{actorcode,jdbcType=DECIMAL}
 			)
 	</insert>
 
@@ -106,7 +106,7 @@
 		</trim>
 		<trim prefix="values (" suffix=")" suffixOverrides="," >
 			<if test="id != null" >
-				#{id,jdbcType=OTHER},
+				#{id,jdbcType=VARCHAR},
 			</if>
 			<if test="code != null" >
 				#{code,jdbcType=DECIMAL},
@@ -115,16 +115,16 @@
 				#{entrycode,jdbcType=DECIMAL},
 			</if>
 			<if test="name != null" >
-				#{name,jdbcType=OTHER},
+				#{name,jdbcType=VARCHAR},
 			</if>
 			<if test="username != null" >
-				#{username,jdbcType=OTHER},
+				#{username,jdbcType=VARCHAR},
 			</if>
 			<if test="password != null" >
-				#{password,jdbcType=OTHER},
+				#{password,jdbcType=VARCHAR},
 			</if>
 			<if test="email != null" >
-				#{email,jdbcType=OTHER},
+				#{email,jdbcType=VARCHAR},
 			</if>
 			<if test="createcode != null" >
 				#{createcode,jdbcType=DECIMAL},
@@ -142,13 +142,13 @@
 				#{sortnum,jdbcType=DECIMAL},
 			</if>
 			<if test="memo != null" >
-				#{memo,jdbcType=OTHER},
+				#{memo,jdbcType=VARCHAR},
 			</if>
 			<if test="areacode != null" >
-				#{areacode,jdbcType=OTHER},
+				#{areacode,jdbcType=VARCHAR},
 			</if>
 			<if test="isuse != null" >
-				#{isuse,jdbcType=OTHER},
+				#{isuse,jdbcType=VARCHAR},
 			</if>
 			<if test="actorcode != null" >
 				#{actorcode,jdbcType=DECIMAL},
@@ -166,16 +166,16 @@
 				ENTRYCODE = #{entrycode,jdbcType=DECIMAL},
 			</if>
 			<if test="name != null" >
-				NAME = #{name,jdbcType=OTHER},
+				NAME = #{name,jdbcType=VARCHAR},
 			</if>
 			<if test="username != null" >
-				USERNAME = #{username,jdbcType=OTHER},
+				USERNAME = #{username,jdbcType=VARCHAR},
 			</if>
 			<if test="password != null" >
-				PASSWORD = #{password,jdbcType=OTHER},
+				PASSWORD = #{password,jdbcType=VARCHAR},
 			</if>
 			<if test="email != null" >
-				EMAIL = #{email,jdbcType=OTHER},
+				EMAIL = #{email,jdbcType=VARCHAR},
 			</if>
 			<if test="createcode != null" >
 				CREATECODE = #{createcode,jdbcType=DECIMAL},
@@ -193,39 +193,39 @@
 				SORTNUM = #{sortnum,jdbcType=DECIMAL},
 			</if>
 			<if test="memo != null" >
-				MEMO = #{memo,jdbcType=OTHER},
+				MEMO = #{memo,jdbcType=VARCHAR},
 			</if>
 			<if test="areacode != null" >
-				AREACODE = #{areacode,jdbcType=OTHER},
+				AREACODE = #{areacode,jdbcType=VARCHAR},
 			</if>
 			<if test="isuse != null" >
-				ISUSE = #{isuse,jdbcType=OTHER},
+				ISUSE = #{isuse,jdbcType=VARCHAR},
 			</if>
 			<if test="actorcode != null" >
 				ACTORCODE = #{actorcode,jdbcType=DECIMAL},
 			</if>
 		</set>
-		where ID = #{id,jdbcType=OTHER}
+		where ID = #{id,jdbcType=VARCHAR}
 	</update>
 
 	<update id="updateByPrimaryKey" parameterType="com.jfsoft.model.SysUser" >
 		update SYS_USER
 		set CODE = #{code,jdbcType=DECIMAL},
 			ENTRYCODE = #{entrycode,jdbcType=DECIMAL},
-			NAME = #{name,jdbcType=OTHER},
-			USERNAME = #{username,jdbcType=OTHER},
-			PASSWORD = #{password,jdbcType=OTHER},
-			EMAIL = #{email,jdbcType=OTHER},
+			NAME = #{name,jdbcType=VARCHAR},
+			USERNAME = #{username,jdbcType=VARCHAR},
+			PASSWORD = #{password,jdbcType=VARCHAR},
+			EMAIL = #{email,jdbcType=VARCHAR},
 			CREATECODE = #{createcode,jdbcType=DECIMAL},
 			CREATETIME = #{createtime,jdbcType=TIMESTAMP},
 			MODIFYCODE = #{modifycode,jdbcType=DECIMAL},
 			MODIFYTIME = #{modifytime,jdbcType=TIMESTAMP},
 			SORTNUM = #{sortnum,jdbcType=DECIMAL},
-			MEMO = #{memo,jdbcType=OTHER},
-			AREACODE = #{areacode,jdbcType=OTHER},
-			ISUSE = #{isuse,jdbcType=OTHER},
+			MEMO = #{memo,jdbcType=VARCHAR},
+			AREACODE = #{areacode,jdbcType=VARCHAR},
+			ISUSE = #{isuse,jdbcType=VARCHAR},
 			ACTORCODE = #{actorcode,jdbcType=DECIMAL}
-		where ID = #{id,jdbcType=OTHER}
+		where ID = #{id,jdbcType=VARCHAR}
 	</update>
 
 	<!-- 查询结果 -->

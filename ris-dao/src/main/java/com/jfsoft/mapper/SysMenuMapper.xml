@@ -2,20 +2,20 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.jfsoft.mapper.SysMenuMapper" >
 	<resultMap id="BaseResultMap" type="com.jfsoft.model.SysMenu" >
-		<id column="ID" property="id" jdbcType="OTHER" />
+		<id column="ID" property="id" jdbcType="VARCHAR" />
 		<result column="CODE" property="code" jdbcType="DECIMAL" />
-		<result column="TITLE" property="title" jdbcType="OTHER" />
-		<result column="DESCRIPTION" property="description" jdbcType="OTHER" />
+		<result column="TITLE" property="title" jdbcType="VARCHAR" />
+		<result column="DESCRIPTION" property="description" jdbcType="VARCHAR" />
 		<result column="PARENTCODE" property="parentcode" jdbcType="DECIMAL" />
-		<result column="URL" property="url" jdbcType="OTHER" />
+		<result column="URL" property="url" jdbcType="VARCHAR" />
 		<result column="CREATECODE" property="createcode" jdbcType="DECIMAL" />
 		<result column="CREATETIME" property="createtime" jdbcType="TIMESTAMP" />
 		<result column="MODIFYCODE" property="modifycode" jdbcType="DECIMAL" />
 		<result column="MODIFYTIME" property="modifytime" jdbcType="TIMESTAMP" />
 		<result column="SORTNUM" property="sortnum" jdbcType="DECIMAL" />
-		<result column="MEMO" property="memo" jdbcType="OTHER" />
-		<result column="AREACODE" property="areacode" jdbcType="OTHER" />
-		<result column="ISUSE" property="isuse" jdbcType="OTHER" />
+		<result column="MEMO" property="memo" jdbcType="VARCHAR" />
+		<result column="AREACODE" property="areacode" jdbcType="VARCHAR" />
+		<result column="ISUSE" property="isuse" jdbcType="VARCHAR" />
 	</resultMap>
 
 	<sql id="Base_Column_List" >
@@ -27,12 +27,12 @@
 		select 
 		<include refid="Base_Column_List" />
 		from SYS_MENU
-		where ID = #{id,jdbcType=OTHER}
+		where ID = #{id,jdbcType=VARCHAR}
 	</select>
 
 	<delete id="deleteByPrimaryKey" parameterType="java.lang.Object" >
 		delete from SYS_MENU
-		where ID = #{id,jdbcType=OTHER}
+		where ID = #{id,jdbcType=VARCHAR}
 	</delete>
 
 	<insert id="insert" parameterType="com.jfsoft.model.SysMenu" >
@@ -41,11 +41,11 @@
 			CREATECODE, CREATETIME, MODIFYCODE, 
 			MODIFYTIME, SORTNUM, MEMO, 
 			AREACODE, ISUSE)
-		values (#{id,jdbcType=OTHER}, #{code,jdbcType=DECIMAL}, #{title,jdbcType=OTHER}, 
-			#{description,jdbcType=OTHER}, #{parentcode,jdbcType=DECIMAL}, #{url,jdbcType=OTHER}, 
+		values (#{id,jdbcType=VARCHAR}, #{code,jdbcType=DECIMAL}, #{title,jdbcType=VARCHAR},
+			#{description,jdbcType=VARCHAR}, #{parentcode,jdbcType=DECIMAL}, #{url,jdbcType=VARCHAR},
 			#{createcode,jdbcType=DECIMAL}, #{createtime,jdbcType=TIMESTAMP}, #{modifycode,jdbcType=DECIMAL}, 
-			#{modifytime,jdbcType=TIMESTAMP}, #{sortnum,jdbcType=DECIMAL}, #{memo,jdbcType=OTHER}, 
-			#{areacode,jdbcType=OTHER}, #{isuse,jdbcType=OTHER})
+			#{modifytime,jdbcType=TIMESTAMP}, #{sortnum,jdbcType=DECIMAL}, #{memo,jdbcType=VARCHAR},
+			#{areacode,jdbcType=VARCHAR}, #{isuse,jdbcType=VARCHAR})
 	</insert>
 
 	<insert id="insertSelective" parameterType="com.jfsoft.model.SysMenu" >
@@ -96,22 +96,22 @@
 		</trim>
 		<trim prefix="values (" suffix=")" suffixOverrides="," >
 			<if test="id != null" >
-				#{id,jdbcType=OTHER},
+				#{id,jdbcType=VARCHAR},
 			</if>
 			<if test="code != null" >
 				#{code,jdbcType=DECIMAL},
 			</if>
 			<if test="title != null" >
-				#{title,jdbcType=OTHER},
+				#{title,jdbcType=VARCHAR},
 			</if>
 			<if test="description != null" >
-				#{description,jdbcType=OTHER},
+				#{description,jdbcType=VARCHAR},
 			</if>
 			<if test="parentcode != null" >
 				#{parentcode,jdbcType=DECIMAL},
 			</if>
 			<if test="url != null" >
-				#{url,jdbcType=OTHER},
+				#{url,jdbcType=VARCHAR},
 			</if>
 			<if test="createcode != null" >
 				#{createcode,jdbcType=DECIMAL},
@@ -129,13 +129,13 @@
 				#{sortnum,jdbcType=DECIMAL},
 			</if>
 			<if test="memo != null" >
-				#{memo,jdbcType=OTHER},
+				#{memo,jdbcType=VARCHAR},
 			</if>
 			<if test="areacode != null" >
-				#{areacode,jdbcType=OTHER},
+				#{areacode,jdbcType=VARCHAR},
 			</if>
 			<if test="isuse != null" >
-				#{isuse,jdbcType=OTHER},
+				#{isuse,jdbcType=VARCHAR},
 			</if>
 		</trim>
 	</insert>
@@ -147,16 +147,16 @@
 				CODE = #{code,jdbcType=DECIMAL},
 			</if>
 			<if test="title != null" >
-				TITLE = #{title,jdbcType=OTHER},
+				TITLE = #{title,jdbcType=VARCHAR},
 			</if>
 			<if test="description != null" >
-				DESCRIPTION = #{description,jdbcType=OTHER},
+				DESCRIPTION = #{description,jdbcType=VARCHAR},
 			</if>
 			<if test="parentcode != null" >
 				PARENTCODE = #{parentcode,jdbcType=DECIMAL},
 			</if>
 			<if test="url != null" >
-				URL = #{url,jdbcType=OTHER},
+				URL = #{url,jdbcType=VARCHAR},
 			</if>
 			<if test="createcode != null" >
 				CREATECODE = #{createcode,jdbcType=DECIMAL},
@@ -174,34 +174,34 @@
 				SORTNUM = #{sortnum,jdbcType=DECIMAL},
 			</if>
 			<if test="memo != null" >
-				MEMO = #{memo,jdbcType=OTHER},
+				MEMO = #{memo,jdbcType=VARCHAR},
 			</if>
 			<if test="areacode != null" >
-				AREACODE = #{areacode,jdbcType=OTHER},
+				AREACODE = #{areacode,jdbcType=VARCHAR},
 			</if>
 			<if test="isuse != null" >
-				ISUSE = #{isuse,jdbcType=OTHER},
+				ISUSE = #{isuse,jdbcType=VARCHAR},
 			</if>
 		</set>
-		where ID = #{id,jdbcType=OTHER}
+		where ID = #{id,jdbcType=VARCHAR}
 	</update>
 
 	<update id="updateByPrimaryKey" parameterType="com.jfsoft.model.SysMenu" >
 		update SYS_MENU
 		set CODE = #{code,jdbcType=DECIMAL},
-			TITLE = #{title,jdbcType=OTHER},
-			DESCRIPTION = #{description,jdbcType=OTHER},
+			TITLE = #{title,jdbcType=VARCHAR},
+			DESCRIPTION = #{description,jdbcType=VARCHAR},
 			PARENTCODE = #{parentcode,jdbcType=DECIMAL},
-			URL = #{url,jdbcType=OTHER},
+			URL = #{url,jdbcType=VARCHAR},
 			CREATECODE = #{createcode,jdbcType=DECIMAL},
 			CREATETIME = #{createtime,jdbcType=TIMESTAMP},
 			MODIFYCODE = #{modifycode,jdbcType=DECIMAL},
 			MODIFYTIME = #{modifytime,jdbcType=TIMESTAMP},
 			SORTNUM = #{sortnum,jdbcType=DECIMAL},
-			MEMO = #{memo,jdbcType=OTHER},
-			AREACODE = #{areacode,jdbcType=OTHER},
-			ISUSE = #{isuse,jdbcType=OTHER}
-		where ID = #{id,jdbcType=OTHER}
+			MEMO = #{memo,jdbcType=VARCHAR},
+			AREACODE = #{areacode,jdbcType=VARCHAR},
+			ISUSE = #{isuse,jdbcType=VARCHAR}
+		where ID = #{id,jdbcType=VARCHAR}
 	</update>
 
 </mapper>

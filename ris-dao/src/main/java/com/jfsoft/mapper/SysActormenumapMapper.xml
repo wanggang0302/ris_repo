@@ -2,10 +2,10 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.jfsoft.mapper.SysActormenumapMapper" >
 	<resultMap id="BaseResultMap" type="com.jfsoft.model.SysActormenumap" >
-		<id column="ID" property="id" jdbcType="OTHER" />
+		<id column="ID" property="id" jdbcType="VARCHAR" />
 		<result column="ROLECODE" property="rolecode" jdbcType="DECIMAL" />
 		<result column="MENUCODE" property="menucode" jdbcType="DECIMAL" />
-		<result column="AREACODE" property="areacode" jdbcType="OTHER" />
+		<result column="AREACODE" property="areacode" jdbcType="VARCHAR" />
 	</resultMap>
 
 	<sql id="Base_Column_List" >
@@ -16,19 +16,19 @@
 		select 
 		<include refid="Base_Column_List" />
 		from SYS_ACTORMENUMAP
-		where ID = #{id,jdbcType=OTHER}
+		where ID = #{id,jdbcType=VARCHAR}
 	</select>
 
 	<delete id="deleteByPrimaryKey" parameterType="java.lang.Object" >
 		delete from SYS_ACTORMENUMAP
-		where ID = #{id,jdbcType=OTHER}
+		where ID = #{id,jdbcType=VARCHAR}
 	</delete>
 
 	<insert id="insert" parameterType="com.jfsoft.model.SysActormenumap" >
 		insert into SYS_ACTORMENUMAP (ID, ROLECODE, MENUCODE, 
 			AREACODE)
-		values (#{id,jdbcType=OTHER}, #{rolecode,jdbcType=DECIMAL}, #{menucode,jdbcType=DECIMAL}, 
-			#{areacode,jdbcType=OTHER})
+		values (#{id,jdbcType=VARCHAR}, #{rolecode,jdbcType=DECIMAL}, #{menucode,jdbcType=DECIMAL},
+			#{areacode,jdbcType=VARCHAR})
 	</insert>
 
 	<insert id="insertSelective" parameterType="com.jfsoft.model.SysActormenumap" >
@@ -49,7 +49,7 @@
 		</trim>
 		<trim prefix="values (" suffix=")" suffixOverrides="," >
 			<if test="id != null" >
-				#{id,jdbcType=OTHER},
+				#{id,jdbcType=VARCHAR},
 			</if>
 			<if test="rolecode != null" >
 				#{rolecode,jdbcType=DECIMAL},
@@ -58,7 +58,7 @@
 				#{menucode,jdbcType=DECIMAL},
 			</if>
 			<if test="areacode != null" >
-				#{areacode,jdbcType=OTHER},
+				#{areacode,jdbcType=VARCHAR},
 			</if>
 		</trim>
 	</insert>
@@ -73,18 +73,18 @@
 				MENUCODE = #{menucode,jdbcType=DECIMAL},
 			</if>
 			<if test="areacode != null" >
-				AREACODE = #{areacode,jdbcType=OTHER},
+				AREACODE = #{areacode,jdbcType=VARCHAR},
 			</if>
 		</set>
-		where ID = #{id,jdbcType=OTHER}
+		where ID = #{id,jdbcType=VARCHAR}
 	</update>
 
 	<update id="updateByPrimaryKey" parameterType="com.jfsoft.model.SysActormenumap" >
 		update SYS_ACTORMENUMAP
 		set ROLECODE = #{rolecode,jdbcType=DECIMAL},
 			MENUCODE = #{menucode,jdbcType=DECIMAL},
-			AREACODE = #{areacode,jdbcType=OTHER}
-		where ID = #{id,jdbcType=OTHER}
+			AREACODE = #{areacode,jdbcType=VARCHAR}
+		where ID = #{id,jdbcType=VARCHAR}
 	</update>
 
 </mapper>
