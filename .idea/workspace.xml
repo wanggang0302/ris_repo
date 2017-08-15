@@ -1,86 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b5c15f0-baa4-4867-80cf-71b1fd81b15e" name="Default" comment="收费项目">
+    <list default="true" id="6b5c15f0-baa4-4867-80cf-71b1fd81b15e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE" afterPath="$PROJECT_DIR$/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseAreaMapper.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseAreaMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseAreaMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseAreaMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckmethodMapper.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckmethodMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckmethodMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckmethodMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckpartMapper.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckpartMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckpartMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckpartMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckroomMapper.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckroomMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckroomMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseCheckroomMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseDeptMapper.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseDeptMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseDeptMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseDeptMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseEquipmentMapper.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseEquipmentMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseEquipmentMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseEquipmentMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseGroupitemMapper.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseGroupitemMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseGroupitemMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseGroupitemMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseIllnessMapper.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseIllnessMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseIllnessMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseIllnessMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseItempartmapMapper.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseItempartmapMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseItempartmapMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseItempartmapMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseTempillmapMapper.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseTempillmapMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseTempillmapMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseTempillmapMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseTemplateMapper.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseTemplateMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseTemplateMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/BaseTemplateMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InsGroupitemmapMapper.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InsGroupitemmapMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InsGroupitemmapMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InsGroupitemmapMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InsIllnessmapMapper.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InsIllnessmapMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InsIllnessmapMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InsIllnessmapMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InspectPerinfoMapper.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InspectPerinfoMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InspectPerinfoMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InspectPerinfoMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InspectPicresultMapper.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InspectPicresultMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InspectPicresultMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InspectPicresultMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InspectTextresultMapper.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InspectTextresultMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InspectTextresultMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/InspectTextresultMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/OutPerinfoMapper.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/OutPerinfoMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/OutPerinfoMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/OutPerinfoMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysActorMapper.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysActorMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysActorMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysActorMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysActordeptmapMapper.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysActordeptmapMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysActordeptmapMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysActordeptmapMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysActormenumapMapper.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysActormenumapMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysActormenumapMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysActormenumapMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysLogMapper.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysLogMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysLogMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysLogMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysMenuMapper.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysMenuMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysMenuMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysMenuMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysUserMapper.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysUserMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysUserMapper.xml" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/SysUserMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/TUserMapper.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/mapper/TUserMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseArea.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseArea.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseCheckmethod.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseCheckmethod.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseCheckpart.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseCheckpart.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseCheckroom.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseCheckroom.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseDept.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseDept.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseEquipment.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseEquipment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseGroupitem.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseGroupitem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseIllness.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseIllness.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseItempartmap.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseItempartmap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseTempillmap.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseTempillmap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseTemplate.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/BaseTemplate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/InsAreamap.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/InsAreamap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/InsGroupitemmap.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/InsGroupitemmap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/InsIllnessmap.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/InsIllnessmap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/InspectPerinfo.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/InspectPerinfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/InspectPicresult.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/InspectPicresult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/InspectTextresult.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/InspectTextresult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/OutPerinfo.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/OutPerinfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/SysActor.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/SysActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/SysActordeptmap.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/SysActordeptmap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/SysActormenumap.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/SysActormenumap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/SysLog.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/SysLog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/SysMenu.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/SysMenu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/SysUser.java" afterPath="$PROJECT_DIR$/ris-dao/src/main/java/com/jfsoft/model/SysUser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-service/src/main/java/com/jfsoft/groupitem/service/impl/GroupitemServiceImpl.java" afterPath="$PROJECT_DIR$/ris-service/src/main/java/com/jfsoft/groupitem/service/impl/GroupitemServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/dictionary/controller/BaseGroupitemController.java" afterPath="$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/dictionary/controller/BaseGroupitemController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/dictionary/controller/BaseTemplateController.java" afterPath="$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/dictionary/controller/BaseTemplateController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/login/controller/LoginController.java" afterPath="$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/login/controller/LoginController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/perinfo/controller/PerinfoController.java" afterPath="$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/perinfo/controller/PerinfoController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/shiro/controller/ShiroController.java" afterPath="$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/shiro/controller/ShiroController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/ris-dao/target/" />
     <ignored path="$PROJECT_DIR$/ris-api/target/" />
@@ -155,14 +78,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IPerinfoService.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="IPerinfoService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ris-service/src/main/java/com/jfsoft/perinfo/service/IPerinfoService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="84">
+              <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -200,15 +121,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PerinfoController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PerinfoController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/perinfo/controller/PerinfoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="40" column="64" lean-forward="true" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
+            <state relative-caret-position="332">
+              <caret line="33" column="47" lean-forward="false" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#963#979#0" expanded="true" />
-                <element signature="e#1329#1345#0" expanded="true" />
+                <element signature="e#1377#1393#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -861,6 +782,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris_repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris_repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ris-service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jfsoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1627,7 +1582,7 @@
       <workItem from="1502670814249" duration="18925000" />
       <workItem from="1502703793147" duration="718000" />
       <workItem from="1502759497511" duration="71000" />
-      <workItem from="1502760433811" duration="22982000" />
+      <workItem from="1502760433811" duration="23365000" />
     </task>
     <task id="LOCAL-00001" summary="修改pom">
       <created>1501746763215</created>
@@ -1657,15 +1612,21 @@
       <option name="project" value="LOCAL" />
       <updated>1502785029917</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="收费项目">
+      <created>1502789161284</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1502789161284</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80939000" />
+    <option name="totallyTimeSpent" value="81322000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1685,7 +1646,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850778" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22441365" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1724,7 +1685,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/perinfo/controller/PerinfoController.java</url>
-          <line>42</line>
+          <line>43</line>
           <properties />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
@@ -2167,12 +2128,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ris-service/src/main/java/com/jfsoft/perinfo/service/IPerinfoService.java">
+    <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/perinfo/controller/PerinfoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        <state relative-caret-position="332">
+          <caret line="33" column="47" lean-forward="false" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#963#979#0" expanded="true" />
+            <element signature="e#1377#1393#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2188,15 +2151,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ris-web/src/main/java/com/jfsoft/perinfo/controller/PerinfoController.java">
+    <entry file="file://$PROJECT_DIR$/ris-service/src/main/java/com/jfsoft/perinfo/service/IPerinfoService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="40" column="64" lean-forward="true" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#963#979#0" expanded="true" />
-            <element signature="e#1329#1345#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="84">
+          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>

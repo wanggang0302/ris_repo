@@ -31,6 +31,7 @@ public class PerinfoController {
         Map<String, Object> map = new HashMap<String, Object>();
         try {
             List<InspectPerinfo> perinfoList =perinfoService.getPerinfoList();
+            map.put("perinfoList",perinfoList);
         } catch (Exception e) {
             e.printStackTrace();
         }
