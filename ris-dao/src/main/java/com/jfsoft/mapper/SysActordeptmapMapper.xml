@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jfsoft.mapper.SysActordeptmapMapper" >
+	<resultMap id="BaseResultMap" type="com.jfsoft.model.SysActordeptmap" >
+		<id column="ID" property="id" jdbcType="OTHER" />
+		<result column="ACTORCODE" property="actorcode" jdbcType="DECIMAL" />
+		<result column="DEPTCODE" property="deptcode" jdbcType="DECIMAL" />
+		<result column="AREACODE" property="areacode" jdbcType="OTHER" />
+	</resultMap>
+
+	<sql id="Base_Column_List" >
+		ID, ACTORCODE, DEPTCODE, AREACODE
+	</sql>
+
+	<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Object" >
+		select 
+		<include refid="Base_Column_List" />
+		from SYS_ACTORDEPTMAP
+		where ID = #{id,jdbcType=OTHER}
+	</select>
+
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Object" >
+		delete from SYS_ACTORDEPTMAP
+		where ID = #{id,jdbcType=OTHER}
+	</delete>
+
+	<insert id="insert" parameterType="com.jfsoft.model.SysActordeptmap" >
+		insert into SYS_ACTORDEPTMAP (ID, ACTORCODE, DEPTCODE, 
+			AREACODE)
+		values (#{id,jdbcType=OTHER}, #{actorcode,jdbcType=DECIMAL}, #{deptcode,jdbcType=DECIMAL}, 
+			#{areacode,jdbcType=OTHER})
+	</insert>
+
+	<insert id="insertSelective" parameterType="com.jfsoft.model.SysActordeptmap" >
+		insert into SYS_ACTORDEPTMAP
+		<trim prefix="(" suffix=")" suffixOverrides="," >
+			<if test="id != null" >
+				ID,
+			</if>
+			<if test="actorcode != null" >
+				ACTORCODE,
+			</if>
+			<if test="deptcode != null" >
+				DEPTCODE,
+			</if>
+			<if test="areacode != null" >
+				AREACODE,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides="," >
+			<if test="id != null" >
+				#{id,jdbcType=OTHER},
+			</if>
+			<if test="actorcode != null" >
+				#{actorcode,jdbcType=DECIMAL},
+			</if>
+			<if test="deptcode != null" >
+				#{deptcode,jdbcType=DECIMAL},
+			</if>
+			<if test="areacode != null" >
+				#{areacode,jdbcType=OTHER},
+			</if>
+		</trim>
+	</insert>
+
+	<update id="updateByPrimaryKeySelective" parameterType="com.jfsoft.model.SysActordeptmap" >
+		update SYS_ACTORDEPTMAP
+		<set >
+			<if test="actorcode != null" >
+				ACTORCODE = #{actorcode,jdbcType=DECIMAL},
+			</if>
+			<if test="deptcode != null" >
+				DEPTCODE = #{deptcode,jdbcType=DECIMAL},
+			</if>
+			<if test="areacode != null" >
+				AREACODE = #{areacode,jdbcType=OTHER},
+			</if>
+		</set>
+		where ID = #{id,jdbcType=OTHER}
+	</update>
+
+	<update id="updateByPrimaryKey" parameterType="com.jfsoft.model.SysActordeptmap" >
+		update SYS_ACTORDEPTMAP
+		set ACTORCODE = #{actorcode,jdbcType=DECIMAL},
+			DEPTCODE = #{deptcode,jdbcType=DECIMAL},
+			AREACODE = #{areacode,jdbcType=OTHER}
+		where ID = #{id,jdbcType=OTHER}
+	</update>
+
+</mapper>

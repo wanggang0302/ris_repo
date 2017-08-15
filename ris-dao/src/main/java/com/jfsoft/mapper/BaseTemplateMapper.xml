@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jfsoft.mapper.BaseTemplateMapper" >
+	<resultMap id="BaseResultMap" type="com.jfsoft.model.BaseTemplate" >
+		<id column="ID" property="id" jdbcType="OTHER" />
+		<result column="NAME" property="name" jdbcType="OTHER" />
+		<result column="CODE" property="code" jdbcType="DECIMAL" />
+		<result column="PYCODE" property="pycode" jdbcType="OTHER" />
+		<result column="TYPE" property="type" jdbcType="OTHER" />
+		<result column="PERTEMPLATEID" property="pertemplateid" jdbcType="OTHER" />
+		<result column="URGENTVALUE" property="urgentvalue" jdbcType="OTHER" />
+		<result column="POLARITY" property="polarity" jdbcType="OTHER" />
+		<result column="PATHOLOGY" property="pathology" jdbcType="OTHER" />
+		<result column="SUGGEST" property="suggest" jdbcType="OTHER" />
+		<result column="ADAPTSEX" property="adaptsex" jdbcType="OTHER" />
+		<result column="ISUSE" property="isuse" jdbcType="DECIMAL" />
+		<result column="SORTNUM" property="sortnum" jdbcType="DECIMAL" />
+		<result column="MEMO" property="memo" jdbcType="OTHER" />
+		<result column="AREACODE" property="areacode" jdbcType="OTHER" />
+	</resultMap>
+
+	<sql id="Base_Column_List" >
+		ID, NAME, CODE, PYCODE, TYPE, PERTEMPLATEID, URGENTVALUE, POLARITY, PATHOLOGY, SUGGEST, 
+		ADAPTSEX, ISUSE, SORTNUM, MEMO, AREACODE
+	</sql>
+
+	<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Object" >
+		select 
+		<include refid="Base_Column_List" />
+		from BASE_TEMPLATE
+		where ID = #{id,jdbcType=OTHER}
+	</select>
+
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Object" >
+		delete from BASE_TEMPLATE
+		where ID = #{id,jdbcType=OTHER}
+	</delete>
+
+	<insert id="insert" parameterType="com.jfsoft.model.BaseTemplate" >
+		insert into BASE_TEMPLATE (ID, NAME, CODE, PYCODE, 
+			TYPE, PERTEMPLATEID, URGENTVALUE, 
+			POLARITY, PATHOLOGY, SUGGEST, 
+			ADAPTSEX, ISUSE, SORTNUM, 
+			MEMO, AREACODE)
+		values (#{id,jdbcType=OTHER}, #{name,jdbcType=OTHER}, #{code,jdbcType=DECIMAL}, #{pycode,jdbcType=OTHER}, 
+			#{type,jdbcType=OTHER}, #{pertemplateid,jdbcType=OTHER}, #{urgentvalue,jdbcType=OTHER}, 
+			#{polarity,jdbcType=OTHER}, #{pathology,jdbcType=OTHER}, #{suggest,jdbcType=OTHER}, 
+			#{adaptsex,jdbcType=OTHER}, #{isuse,jdbcType=DECIMAL}, #{sortnum,jdbcType=DECIMAL}, 
+			#{memo,jdbcType=OTHER}, #{areacode,jdbcType=OTHER})
+	</insert>
+
+	<insert id="insertSelective" parameterType="com.jfsoft.model.BaseTemplate" >
+		insert into BASE_TEMPLATE
+		<trim prefix="(" suffix=")" suffixOverrides="," >
+			<if test="id != null" >
+				ID,
+			</if>
+			<if test="name != null" >
+				NAME,
+			</if>
+			<if test="code != null" >
+				CODE,
+			</if>
+			<if test="pycode != null" >
+				PYCODE,
+			</if>
+			<if test="type != null" >
+				TYPE,
+			</if>
+			<if test="pertemplateid != null" >
+				PERTEMPLATEID,
+			</if>
+			<if test="urgentvalue != null" >
+				URGENTVALUE,
+			</if>
+			<if test="polarity != null" >
+				POLARITY,
+			</if>
+			<if test="pathology != null" >
+				PATHOLOGY,
+			</if>
+			<if test="suggest != null" >
+				SUGGEST,
+			</if>
+			<if test="adaptsex != null" >
+				ADAPTSEX,
+			</if>
+			<if test="isuse != null" >
+				ISUSE,
+			</if>
+			<if test="sortnum != null" >
+				SORTNUM,
+			</if>
+			<if test="memo != null" >
+				MEMO,
+			</if>
+			<if test="areacode != null" >
+				AREACODE,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides="," >
+			<if test="id != null" >
+				#{id,jdbcType=OTHER},
+			</if>
+			<if test="name != null" >
+				#{name,jdbcType=OTHER},
+			</if>
+			<if test="code != null" >
+				#{code,jdbcType=DECIMAL},
+			</if>
+			<if test="pycode != null" >
+				#{pycode,jdbcType=OTHER},
+			</if>
+			<if test="type != null" >
+				#{type,jdbcType=OTHER},
+			</if>
+			<if test="pertemplateid != null" >
+				#{pertemplateid,jdbcType=OTHER},
+			</if>
+			<if test="urgentvalue != null" >
+				#{urgentvalue,jdbcType=OTHER},
+			</if>
+			<if test="polarity != null" >
+				#{polarity,jdbcType=OTHER},
+			</if>
+			<if test="pathology != null" >
+				#{pathology,jdbcType=OTHER},
+			</if>
+			<if test="suggest != null" >
+				#{suggest,jdbcType=OTHER},
+			</if>
+			<if test="adaptsex != null" >
+				#{adaptsex,jdbcType=OTHER},
+			</if>
+			<if test="isuse != null" >
+				#{isuse,jdbcType=DECIMAL},
+			</if>
+			<if test="sortnum != null" >
+				#{sortnum,jdbcType=DECIMAL},
+			</if>
+			<if test="memo != null" >
+				#{memo,jdbcType=OTHER},
+			</if>
+			<if test="areacode != null" >
+				#{areacode,jdbcType=OTHER},
+			</if>
+		</trim>
+	</insert>
+
+	<update id="updateByPrimaryKeySelective" parameterType="com.jfsoft.model.BaseTemplate" >
+		update BASE_TEMPLATE
+		<set >
+			<if test="name != null" >
+				NAME = #{name,jdbcType=OTHER},
+			</if>
+			<if test="code != null" >
+				CODE = #{code,jdbcType=DECIMAL},
+			</if>
+			<if test="pycode != null" >
+				PYCODE = #{pycode,jdbcType=OTHER},
+			</if>
+			<if test="type != null" >
+				TYPE = #{type,jdbcType=OTHER},
+			</if>
+			<if test="pertemplateid != null" >
+				PERTEMPLATEID = #{pertemplateid,jdbcType=OTHER},
+			</if>
+			<if test="urgentvalue != null" >
+				URGENTVALUE = #{urgentvalue,jdbcType=OTHER},
+			</if>
+			<if test="polarity != null" >
+				POLARITY = #{polarity,jdbcType=OTHER},
+			</if>
+			<if test="pathology != null" >
+				PATHOLOGY = #{pathology,jdbcType=OTHER},
+			</if>
+			<if test="suggest != null" >
+				SUGGEST = #{suggest,jdbcType=OTHER},
+			</if>
+			<if test="adaptsex != null" >
+				ADAPTSEX = #{adaptsex,jdbcType=OTHER},
+			</if>
+			<if test="isuse != null" >
+				ISUSE = #{isuse,jdbcType=DECIMAL},
+			</if>
+			<if test="sortnum != null" >
+				SORTNUM = #{sortnum,jdbcType=DECIMAL},
+			</if>
+			<if test="memo != null" >
+				MEMO = #{memo,jdbcType=OTHER},
+			</if>
+			<if test="areacode != null" >
+				AREACODE = #{areacode,jdbcType=OTHER},
+			</if>
+		</set>
+		where ID = #{id,jdbcType=OTHER}
+	</update>
+
+	<update id="updateByPrimaryKey" parameterType="com.jfsoft.model.BaseTemplate" >
+		update BASE_TEMPLATE
+		set NAME = #{name,jdbcType=OTHER},
+			CODE = #{code,jdbcType=DECIMAL},
+			PYCODE = #{pycode,jdbcType=OTHER},
+			TYPE = #{type,jdbcType=OTHER},
+			PERTEMPLATEID = #{pertemplateid,jdbcType=OTHER},
+			URGENTVALUE = #{urgentvalue,jdbcType=OTHER},
+			POLARITY = #{polarity,jdbcType=OTHER},
+			PATHOLOGY = #{pathology,jdbcType=OTHER},
+			SUGGEST = #{suggest,jdbcType=OTHER},
+			ADAPTSEX = #{adaptsex,jdbcType=OTHER},
+			ISUSE = #{isuse,jdbcType=DECIMAL},
+			SORTNUM = #{sortnum,jdbcType=DECIMAL},
+			MEMO = #{memo,jdbcType=OTHER},
+			AREACODE = #{areacode,jdbcType=OTHER}
+		where ID = #{id,jdbcType=OTHER}
+	</update>
+
+</mapper>

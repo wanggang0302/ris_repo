@@ -1,5 +1,5 @@
 /**
- * BaseCheckpart.java
+ * BaseTemplate.java
  * Copyright© 2017 北京金风易通科技有限公司
  * All rights reserved.
  * -----------------------------------------------
@@ -15,7 +15,7 @@ import java.math.BigDecimal;
  * @author wanggang
  * @version 1.0 2017-08-15
  */
-public class BaseCheckpart {
+public class BaseTemplate {
 
     /**
      * GUID
@@ -23,19 +23,49 @@ public class BaseCheckpart {
     private Object id;
 
     /**
-     * 部位编号
-     */
-    private BigDecimal code;
-
-    /**
-     * 部位名称
+     * 模板类别
      */
     private Object name;
+
+    /**
+     * 模板code
+     */
+    private BigDecimal code;
 
     /**
      * 拼音码
      */
     private Object pycode;
+
+    /**
+     * 个人或者公用模板
+     */
+    private Object type;
+
+    /**
+     * 模板对应人的id
+     */
+    private Object pertemplateid;
+
+    /**
+     * 危急值
+     */
+    private Object urgentvalue;
+
+    /**
+     * 阴性或者阳性体征
+     */
+    private Object polarity;
+
+    /**
+     * 正常模板或者异常模板
+     */
+    private Object pathology;
+
+    /**
+     * 建议
+     */
+    private Object suggest;
 
     /**
      * 适用性别(0:不限,1:男,2:女)
@@ -70,14 +100,6 @@ public class BaseCheckpart {
         this.id = id;
     }
 
-    public BigDecimal getCode() {
-        return code;
-    }
-
-    public void setCode(BigDecimal code) {
-        this.code = code;
-    }
-
     public Object getName() {
         return name;
     }
@@ -86,12 +108,68 @@ public class BaseCheckpart {
         this.name = name;
     }
 
+    public BigDecimal getCode() {
+        return code;
+    }
+
+    public void setCode(BigDecimal code) {
+        this.code = code;
+    }
+
     public Object getPycode() {
         return pycode;
     }
 
     public void setPycode(Object pycode) {
         this.pycode = pycode;
+    }
+
+    public Object getType() {
+        return type;
+    }
+
+    public void setType(Object type) {
+        this.type = type;
+    }
+
+    public Object getPertemplateid() {
+        return pertemplateid;
+    }
+
+    public void setPertemplateid(Object pertemplateid) {
+        this.pertemplateid = pertemplateid;
+    }
+
+    public Object getUrgentvalue() {
+        return urgentvalue;
+    }
+
+    public void setUrgentvalue(Object urgentvalue) {
+        this.urgentvalue = urgentvalue;
+    }
+
+    public Object getPolarity() {
+        return polarity;
+    }
+
+    public void setPolarity(Object polarity) {
+        this.polarity = polarity;
+    }
+
+    public Object getPathology() {
+        return pathology;
+    }
+
+    public void setPathology(Object pathology) {
+        this.pathology = pathology;
+    }
+
+    public Object getSuggest() {
+        return suggest;
+    }
+
+    public void setSuggest(Object suggest) {
+        this.suggest = suggest;
     }
 
     public Object getAdaptsex() {

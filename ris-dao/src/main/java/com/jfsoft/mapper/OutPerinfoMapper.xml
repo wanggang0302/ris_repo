@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jfsoft.mapper.OutPerinfoMapper" >
+	<resultMap id="BaseResultMap" type="com.jfsoft.model.OutPerinfo" >
+		<id column="ID" property="id" jdbcType="OTHER" />
+		<result column="INFOID" property="infoid" jdbcType="OTHER" />
+		<result column="NAME" property="name" jdbcType="OTHER" />
+		<result column="PYCODE" property="pycode" jdbcType="OTHER" />
+		<result column="REGTIME" property="regtime" jdbcType="TIMESTAMP" />
+		<result column="SEX" property="sex" jdbcType="OTHER" />
+		<result column="AGE" property="age" jdbcType="DECIMAL" />
+		<result column="NATION" property="nation" jdbcType="OTHER" />
+		<result column="BIRTHDAY" property="birthday" jdbcType="TIMESTAMP" />
+		<result column="SSID" property="ssid" jdbcType="OTHER" />
+		<result column="TEL" property="tel" jdbcType="OTHER" />
+		<result column="LINKTEL" property="linktel" jdbcType="OTHER" />
+		<result column="COMPANY" property="company" jdbcType="OTHER" />
+		<result column="WEIGHT" property="weight" jdbcType="OTHER" />
+		<result column="POSTCODE" property="postcode" jdbcType="OTHER" />
+		<result column="PROFESSION" property="profession" jdbcType="OTHER" />
+		<result column="TABOOS" property="taboos" jdbcType="OTHER" />
+		<result column="MEDICALHISTORY" property="medicalhistory" jdbcType="OTHER" />
+		<result column="DOCADVICE" property="docadvice" jdbcType="CLOB" />
+		<result column="DIAGNOSIS" property="diagnosis" jdbcType="OTHER" />
+		<result column="ISEMERGENCY" property="isemergency" jdbcType="DECIMAL" />
+		<result column="GROUPCODE" property="groupcode" jdbcType="DECIMAL" />
+		<result column="STATUSCODE" property="statuscode" jdbcType="OTHER" />
+		<result column="APPLYDOCCODE" property="applydoccode" jdbcType="DECIMAL" />
+		<result column="APPLYDOCNAME" property="applydocname" jdbcType="OTHER" />
+		<result column="APPLYDEPT" property="applydept" jdbcType="OTHER" />
+		<result column="APPLYTIME" property="applytime" jdbcType="TIMESTAMP" />
+		<result column="PERTYPE" property="pertype" jdbcType="OTHER" />
+		<result column="WARD" property="ward" jdbcType="OTHER" />
+		<result column="BEDNUM" property="bednum" jdbcType="OTHER" />
+		<result column="CREATECODE" property="createcode" jdbcType="DECIMAL" />
+		<result column="CREATETIME" property="createtime" jdbcType="TIMESTAMP" />
+		<result column="PAYSTATUS" property="paystatus" jdbcType="OTHER" />
+		<result column="PAYTIME" property="paytime" jdbcType="TIMESTAMP" />
+		<result column="MODIFYCODE" property="modifycode" jdbcType="DECIMAL" />
+		<result column="MODIFYTIME" property="modifytime" jdbcType="TIMESTAMP" />
+		<result column="MEMO" property="memo" jdbcType="OTHER" />
+		<result column="AREACODE" property="areacode" jdbcType="OTHER" />
+		<result column="UNGENTVALUE" property="ungentvalue" jdbcType="OTHER" />
+		<result column="CONTENT1" property="content1" jdbcType="OTHER" />
+		<result column="CONTENT2" property="content2" jdbcType="OTHER" />
+		<result column="CONTENT3" property="content3" jdbcType="OTHER" />
+		<result column="CONTENT4" property="content4" jdbcType="OTHER" />
+	</resultMap>
+
+	<sql id="Base_Column_List" >
+		ID, INFOID, NAME, PYCODE, REGTIME, SEX, AGE, NATION, BIRTHDAY, SSID, TEL, LINKTEL, 
+		COMPANY, WEIGHT, POSTCODE, PROFESSION, TABOOS, MEDICALHISTORY, DOCADVICE, DIAGNOSIS, 
+		ISEMERGENCY, GROUPCODE, STATUSCODE, APPLYDOCCODE, APPLYDOCNAME, APPLYDEPT, APPLYTIME, 
+		PERTYPE, WARD, BEDNUM, CREATECODE, CREATETIME, PAYSTATUS, PAYTIME, MODIFYCODE, MODIFYTIME, 
+		MEMO, AREACODE, UNGENTVALUE, CONTENT1, CONTENT2, CONTENT3, CONTENT4
+	</sql>
+
+	<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Object" >
+		select 
+		<include refid="Base_Column_List" />
+		from OUT_PERINFO
+		where ID = #{id,jdbcType=OTHER}
+	</select>
+
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Object" >
+		delete from OUT_PERINFO
+		where ID = #{id,jdbcType=OTHER}
+	</delete>
+
+	<insert id="insert" parameterType="com.jfsoft.model.OutPerinfo" >
+		insert into OUT_PERINFO (ID, INFOID, NAME, PYCODE, 
+			REGTIME, SEX, AGE, NATION, 
+			BIRTHDAY, SSID, TEL, LINKTEL, 
+			COMPANY, WEIGHT, POSTCODE, 
+			PROFESSION, TABOOS, MEDICALHISTORY, 
+			DOCADVICE, DIAGNOSIS, ISEMERGENCY, 
+			GROUPCODE, STATUSCODE, APPLYDOCCODE, 
+			APPLYDOCNAME, APPLYDEPT, APPLYTIME, 
+			PERTYPE, WARD, BEDNUM, CREATECODE, 
+			CREATETIME, PAYSTATUS, PAYTIME, 
+			MODIFYCODE, MODIFYTIME, MEMO, 
+			AREACODE, UNGENTVALUE, CONTENT1, 
+			CONTENT2, CONTENT3, CONTENT4
+			)
+		values (#{id,jdbcType=OTHER}, #{infoid,jdbcType=OTHER}, #{name,jdbcType=OTHER}, #{pycode,jdbcType=OTHER}, 
+			#{regtime,jdbcType=TIMESTAMP}, #{sex,jdbcType=OTHER}, #{age,jdbcType=DECIMAL}, #{nation,jdbcType=OTHER}, 
+			#{birthday,jdbcType=TIMESTAMP}, #{ssid,jdbcType=OTHER}, #{tel,jdbcType=OTHER}, #{linktel,jdbcType=OTHER}, 
+			#{company,jdbcType=OTHER}, #{weight,jdbcType=OTHER}, #{postcode,jdbcType=OTHER}, 
+			#{profession,jdbcType=OTHER}, #{taboos,jdbcType=OTHER}, #{medicalhistory,jdbcType=OTHER}, 
+			#{docadvice,jdbcType=CLOB}, #{diagnosis,jdbcType=OTHER}, #{isemergency,jdbcType=DECIMAL}, 
+			#{groupcode,jdbcType=DECIMAL}, #{statuscode,jdbcType=OTHER}, #{applydoccode,jdbcType=DECIMAL}, 
+			#{applydocname,jdbcType=OTHER}, #{applydept,jdbcType=OTHER}, #{applytime,jdbcType=TIMESTAMP}, 
+			#{pertype,jdbcType=OTHER}, #{ward,jdbcType=OTHER}, #{bednum,jdbcType=OTHER}, #{createcode,jdbcType=DECIMAL}, 
+			#{createtime,jdbcType=TIMESTAMP}, #{paystatus,jdbcType=OTHER}, #{paytime,jdbcType=TIMESTAMP}, 
+			#{modifycode,jdbcType=DECIMAL}, #{modifytime,jdbcType=TIMESTAMP}, #{memo,jdbcType=OTHER}, 
+			#{areacode,jdbcType=OTHER}, #{ungentvalue,jdbcType=OTHER}, #{content1,jdbcType=OTHER}, 
+			#{content2,jdbcType=OTHER}, #{content3,jdbcType=OTHER}, #{content4,jdbcType=OTHER}
+			)
+	</insert>
+
+	<insert id="insertSelective" parameterType="com.jfsoft.model.OutPerinfo" >
+		insert into OUT_PERINFO
+		<trim prefix="(" suffix=")" suffixOverrides="," >
+			<if test="id != null" >
+				ID,
+			</if>
+			<if test="infoid != null" >
+				INFOID,
+			</if>
+			<if test="name != null" >
+				NAME,
+			</if>
+			<if test="pycode != null" >
+				PYCODE,
+			</if>
+			<if test="regtime != null" >
+				REGTIME,
+			</if>
+			<if test="sex != null" >
+				SEX,
+			</if>
+			<if test="age != null" >
+				AGE,
+			</if>
+			<if test="nation != null" >
+				NATION,
+			</if>
+			<if test="birthday != null" >
+				BIRTHDAY,
+			</if>
+			<if test="ssid != null" >
+				SSID,
+			</if>
+			<if test="tel != null" >
+				TEL,
+			</if>
+			<if test="linktel != null" >
+				LINKTEL,
+			</if>
+			<if test="company != null" >
+				COMPANY,
+			</if>
+			<if test="weight != null" >
+				WEIGHT,
+			</if>
+			<if test="postcode != null" >
+				POSTCODE,
+			</if>
+			<if test="profession != null" >
+				PROFESSION,
+			</if>
+			<if test="taboos != null" >
+				TABOOS,
+			</if>
+			<if test="medicalhistory != null" >
+				MEDICALHISTORY,
+			</if>
+			<if test="docadvice != null" >
+				DOCADVICE,
+			</if>
+			<if test="diagnosis != null" >
+				DIAGNOSIS,
+			</if>
+			<if test="isemergency != null" >
+				ISEMERGENCY,
+			</if>
+			<if test="groupcode != null" >
+				GROUPCODE,
+			</if>
+			<if test="statuscode != null" >
+				STATUSCODE,
+			</if>
+			<if test="applydoccode != null" >
+				APPLYDOCCODE,
+			</if>
+			<if test="applydocname != null" >
+				APPLYDOCNAME,
+			</if>
+			<if test="applydept != null" >
+				APPLYDEPT,
+			</if>
+			<if test="applytime != null" >
+				APPLYTIME,
+			</if>
+			<if test="pertype != null" >
+				PERTYPE,
+			</if>
+			<if test="ward != null" >
+				WARD,
+			</if>
+			<if test="bednum != null" >
+				BEDNUM,
+			</if>
+			<if test="createcode != null" >
+				CREATECODE,
+			</if>
+			<if test="createtime != null" >
+				CREATETIME,
+			</if>
+			<if test="paystatus != null" >
+				PAYSTATUS,
+			</if>
+			<if test="paytime != null" >
+				PAYTIME,
+			</if>
+			<if test="modifycode != null" >
+				MODIFYCODE,
+			</if>
+			<if test="modifytime != null" >
+				MODIFYTIME,
+			</if>
+			<if test="memo != null" >
+				MEMO,
+			</if>
+			<if test="areacode != null" >
+				AREACODE,
+			</if>
+			<if test="ungentvalue != null" >
+				UNGENTVALUE,
+			</if>
+			<if test="content1 != null" >
+				CONTENT1,
+			</if>
+			<if test="content2 != null" >
+				CONTENT2,
+			</if>
+			<if test="content3 != null" >
+				CONTENT3,
+			</if>
+			<if test="content4 != null" >
+				CONTENT4,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides="," >
+			<if test="id != null" >
+				#{id,jdbcType=OTHER},
+			</if>
+			<if test="infoid != null" >
+				#{infoid,jdbcType=OTHER},
+			</if>
+			<if test="name != null" >
+				#{name,jdbcType=OTHER},
+			</if>
+			<if test="pycode != null" >
+				#{pycode,jdbcType=OTHER},
+			</if>
+			<if test="regtime != null" >
+				#{regtime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="sex != null" >
+				#{sex,jdbcType=OTHER},
+			</if>
+			<if test="age != null" >
+				#{age,jdbcType=DECIMAL},
+			</if>
+			<if test="nation != null" >
+				#{nation,jdbcType=OTHER},
+			</if>
+			<if test="birthday != null" >
+				#{birthday,jdbcType=TIMESTAMP},
+			</if>
+			<if test="ssid != null" >
+				#{ssid,jdbcType=OTHER},
+			</if>
+			<if test="tel != null" >
+				#{tel,jdbcType=OTHER},
+			</if>
+			<if test="linktel != null" >
+				#{linktel,jdbcType=OTHER},
+			</if>
+			<if test="company != null" >
+				#{company,jdbcType=OTHER},
+			</if>
+			<if test="weight != null" >
+				#{weight,jdbcType=OTHER},
+			</if>
+			<if test="postcode != null" >
+				#{postcode,jdbcType=OTHER},
+			</if>
+			<if test="profession != null" >
+				#{profession,jdbcType=OTHER},
+			</if>
+			<if test="taboos != null" >
+				#{taboos,jdbcType=OTHER},
+			</if>
+			<if test="medicalhistory != null" >
+				#{medicalhistory,jdbcType=OTHER},
+			</if>
+			<if test="docadvice != null" >
+				#{docadvice,jdbcType=CLOB},
+			</if>
+			<if test="diagnosis != null" >
+				#{diagnosis,jdbcType=OTHER},
+			</if>
+			<if test="isemergency != null" >
+				#{isemergency,jdbcType=DECIMAL},
+			</if>
+			<if test="groupcode != null" >
+				#{groupcode,jdbcType=DECIMAL},
+			</if>
+			<if test="statuscode != null" >
+				#{statuscode,jdbcType=OTHER},
+			</if>
+			<if test="applydoccode != null" >
+				#{applydoccode,jdbcType=DECIMAL},
+			</if>
+			<if test="applydocname != null" >
+				#{applydocname,jdbcType=OTHER},
+			</if>
+			<if test="applydept != null" >
+				#{applydept,jdbcType=OTHER},
+			</if>
+			<if test="applytime != null" >
+				#{applytime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="pertype != null" >
+				#{pertype,jdbcType=OTHER},
+			</if>
+			<if test="ward != null" >
+				#{ward,jdbcType=OTHER},
+			</if>
+			<if test="bednum != null" >
+				#{bednum,jdbcType=OTHER},
+			</if>
+			<if test="createcode != null" >
+				#{createcode,jdbcType=DECIMAL},
+			</if>
+			<if test="createtime != null" >
+				#{createtime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="paystatus != null" >
+				#{paystatus,jdbcType=OTHER},
+			</if>
+			<if test="paytime != null" >
+				#{paytime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="modifycode != null" >
+				#{modifycode,jdbcType=DECIMAL},
+			</if>
+			<if test="modifytime != null" >
+				#{modifytime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="memo != null" >
+				#{memo,jdbcType=OTHER},
+			</if>
+			<if test="areacode != null" >
+				#{areacode,jdbcType=OTHER},
+			</if>
+			<if test="ungentvalue != null" >
+				#{ungentvalue,jdbcType=OTHER},
+			</if>
+			<if test="content1 != null" >
+				#{content1,jdbcType=OTHER},
+			</if>
+			<if test="content2 != null" >
+				#{content2,jdbcType=OTHER},
+			</if>
+			<if test="content3 != null" >
+				#{content3,jdbcType=OTHER},
+			</if>
+			<if test="content4 != null" >
+				#{content4,jdbcType=OTHER},
+			</if>
+		</trim>
+	</insert>
+
+	<update id="updateByPrimaryKeySelective" parameterType="com.jfsoft.model.OutPerinfo" >
+		update OUT_PERINFO
+		<set >
+			<if test="infoid != null" >
+				INFOID = #{infoid,jdbcType=OTHER},
+			</if>
+			<if test="name != null" >
+				NAME = #{name,jdbcType=OTHER},
+			</if>
+			<if test="pycode != null" >
+				PYCODE = #{pycode,jdbcType=OTHER},
+			</if>
+			<if test="regtime != null" >
+				REGTIME = #{regtime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="sex != null" >
+				SEX = #{sex,jdbcType=OTHER},
+			</if>
+			<if test="age != null" >
+				AGE = #{age,jdbcType=DECIMAL},
+			</if>
+			<if test="nation != null" >
+				NATION = #{nation,jdbcType=OTHER},
+			</if>
+			<if test="birthday != null" >
+				BIRTHDAY = #{birthday,jdbcType=TIMESTAMP},
+			</if>
+			<if test="ssid != null" >
+				SSID = #{ssid,jdbcType=OTHER},
+			</if>
+			<if test="tel != null" >
+				TEL = #{tel,jdbcType=OTHER},
+			</if>
+			<if test="linktel != null" >
+				LINKTEL = #{linktel,jdbcType=OTHER},
+			</if>
+			<if test="company != null" >
+				COMPANY = #{company,jdbcType=OTHER},
+			</if>
+			<if test="weight != null" >
+				WEIGHT = #{weight,jdbcType=OTHER},
+			</if>
+			<if test="postcode != null" >
+				POSTCODE = #{postcode,jdbcType=OTHER},
+			</if>
+			<if test="profession != null" >
+				PROFESSION = #{profession,jdbcType=OTHER},
+			</if>
+			<if test="taboos != null" >
+				TABOOS = #{taboos,jdbcType=OTHER},
+			</if>
+			<if test="medicalhistory != null" >
+				MEDICALHISTORY = #{medicalhistory,jdbcType=OTHER},
+			</if>
+			<if test="docadvice != null" >
+				DOCADVICE = #{docadvice,jdbcType=CLOB},
+			</if>
+			<if test="diagnosis != null" >
+				DIAGNOSIS = #{diagnosis,jdbcType=OTHER},
+			</if>
+			<if test="isemergency != null" >
+				ISEMERGENCY = #{isemergency,jdbcType=DECIMAL},
+			</if>
+			<if test="groupcode != null" >
+				GROUPCODE = #{groupcode,jdbcType=DECIMAL},
+			</if>
+			<if test="statuscode != null" >
+				STATUSCODE = #{statuscode,jdbcType=OTHER},
+			</if>
+			<if test="applydoccode != null" >
+				APPLYDOCCODE = #{applydoccode,jdbcType=DECIMAL},
+			</if>
+			<if test="applydocname != null" >
+				APPLYDOCNAME = #{applydocname,jdbcType=OTHER},
+			</if>
+			<if test="applydept != null" >
+				APPLYDEPT = #{applydept,jdbcType=OTHER},
+			</if>
+			<if test="applytime != null" >
+				APPLYTIME = #{applytime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="pertype != null" >
+				PERTYPE = #{pertype,jdbcType=OTHER},
+			</if>
+			<if test="ward != null" >
+				WARD = #{ward,jdbcType=OTHER},
+			</if>
+			<if test="bednum != null" >
+				BEDNUM = #{bednum,jdbcType=OTHER},
+			</if>
+			<if test="createcode != null" >
+				CREATECODE = #{createcode,jdbcType=DECIMAL},
+			</if>
+			<if test="createtime != null" >
+				CREATETIME = #{createtime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="paystatus != null" >
+				PAYSTATUS = #{paystatus,jdbcType=OTHER},
+			</if>
+			<if test="paytime != null" >
+				PAYTIME = #{paytime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="modifycode != null" >
+				MODIFYCODE = #{modifycode,jdbcType=DECIMAL},
+			</if>
+			<if test="modifytime != null" >
+				MODIFYTIME = #{modifytime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="memo != null" >
+				MEMO = #{memo,jdbcType=OTHER},
+			</if>
+			<if test="areacode != null" >
+				AREACODE = #{areacode,jdbcType=OTHER},
+			</if>
+			<if test="ungentvalue != null" >
+				UNGENTVALUE = #{ungentvalue,jdbcType=OTHER},
+			</if>
+			<if test="content1 != null" >
+				CONTENT1 = #{content1,jdbcType=OTHER},
+			</if>
+			<if test="content2 != null" >
+				CONTENT2 = #{content2,jdbcType=OTHER},
+			</if>
+			<if test="content3 != null" >
+				CONTENT3 = #{content3,jdbcType=OTHER},
+			</if>
+			<if test="content4 != null" >
+				CONTENT4 = #{content4,jdbcType=OTHER},
+			</if>
+		</set>
+		where ID = #{id,jdbcType=OTHER}
+	</update>
+
+	<update id="updateByPrimaryKey" parameterType="com.jfsoft.model.OutPerinfo" >
+		update OUT_PERINFO
+		set INFOID = #{infoid,jdbcType=OTHER},
+			NAME = #{name,jdbcType=OTHER},
+			PYCODE = #{pycode,jdbcType=OTHER},
+			REGTIME = #{regtime,jdbcType=TIMESTAMP},
+			SEX = #{sex,jdbcType=OTHER},
+			AGE = #{age,jdbcType=DECIMAL},
+			NATION = #{nation,jdbcType=OTHER},
+			BIRTHDAY = #{birthday,jdbcType=TIMESTAMP},
+			SSID = #{ssid,jdbcType=OTHER},
+			TEL = #{tel,jdbcType=OTHER},
+			LINKTEL = #{linktel,jdbcType=OTHER},
+			COMPANY = #{company,jdbcType=OTHER},
+			WEIGHT = #{weight,jdbcType=OTHER},
+			POSTCODE = #{postcode,jdbcType=OTHER},
+			PROFESSION = #{profession,jdbcType=OTHER},
+			TABOOS = #{taboos,jdbcType=OTHER},
+			MEDICALHISTORY = #{medicalhistory,jdbcType=OTHER},
+			DOCADVICE = #{docadvice,jdbcType=CLOB},
+			DIAGNOSIS = #{diagnosis,jdbcType=OTHER},
+			ISEMERGENCY = #{isemergency,jdbcType=DECIMAL},
+			GROUPCODE = #{groupcode,jdbcType=DECIMAL},
+			STATUSCODE = #{statuscode,jdbcType=OTHER},
+			APPLYDOCCODE = #{applydoccode,jdbcType=DECIMAL},
+			APPLYDOCNAME = #{applydocname,jdbcType=OTHER},
+			APPLYDEPT = #{applydept,jdbcType=OTHER},
+			APPLYTIME = #{applytime,jdbcType=TIMESTAMP},
+			PERTYPE = #{pertype,jdbcType=OTHER},
+			WARD = #{ward,jdbcType=OTHER},
+			BEDNUM = #{bednum,jdbcType=OTHER},
+			CREATECODE = #{createcode,jdbcType=DECIMAL},
+			CREATETIME = #{createtime,jdbcType=TIMESTAMP},
+			PAYSTATUS = #{paystatus,jdbcType=OTHER},
+			PAYTIME = #{paytime,jdbcType=TIMESTAMP},
+			MODIFYCODE = #{modifycode,jdbcType=DECIMAL},
+			MODIFYTIME = #{modifytime,jdbcType=TIMESTAMP},
+			MEMO = #{memo,jdbcType=OTHER},
+			AREACODE = #{areacode,jdbcType=OTHER},
+			UNGENTVALUE = #{ungentvalue,jdbcType=OTHER},
+			CONTENT1 = #{content1,jdbcType=OTHER},
+			CONTENT2 = #{content2,jdbcType=OTHER},
+			CONTENT3 = #{content3,jdbcType=OTHER},
+			CONTENT4 = #{content4,jdbcType=OTHER}
+		where ID = #{id,jdbcType=OTHER}
+	</update>
+
+</mapper>

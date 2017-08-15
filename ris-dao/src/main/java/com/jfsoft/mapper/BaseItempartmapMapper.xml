@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jfsoft.mapper.BaseItempartmapMapper" >
+	<resultMap id="BaseResultMap" type="com.jfsoft.model.BaseItempartmap" >
+		<id column="ID" property="id" jdbcType="OTHER" />
+		<result column="ITEMCODE" property="itemcode" jdbcType="DECIMAL" />
+		<result column="PARTCODE" property="partcode" jdbcType="DECIMAL" />
+		<result column="AREACODE" property="areacode" jdbcType="OTHER" />
+	</resultMap>
+
+	<sql id="Base_Column_List" >
+		ID, ITEMCODE, PARTCODE, AREACODE
+	</sql>
+
+	<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Object" >
+		select 
+		<include refid="Base_Column_List" />
+		from BASE_ITEMPARTMAP
+		where ID = #{id,jdbcType=OTHER}
+	</select>
+
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Object" >
+		delete from BASE_ITEMPARTMAP
+		where ID = #{id,jdbcType=OTHER}
+	</delete>
+
+	<insert id="insert" parameterType="com.jfsoft.model.BaseItempartmap" >
+		insert into BASE_ITEMPARTMAP (ID, ITEMCODE, PARTCODE, 
+			AREACODE)
+		values (#{id,jdbcType=OTHER}, #{itemcode,jdbcType=DECIMAL}, #{partcode,jdbcType=DECIMAL}, 
+			#{areacode,jdbcType=OTHER})
+	</insert>
+
+	<insert id="insertSelective" parameterType="com.jfsoft.model.BaseItempartmap" >
+		insert into BASE_ITEMPARTMAP
+		<trim prefix="(" suffix=")" suffixOverrides="," >
+			<if test="id != null" >
+				ID,
+			</if>
+			<if test="itemcode != null" >
+				ITEMCODE,
+			</if>
+			<if test="partcode != null" >
+				PARTCODE,
+			</if>
+			<if test="areacode != null" >
+				AREACODE,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides="," >
+			<if test="id != null" >
+				#{id,jdbcType=OTHER},
+			</if>
+			<if test="itemcode != null" >
+				#{itemcode,jdbcType=DECIMAL},
+			</if>
+			<if test="partcode != null" >
+				#{partcode,jdbcType=DECIMAL},
+			</if>
+			<if test="areacode != null" >
+				#{areacode,jdbcType=OTHER},
+			</if>
+		</trim>
+	</insert>
+
+	<update id="updateByPrimaryKeySelective" parameterType="com.jfsoft.model.BaseItempartmap" >
+		update BASE_ITEMPARTMAP
+		<set >
+			<if test="itemcode != null" >
+				ITEMCODE = #{itemcode,jdbcType=DECIMAL},
+			</if>
+			<if test="partcode != null" >
+				PARTCODE = #{partcode,jdbcType=DECIMAL},
+			</if>
+			<if test="areacode != null" >
+				AREACODE = #{areacode,jdbcType=OTHER},
+			</if>
+		</set>
+		where ID = #{id,jdbcType=OTHER}
+	</update>
+
+	<update id="updateByPrimaryKey" parameterType="com.jfsoft.model.BaseItempartmap" >
+		update BASE_ITEMPARTMAP
+		set ITEMCODE = #{itemcode,jdbcType=DECIMAL},
+			PARTCODE = #{partcode,jdbcType=DECIMAL},
+			AREACODE = #{areacode,jdbcType=OTHER}
+		where ID = #{id,jdbcType=OTHER}
+	</update>
+
+</mapper>

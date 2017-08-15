@@ -1,5 +1,5 @@
 /**
- * BaseCheckpart.java
+ * BaseEquipment.java
  * Copyright© 2017 北京金风易通科技有限公司
  * All rights reserved.
  * -----------------------------------------------
@@ -15,7 +15,7 @@ import java.math.BigDecimal;
  * @author wanggang
  * @version 1.0 2017-08-15
  */
-public class BaseCheckpart {
+public class BaseEquipment {
 
     /**
      * GUID
@@ -23,12 +23,12 @@ public class BaseCheckpart {
     private Object id;
 
     /**
-     * 部位编号
+     * 类型编号
      */
     private BigDecimal code;
 
     /**
-     * 部位名称
+     * 类型名称
      */
     private Object name;
 
@@ -36,11 +36,6 @@ public class BaseCheckpart {
      * 拼音码
      */
     private Object pycode;
-
-    /**
-     * 适用性别(0:不限,1:男,2:女)
-     */
-    private Object adaptsex;
 
     /**
      * 是否使用(0:否,1:是)
@@ -92,14 +87,6 @@ public class BaseCheckpart {
 
     public void setPycode(Object pycode) {
         this.pycode = pycode;
-    }
-
-    public Object getAdaptsex() {
-        return adaptsex;
-    }
-
-    public void setAdaptsex(Object adaptsex) {
-        this.adaptsex = adaptsex;
     }
 
     public Short getIsuse() {

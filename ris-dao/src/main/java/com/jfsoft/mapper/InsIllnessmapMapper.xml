@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jfsoft.mapper.InsIllnessmapMapper" >
+	<resultMap id="BaseResultMap" type="com.jfsoft.model.InsIllnessmap" >
+		<id column="ID" property="id" jdbcType="OTHER" />
+		<result column="CHECKNO" property="checkno" jdbcType="DECIMAL" />
+		<result column="ILLNESSCODE" property="illnesscode" jdbcType="DECIMAL" />
+		<result column="AREACODE" property="areacode" jdbcType="OTHER" />
+	</resultMap>
+
+	<sql id="Base_Column_List" >
+		ID, CHECKNO, ILLNESSCODE, AREACODE
+	</sql>
+
+	<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Object" >
+		select 
+		<include refid="Base_Column_List" />
+		from INS_ILLNESSMAP
+		where ID = #{id,jdbcType=OTHER}
+	</select>
+
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Object" >
+		delete from INS_ILLNESSMAP
+		where ID = #{id,jdbcType=OTHER}
+	</delete>
+
+	<insert id="insert" parameterType="com.jfsoft.model.InsIllnessmap" >
+		insert into INS_ILLNESSMAP (ID, CHECKNO, ILLNESSCODE, 
+			AREACODE)
+		values (#{id,jdbcType=OTHER}, #{checkno,jdbcType=DECIMAL}, #{illnesscode,jdbcType=DECIMAL}, 
+			#{areacode,jdbcType=OTHER})
+	</insert>
+
+	<insert id="insertSelective" parameterType="com.jfsoft.model.InsIllnessmap" >
+		insert into INS_ILLNESSMAP
+		<trim prefix="(" suffix=")" suffixOverrides="," >
+			<if test="id != null" >
+				ID,
+			</if>
+			<if test="checkno != null" >
+				CHECKNO,
+			</if>
+			<if test="illnesscode != null" >
+				ILLNESSCODE,
+			</if>
+			<if test="areacode != null" >
+				AREACODE,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides="," >
+			<if test="id != null" >
+				#{id,jdbcType=OTHER},
+			</if>
+			<if test="checkno != null" >
+				#{checkno,jdbcType=DECIMAL},
+			</if>
+			<if test="illnesscode != null" >
+				#{illnesscode,jdbcType=DECIMAL},
+			</if>
+			<if test="areacode != null" >
+				#{areacode,jdbcType=OTHER},
+			</if>
+		</trim>
+	</insert>
+
+	<update id="updateByPrimaryKeySelective" parameterType="com.jfsoft.model.InsIllnessmap" >
+		update INS_ILLNESSMAP
+		<set >
+			<if test="checkno != null" >
+				CHECKNO = #{checkno,jdbcType=DECIMAL},
+			</if>
+			<if test="illnesscode != null" >
+				ILLNESSCODE = #{illnesscode,jdbcType=DECIMAL},
+			</if>
+			<if test="areacode != null" >
+				AREACODE = #{areacode,jdbcType=OTHER},
+			</if>
+		</set>
+		where ID = #{id,jdbcType=OTHER}
+	</update>
+
+	<update id="updateByPrimaryKey" parameterType="com.jfsoft.model.InsIllnessmap" >
+		update INS_ILLNESSMAP
+		set CHECKNO = #{checkno,jdbcType=DECIMAL},
+			ILLNESSCODE = #{illnesscode,jdbcType=DECIMAL},
+			AREACODE = #{areacode,jdbcType=OTHER}
+		where ID = #{id,jdbcType=OTHER}
+	</update>
+
+</mapper>

@@ -1,5 +1,5 @@
 /**
- * BaseCheckpart.java
+ * BaseArea.java
  * Copyright© 2017 北京金风易通科技有限公司
  * All rights reserved.
  * -----------------------------------------------
@@ -15,7 +15,7 @@ import java.math.BigDecimal;
  * @author wanggang
  * @version 1.0 2017-08-15
  */
-public class BaseCheckpart {
+public class BaseArea {
 
     /**
      * GUID
@@ -23,29 +23,19 @@ public class BaseCheckpart {
     private Object id;
 
     /**
-     * 部位编号
+     * 区域编号
      */
-    private BigDecimal code;
+    private Object code;
 
     /**
-     * 部位名称
+     * 区域名称
      */
     private Object name;
 
     /**
-     * 拼音码
+     * 区域拼音码
      */
     private Object pycode;
-
-    /**
-     * 适用性别(0:不限,1:男,2:女)
-     */
-    private Object adaptsex;
-
-    /**
-     * 是否使用(0:否,1:是)
-     */
-    private Short isuse;
 
     /**
      * 排序号
@@ -58,9 +48,9 @@ public class BaseCheckpart {
     private Object memo;
 
     /**
-     * 所属区域号
+     * 外部数据标识
      */
-    private Object areacode;
+    private Object hiscode;
 
     public Object getId() {
         return id;
@@ -70,11 +60,11 @@ public class BaseCheckpart {
         this.id = id;
     }
 
-    public BigDecimal getCode() {
+    public Object getCode() {
         return code;
     }
 
-    public void setCode(BigDecimal code) {
+    public void setCode(Object code) {
         this.code = code;
     }
 
@@ -94,22 +84,6 @@ public class BaseCheckpart {
         this.pycode = pycode;
     }
 
-    public Object getAdaptsex() {
-        return adaptsex;
-    }
-
-    public void setAdaptsex(Object adaptsex) {
-        this.adaptsex = adaptsex;
-    }
-
-    public Short getIsuse() {
-        return isuse;
-    }
-
-    public void setIsuse(Short isuse) {
-        this.isuse = isuse;
-    }
-
     public BigDecimal getSortnum() {
         return sortnum;
     }
@@ -126,12 +100,12 @@ public class BaseCheckpart {
         this.memo = memo;
     }
 
-    public Object getAreacode() {
-        return areacode;
+    public Object getHiscode() {
+        return hiscode;
     }
 
-    public void setAreacode(Object areacode) {
-        this.areacode = areacode;
+    public void setHiscode(Object hiscode) {
+        this.hiscode = hiscode;
     }
 
 }

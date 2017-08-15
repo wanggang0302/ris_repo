@@ -1,5 +1,5 @@
 /**
- * BaseCheckpart.java
+ * SysActor.java
  * Copyright© 2017 北京金风易通科技有限公司
  * All rights reserved.
  * -----------------------------------------------
@@ -8,6 +8,7 @@
 package com.jfsoft.model;
 
 import java.math.BigDecimal;
+import java.util.Date;
 
 /**
  * null
@@ -15,37 +16,42 @@ import java.math.BigDecimal;
  * @author wanggang
  * @version 1.0 2017-08-15
  */
-public class BaseCheckpart {
+public class SysActor {
 
     /**
-     * GUID
+     * GUID主键
      */
     private Object id;
 
     /**
-     * 部位编号
+     * 编号(业务唯一)
      */
     private BigDecimal code;
 
     /**
-     * 部位名称
+     * 角色名称
      */
     private Object name;
 
     /**
-     * 拼音码
+     * 创建人code
      */
-    private Object pycode;
+    private BigDecimal createcode;
 
     /**
-     * 适用性别(0:不限,1:男,2:女)
+     * 创建时间
      */
-    private Object adaptsex;
+    private Date createtime;
 
     /**
-     * 是否使用(0:否,1:是)
+     * 修改人code
      */
-    private Short isuse;
+    private BigDecimal modifycode;
+
+    /**
+     * 修改时间
+     */
+    private Date modifytime;
 
     /**
      * 排序号
@@ -58,9 +64,13 @@ public class BaseCheckpart {
     private Object memo;
 
     /**
-     * 所属区域号
+     * 区域编码
      */
     private Object areacode;
+
+    /**
+     */
+    private Object isuse;
 
     public Object getId() {
         return id;
@@ -86,28 +96,36 @@ public class BaseCheckpart {
         this.name = name;
     }
 
-    public Object getPycode() {
-        return pycode;
+    public BigDecimal getCreatecode() {
+        return createcode;
     }
 
-    public void setPycode(Object pycode) {
-        this.pycode = pycode;
+    public void setCreatecode(BigDecimal createcode) {
+        this.createcode = createcode;
     }
 
-    public Object getAdaptsex() {
-        return adaptsex;
+    public Date getCreatetime() {
+        return createtime;
     }
 
-    public void setAdaptsex(Object adaptsex) {
-        this.adaptsex = adaptsex;
+    public void setCreatetime(Date createtime) {
+        this.createtime = createtime;
     }
 
-    public Short getIsuse() {
-        return isuse;
+    public BigDecimal getModifycode() {
+        return modifycode;
     }
 
-    public void setIsuse(Short isuse) {
-        this.isuse = isuse;
+    public void setModifycode(BigDecimal modifycode) {
+        this.modifycode = modifycode;
+    }
+
+    public Date getModifytime() {
+        return modifytime;
+    }
+
+    public void setModifytime(Date modifytime) {
+        this.modifytime = modifytime;
     }
 
     public BigDecimal getSortnum() {
@@ -132,6 +150,14 @@ public class BaseCheckpart {
 
     public void setAreacode(Object areacode) {
         this.areacode = areacode;
+    }
+
+    public Object getIsuse() {
+        return isuse;
+    }
+
+    public void setIsuse(Object isuse) {
+        this.isuse = isuse;
     }
 
 }

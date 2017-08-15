@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.jfsoft.mapper.BaseCheckpartMapper" >
-	<resultMap id="BaseResultMap" type="com.jfsoft.model.BaseCheckpart" >
+<mapper namespace="com.jfsoft.mapper.BaseCheckmethodMapper" >
+	<resultMap id="BaseResultMap" type="com.jfsoft.model.BaseCheckmethod" >
 		<id column="ID" property="id" jdbcType="OTHER" />
 		<result column="CODE" property="code" jdbcType="DECIMAL" />
 		<result column="NAME" property="name" jdbcType="OTHER" />
@@ -20,17 +20,17 @@
 	<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Object" >
 		select 
 		<include refid="Base_Column_List" />
-		from BASE_CHECKPART
+		from BASE_CHECKMETHOD
 		where ID = #{id,jdbcType=OTHER}
 	</select>
 
 	<delete id="deleteByPrimaryKey" parameterType="java.lang.Object" >
-		delete from BASE_CHECKPART
+		delete from BASE_CHECKMETHOD
 		where ID = #{id,jdbcType=OTHER}
 	</delete>
 
-	<insert id="insert" parameterType="com.jfsoft.model.BaseCheckpart" >
-		insert into BASE_CHECKPART (ID, CODE, NAME, PYCODE, 
+	<insert id="insert" parameterType="com.jfsoft.model.BaseCheckmethod" >
+		insert into BASE_CHECKMETHOD (ID, CODE, NAME, PYCODE, 
 			ADAPTSEX, ISUSE, SORTNUM, 
 			MEMO, AREACODE)
 		values (#{id,jdbcType=OTHER}, #{code,jdbcType=DECIMAL}, #{name,jdbcType=OTHER}, #{pycode,jdbcType=OTHER}, 
@@ -38,8 +38,8 @@
 			#{memo,jdbcType=OTHER}, #{areacode,jdbcType=OTHER})
 	</insert>
 
-	<insert id="insertSelective" parameterType="com.jfsoft.model.BaseCheckpart" >
-		insert into BASE_CHECKPART
+	<insert id="insertSelective" parameterType="com.jfsoft.model.BaseCheckmethod" >
+		insert into BASE_CHECKMETHOD
 		<trim prefix="(" suffix=")" suffixOverrides="," >
 			<if test="id != null" >
 				ID,
@@ -100,8 +100,8 @@
 		</trim>
 	</insert>
 
-	<update id="updateByPrimaryKeySelective" parameterType="com.jfsoft.model.BaseCheckpart" >
-		update BASE_CHECKPART
+	<update id="updateByPrimaryKeySelective" parameterType="com.jfsoft.model.BaseCheckmethod" >
+		update BASE_CHECKMETHOD
 		<set >
 			<if test="code != null" >
 				CODE = #{code,jdbcType=DECIMAL},
@@ -131,8 +131,8 @@
 		where ID = #{id,jdbcType=OTHER}
 	</update>
 
-	<update id="updateByPrimaryKey" parameterType="com.jfsoft.model.BaseCheckpart" >
-		update BASE_CHECKPART
+	<update id="updateByPrimaryKey" parameterType="com.jfsoft.model.BaseCheckmethod" >
+		update BASE_CHECKMETHOD
 		set CODE = #{code,jdbcType=DECIMAL},
 			NAME = #{name,jdbcType=OTHER},
 			PYCODE = #{pycode,jdbcType=OTHER},

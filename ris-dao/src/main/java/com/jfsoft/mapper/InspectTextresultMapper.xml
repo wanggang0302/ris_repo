@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jfsoft.mapper.InspectTextresultMapper" >
+	<resultMap id="BaseResultMap" type="com.jfsoft.model.InspectTextresult" >
+		<id column="ID" property="id" jdbcType="OTHER" />
+		<result column="INSPECTNO" property="inspectno" jdbcType="DECIMAL" />
+		<result column="INSPECTRESULT" property="inspectresult" jdbcType="CLOB" />
+		<result column="INSPECTDESC" property="inspectdesc" jdbcType="CLOB" />
+		<result column="CHECKDOCCODE" property="checkdoccode" jdbcType="DECIMAL" />
+		<result column="CHECKDOCNAME" property="checkdocname" jdbcType="OTHER" />
+		<result column="CHECKTIME" property="checktime" jdbcType="TIMESTAMP" />
+		<result column="AUDITDOCCODE" property="auditdoccode" jdbcType="DECIMAL" />
+		<result column="AUDITDOCNAME" property="auditdocname" jdbcType="OTHER" />
+		<result column="AUDITTIME" property="audittime" jdbcType="TIMESTAMP" />
+		<result column="REPORTNATURE" property="reportnature" jdbcType="OTHER" />
+		<result column="CREATECODE" property="createcode" jdbcType="DECIMAL" />
+		<result column="CREATETIME" property="createtime" jdbcType="TIMESTAMP" />
+		<result column="MODIFYCODE" property="modifycode" jdbcType="DECIMAL" />
+		<result column="MODIFYTIME" property="modifytime" jdbcType="TIMESTAMP" />
+		<result column="SORTNUM" property="sortnum" jdbcType="DECIMAL" />
+		<result column="MEMO" property="memo" jdbcType="OTHER" />
+		<result column="AREACODE" property="areacode" jdbcType="OTHER" />
+	</resultMap>
+
+	<sql id="Base_Column_List" >
+		ID, INSPECTNO, INSPECTRESULT, INSPECTDESC, CHECKDOCCODE, CHECKDOCNAME, CHECKTIME, 
+		AUDITDOCCODE, AUDITDOCNAME, AUDITTIME, REPORTNATURE, CREATECODE, CREATETIME, MODIFYCODE, 
+		MODIFYTIME, SORTNUM, MEMO, AREACODE
+	</sql>
+
+	<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Object" >
+		select 
+		<include refid="Base_Column_List" />
+		from INSPECT_TEXTRESULT
+		where ID = #{id,jdbcType=OTHER}
+	</select>
+
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Object" >
+		delete from INSPECT_TEXTRESULT
+		where ID = #{id,jdbcType=OTHER}
+	</delete>
+
+	<insert id="insert" parameterType="com.jfsoft.model.InspectTextresult" >
+		insert into INSPECT_TEXTRESULT (ID, INSPECTNO, INSPECTRESULT, 
+			INSPECTDESC, CHECKDOCCODE, CHECKDOCNAME, 
+			CHECKTIME, AUDITDOCCODE, AUDITDOCNAME, 
+			AUDITTIME, REPORTNATURE, CREATECODE, 
+			CREATETIME, MODIFYCODE, MODIFYTIME, 
+			SORTNUM, MEMO, AREACODE)
+		values (#{id,jdbcType=OTHER}, #{inspectno,jdbcType=DECIMAL}, #{inspectresult,jdbcType=CLOB}, 
+			#{inspectdesc,jdbcType=CLOB}, #{checkdoccode,jdbcType=DECIMAL}, #{checkdocname,jdbcType=OTHER}, 
+			#{checktime,jdbcType=TIMESTAMP}, #{auditdoccode,jdbcType=DECIMAL}, #{auditdocname,jdbcType=OTHER}, 
+			#{audittime,jdbcType=TIMESTAMP}, #{reportnature,jdbcType=OTHER}, #{createcode,jdbcType=DECIMAL}, 
+			#{createtime,jdbcType=TIMESTAMP}, #{modifycode,jdbcType=DECIMAL}, #{modifytime,jdbcType=TIMESTAMP}, 
+			#{sortnum,jdbcType=DECIMAL}, #{memo,jdbcType=OTHER}, #{areacode,jdbcType=OTHER})
+	</insert>
+
+	<insert id="insertSelective" parameterType="com.jfsoft.model.InspectTextresult" >
+		insert into INSPECT_TEXTRESULT
+		<trim prefix="(" suffix=")" suffixOverrides="," >
+			<if test="id != null" >
+				ID,
+			</if>
+			<if test="inspectno != null" >
+				INSPECTNO,
+			</if>
+			<if test="inspectresult != null" >
+				INSPECTRESULT,
+			</if>
+			<if test="inspectdesc != null" >
+				INSPECTDESC,
+			</if>
+			<if test="checkdoccode != null" >
+				CHECKDOCCODE,
+			</if>
+			<if test="checkdocname != null" >
+				CHECKDOCNAME,
+			</if>
+			<if test="checktime != null" >
+				CHECKTIME,
+			</if>
+			<if test="auditdoccode != null" >
+				AUDITDOCCODE,
+			</if>
+			<if test="auditdocname != null" >
+				AUDITDOCNAME,
+			</if>
+			<if test="audittime != null" >
+				AUDITTIME,
+			</if>
+			<if test="reportnature != null" >
+				REPORTNATURE,
+			</if>
+			<if test="createcode != null" >
+				CREATECODE,
+			</if>
+			<if test="createtime != null" >
+				CREATETIME,
+			</if>
+			<if test="modifycode != null" >
+				MODIFYCODE,
+			</if>
+			<if test="modifytime != null" >
+				MODIFYTIME,
+			</if>
+			<if test="sortnum != null" >
+				SORTNUM,
+			</if>
+			<if test="memo != null" >
+				MEMO,
+			</if>
+			<if test="areacode != null" >
+				AREACODE,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides="," >
+			<if test="id != null" >
+				#{id,jdbcType=OTHER},
+			</if>
+			<if test="inspectno != null" >
+				#{inspectno,jdbcType=DECIMAL},
+			</if>
+			<if test="inspectresult != null" >
+				#{inspectresult,jdbcType=CLOB},
+			</if>
+			<if test="inspectdesc != null" >
+				#{inspectdesc,jdbcType=CLOB},
+			</if>
+			<if test="checkdoccode != null" >
+				#{checkdoccode,jdbcType=DECIMAL},
+			</if>
+			<if test="checkdocname != null" >
+				#{checkdocname,jdbcType=OTHER},
+			</if>
+			<if test="checktime != null" >
+				#{checktime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="auditdoccode != null" >
+				#{auditdoccode,jdbcType=DECIMAL},
+			</if>
+			<if test="auditdocname != null" >
+				#{auditdocname,jdbcType=OTHER},
+			</if>
+			<if test="audittime != null" >
+				#{audittime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="reportnature != null" >
+				#{reportnature,jdbcType=OTHER},
+			</if>
+			<if test="createcode != null" >
+				#{createcode,jdbcType=DECIMAL},
+			</if>
+			<if test="createtime != null" >
+				#{createtime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="modifycode != null" >
+				#{modifycode,jdbcType=DECIMAL},
+			</if>
+			<if test="modifytime != null" >
+				#{modifytime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="sortnum != null" >
+				#{sortnum,jdbcType=DECIMAL},
+			</if>
+			<if test="memo != null" >
+				#{memo,jdbcType=OTHER},
+			</if>
+			<if test="areacode != null" >
+				#{areacode,jdbcType=OTHER},
+			</if>
+		</trim>
+	</insert>
+
+	<update id="updateByPrimaryKeySelective" parameterType="com.jfsoft.model.InspectTextresult" >
+		update INSPECT_TEXTRESULT
+		<set >
+			<if test="inspectno != null" >
+				INSPECTNO = #{inspectno,jdbcType=DECIMAL},
+			</if>
+			<if test="inspectresult != null" >
+				INSPECTRESULT = #{inspectresult,jdbcType=CLOB},
+			</if>
+			<if test="inspectdesc != null" >
+				INSPECTDESC = #{inspectdesc,jdbcType=CLOB},
+			</if>
+			<if test="checkdoccode != null" >
+				CHECKDOCCODE = #{checkdoccode,jdbcType=DECIMAL},
+			</if>
+			<if test="checkdocname != null" >
+				CHECKDOCNAME = #{checkdocname,jdbcType=OTHER},
+			</if>
+			<if test="checktime != null" >
+				CHECKTIME = #{checktime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="auditdoccode != null" >
+				AUDITDOCCODE = #{auditdoccode,jdbcType=DECIMAL},
+			</if>
+			<if test="auditdocname != null" >
+				AUDITDOCNAME = #{auditdocname,jdbcType=OTHER},
+			</if>
+			<if test="audittime != null" >
+				AUDITTIME = #{audittime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="reportnature != null" >
+				REPORTNATURE = #{reportnature,jdbcType=OTHER},
+			</if>
+			<if test="createcode != null" >
+				CREATECODE = #{createcode,jdbcType=DECIMAL},
+			</if>
+			<if test="createtime != null" >
+				CREATETIME = #{createtime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="modifycode != null" >
+				MODIFYCODE = #{modifycode,jdbcType=DECIMAL},
+			</if>
+			<if test="modifytime != null" >
+				MODIFYTIME = #{modifytime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="sortnum != null" >
+				SORTNUM = #{sortnum,jdbcType=DECIMAL},
+			</if>
+			<if test="memo != null" >
+				MEMO = #{memo,jdbcType=OTHER},
+			</if>
+			<if test="areacode != null" >
+				AREACODE = #{areacode,jdbcType=OTHER},
+			</if>
+		</set>
+		where ID = #{id,jdbcType=OTHER}
+	</update>
+
+	<update id="updateByPrimaryKey" parameterType="com.jfsoft.model.InspectTextresult" >
+		update INSPECT_TEXTRESULT
+		set INSPECTNO = #{inspectno,jdbcType=DECIMAL},
+			INSPECTRESULT = #{inspectresult,jdbcType=CLOB},
+			INSPECTDESC = #{inspectdesc,jdbcType=CLOB},
+			CHECKDOCCODE = #{checkdoccode,jdbcType=DECIMAL},
+			CHECKDOCNAME = #{checkdocname,jdbcType=OTHER},
+			CHECKTIME = #{checktime,jdbcType=TIMESTAMP},
+			AUDITDOCCODE = #{auditdoccode,jdbcType=DECIMAL},
+			AUDITDOCNAME = #{auditdocname,jdbcType=OTHER},
+			AUDITTIME = #{audittime,jdbcType=TIMESTAMP},
+			REPORTNATURE = #{reportnature,jdbcType=OTHER},
+			CREATECODE = #{createcode,jdbcType=DECIMAL},
+			CREATETIME = #{createtime,jdbcType=TIMESTAMP},
+			MODIFYCODE = #{modifycode,jdbcType=DECIMAL},
+			MODIFYTIME = #{modifytime,jdbcType=TIMESTAMP},
+			SORTNUM = #{sortnum,jdbcType=DECIMAL},
+			MEMO = #{memo,jdbcType=OTHER},
+			AREACODE = #{areacode,jdbcType=OTHER}
+		where ID = #{id,jdbcType=OTHER}
+	</update>
+
+</mapper>

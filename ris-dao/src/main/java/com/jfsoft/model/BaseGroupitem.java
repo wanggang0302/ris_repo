@@ -1,5 +1,5 @@
 /**
- * BaseCheckpart.java
+ * BaseGroupitem.java
  * Copyright© 2017 北京金风易通科技有限公司
  * All rights reserved.
  * -----------------------------------------------
@@ -15,7 +15,7 @@ import java.math.BigDecimal;
  * @author wanggang
  * @version 1.0 2017-08-15
  */
-public class BaseCheckpart {
+public class BaseGroupitem {
 
     /**
      * GUID
@@ -23,17 +23,27 @@ public class BaseCheckpart {
     private Object id;
 
     /**
-     * 部位编号
+     * 收费项目编号
      */
     private BigDecimal code;
 
     /**
-     * 部位名称
+     * 收费项目名称
      */
     private Object name;
 
     /**
-     * 拼音码
+     * 设备类型code
+     */
+    private BigDecimal typecode;
+
+    /**
+     * 检查方法code
+     */
+    private Object methodcode;
+
+    /**
+     * 收费项目拼音码
      */
     private Object pycode;
 
@@ -84,6 +94,22 @@ public class BaseCheckpart {
 
     public void setName(Object name) {
         this.name = name;
+    }
+
+    public BigDecimal getTypecode() {
+        return typecode;
+    }
+
+    public void setTypecode(BigDecimal typecode) {
+        this.typecode = typecode;
+    }
+
+    public Object getMethodcode() {
+        return methodcode;
+    }
+
+    public void setMethodcode(Object methodcode) {
+        this.methodcode = methodcode;
     }
 
     public Object getPycode() {
