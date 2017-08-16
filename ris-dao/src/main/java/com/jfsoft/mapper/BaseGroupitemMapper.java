@@ -9,6 +9,7 @@ package com.jfsoft.mapper;
 
 import com.jfsoft.model.BaseGroupitem;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 public interface BaseGroupitemMapper {
@@ -49,4 +50,6 @@ public interface BaseGroupitemMapper {
     int updateByPrimaryKey(BaseGroupitem record);
 
     List<BaseGroupitem> getGroupList();
+
+    BigDecimal getMaxCode();
 }

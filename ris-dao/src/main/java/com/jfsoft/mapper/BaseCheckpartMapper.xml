@@ -143,5 +143,15 @@
 			AREACODE = #{areacode,jdbcType=VARCHAR}
 		where ID = #{id,jdbcType=VARCHAR}
 	</update>
+	<select id="getCheckpartList" resultMap="BaseResultMap">
+		select
+		<include refid="Base_Column_List" />
+		from BASE_CHECKPART
+
+	</select>
+	<select id="getMaxCode" resultType="java.math.BigDecimal">
+		select nvl2(max(code),max(code),20000)from BASE_CHECKPART
+
+	</select>
 
 </mapper>

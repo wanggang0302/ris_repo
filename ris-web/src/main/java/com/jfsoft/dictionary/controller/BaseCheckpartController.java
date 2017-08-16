@@ -1,12 +1,25 @@
 package com.jfsoft.dictionary.controller;
 
+import com.alibaba.fastjson.JSON;
 import com.base.BaseController;
+import com.jfsoft.checkpart.service.ICheckpartService;
+import com.jfsoft.model.BaseCheckpart;
+import com.jfsoft.model.BaseTemplate;
+import com.jfsoft.model.SysLog;
+import com.jfsoft.utils.Constants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import javax.servlet.http.HttpSession;
+import java.math.BigDecimal;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * 检查部位Controller
@@ -18,30 +31,57 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class BaseCheckpartController extends BaseController {
 
     private final Logger logger = LoggerFactory.getLogger(getClass());
+    @Autowired
+    private ICheckpartService checkpartService;
 
     /**
      * 获得列表
      * @return
      */
     @RequestMapping
-    public String getList() {
+    public String getCheckpartList() {
 
-        logger.debug("Get checkpart list of page!");
+        Map<String, Object> map = new HashMap<String, Object>();
+        List<BaseCheckpart> baseCheckpartList = null;
+        try {
+            baseCheckpartList = checkpartService.getCheckpartList();
+            map.put("status",Constants.RETURN_STATUS_SUCCESS);
+            map.put("baseCheckpartList",baseCheckpartList);
 
-        return "/checkpart/list";
+            SysLog sysLog = new SysLog();
+            logger.info("日志输出测试");
+        } catch (Exception e) {
+            e.printStackTrace();
+            map.put("status",Constants.RETURN_STATUS_FAILURE);
+        }
+
+        return JSON.toJSONString(map);
+//        logger.debug("Get checkpart list of page!");
+//
+//        return "/checkpart/list";
     }
 
     /**
      * 查看详情
-     * @param checkpartId
+     * @param id
      * @return
      */
-    @RequestMapping("/{checkpartId}")
-    public String getUserList(@PathVariable int checkpartId) {
+    @RequestMapping("/checkpartDetail/{id}")
+    public String getUserList(@PathVariable String id) {
+        Map<String, Object> map = new HashMap<String, Object>();
+        try {
+            BaseCheckpart baseCheckpart =checkpartService.checkpartDetail(id);
+            map.put("baseCheckpart",baseCheckpart);
+            map.put("status", Constants.RETURN_STATUS_SUCCESS);
+            logger.info("Get checkpart detail by id:{}.", id);
+        } catch (Exception e) {
+            e.printStackTrace();
+            map.put("status",Constants.RETURN_STATUS_FAILURE);
+        }
+        return JSON.toJSONString(map);
 
-        logger.info("Get checkpart detail by id:{}.", checkpartId);
 
-        return "/checkpart/checkpartDetail";
+ //       return "/checkpart/checkpartDetail";
     }
 
     /**
@@ -60,12 +100,20 @@ public class BaseCheckpartController extends BaseController {
      * 新增
      * @return
      */
-    @RequestMapping(method = RequestMethod.POST)
-    public String insert() {
+    @RequestMapping(value="/insert" , method = RequestMethod.POST)
+    public String insert(BaseCheckpart baseCheckpart) {
+        Map<String, Object> map = new HashMap<String, Object>();
+        try {
+            map=checkpartService.insert(baseCheckpart);
 
-        logger.debug("Add one checkpart!");
+        } catch (Exception e) {
+            e.printStackTrace();
 
-        return "/checkparts";
+        }
+        return JSON.toJSONString(map);
+//        logger.debug("Add one checkpart!");
+//
+//        return "/checkparts";
     }
 
     /**
@@ -84,23 +132,38 @@ public class BaseCheckpartController extends BaseController {
      * 修改
      * @return
      */
-    @RequestMapping(method = RequestMethod.PUT)
-    public String update() {
+    @RequestMapping(value="/update",method = RequestMethod.PUT)
+    public String update(HttpSession session,BaseCheckpart baseCheckpart) {
+        Map<String,Object> map =new HashMap<String,Object>();
 
-        logger.debug("Update checkpart by id:{}.");
-
-        return "/checkparts";
+        try {
+            map=checkpartService.update(baseCheckpart);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return JSON.toJSONString(map);
+//        logger.debug("Update checkpart by id:{}.");
+//
+//        return "/checkparts";
     }
 
     /**
      * 删除
      */
-    @RequestMapping(value = "/{checkpartId}", method = RequestMethod.DELETE)
-    public String delete(@PathVariable int checkpartId) {
+    @RequestMapping(value = "delete/{id}", method = RequestMethod.DELETE)
+    public String delete(@PathVariable String id) {
 
-        logger.debug("Delete checkpart by id:{}.", checkpartId);
+        Map<String,Object> map = new HashMap<String,Object>();
 
-        return "/checkparts";
+        try {
+            map=checkpartService.delete(id);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+            return  JSON.toJSONString(map);
+//        logger.debug("Delete checkpart by id:{}.", id);
+//
+//        return "/checkparts";
     }
 
 }

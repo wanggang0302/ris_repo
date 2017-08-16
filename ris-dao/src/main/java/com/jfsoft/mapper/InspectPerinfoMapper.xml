@@ -609,5 +609,27 @@
 		from INSPECT_PERINFO
 
 	</select>
+	<select id="getPerinfoDetail" parameterType="java.util.Map" resultMap="BaseResultMap">
+		select
+		<include refid="Base_Column_List" />
+		from INSPECT_PERINFO
+		WHERE
+		1=1
+		<if test="checkno!=null and checkno!=''">
+		  and	checkno=#{checkno}
+		</if>
+		<if test="statuscode!=null and statuscode!=''">
+			and	statuscode=#{statuscode}
+		</if>
+		<if test="company!=null and company!=''">
+			and	company=#{company}
+		</if>
+		<if test="timeBegin!=null and timeBegin!=''">
+			and	regtime &gt;= to_date(#{timeBegin},'yyyy-mm-dd hh24:mi:ss')
+		</if>
+		<if test="timeEnd!=null and timeEnd!=''">
+			and	regtime  &lt;= to_date(#{timeEnd},'yyyy-mm-dd hh24:mi:ss')
+		</if>
+	</select>
 
 </mapper>

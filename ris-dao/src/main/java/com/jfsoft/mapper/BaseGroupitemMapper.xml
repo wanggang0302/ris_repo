@@ -172,5 +172,15 @@
 		<include refid="Base_Column_List" />
 		from BASE_GROUPITEM
 	</select>
+	<!--nvl(to_number(
+					CASE
+					WHEN nvl(max(code),0)<![CDATA[<]]>20000 THEN 20000
+					ELSE nvl(max(code),0) END
+				),0) maxcode
+	-->
+	<select id="getMaxCode" resultType="java.math.BigDecimal">
+ 		select nvl2(max(code),max(code),20000)from base_groupitem
+
+	</select>
 
 </mapper>

@@ -10,6 +10,7 @@ package com.jfsoft.mapper;
 import com.jfsoft.model.InspectPerinfo;
 
 import java.util.List;
+import java.util.Map;
 
 public interface InspectPerinfoMapper {
     
@@ -24,6 +25,8 @@ public interface InspectPerinfoMapper {
     int updateByPrimaryKeySelective(InspectPerinfo record);
 
     int updateByPrimaryKey(InspectPerinfo record);
+
     List<InspectPerinfo> getPerinfoList();
-    
+
+    List<InspectPerinfo> getPerinfoDetail(Map<String,Object> params);
 }

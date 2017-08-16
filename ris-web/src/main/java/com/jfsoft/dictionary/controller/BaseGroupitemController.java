@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.jfsoft.groupitem.service.IGroupitemService;
 import com.jfsoft.model.BaseGroupitem;
 import com.jfsoft.model.SysLog;
+import com.jfsoft.utils.Constants;
 import groovy.util.logging.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -39,14 +40,14 @@ public class BaseGroupitemController {
         List<BaseGroupitem> groupList = null;
         try {
             groupList = groupitemService.getGroupitemList();
-            map.put("status","success");
+            map.put("status", Constants.RETURN_STATUS_SUCCESS);
             map.put("groupList",groupList);
 
             SysLog sysLog = new SysLog();
             logger.info("日志输出测试");
         } catch (Exception e) {
             e.printStackTrace();
-            map.put("status","failure");
+            map.put("status",Constants.RETURN_STATUS_FAILURE);
         }
 
         return JSON.toJSONString(map);
@@ -56,10 +57,10 @@ public class BaseGroupitemController {
         Map<String, Object> map = new HashMap<String, Object>();
         try {
             map=groupitemService.insert(baseGroupitem);
-            map.put("status","success");
+            map.put("status",Constants.RETURN_STATUS_SUCCESS);
         } catch (Exception e) {
             e.printStackTrace();
-            map.put("status","failure");
+            map.put("status",Constants.RETURN_STATUS_FAILURE);
         }
         return JSON.toJSONString(map);
     }
@@ -80,10 +81,10 @@ public class BaseGroupitemController {
         Map<String, Object> map = new HashMap<String, Object>();
         try {
             map=groupitemService.update(baseGroupitem);
-            map.put("status","success");
+            map.put("status",Constants.RETURN_STATUS_SUCCESS);
         } catch (Exception e) {
             e.printStackTrace();
-            map.put("status","failure");
+            map.put("status",Constants.RETURN_STATUS_FAILURE);
         }
         return JSON.toJSONString(map);
     }

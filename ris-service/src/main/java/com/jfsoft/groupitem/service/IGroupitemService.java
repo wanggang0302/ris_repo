@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by JFYT002 on 2017/8/15.
+ * Created by matq on 2017/8/15.
  */
 public interface IGroupitemService  {
     /**查询全部收费项目*/

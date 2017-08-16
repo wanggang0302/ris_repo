@@ -10,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpSession;
+import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -31,6 +33,18 @@ public class PerinfoController {
         Map<String, Object> map = new HashMap<String, Object>();
         try {
             List<InspectPerinfo> perinfoList =perinfoService.getPerinfoList();
+            map.put("perinfoList",perinfoList);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return JSON.toJSONString(map);
+    }
+    @RequestMapping("/getPerinfoDetail")
+    public String getPerinfoDetail(HttpSession session, BigDecimal checkno,String statuscode,String company,String timeBegin,String timeEnd){
+        Map<String,Object> map = new HashMap<String,Object>();
+
+        try {
+            List<InspectPerinfo> perinfoList =perinfoService.getPerinfoDetail(checkno,statuscode,company,timeBegin,timeEnd);
             map.put("perinfoList",perinfoList);
         } catch (Exception e) {
             e.printStackTrace();
