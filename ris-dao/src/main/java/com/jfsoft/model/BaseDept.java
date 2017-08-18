@@ -3,7 +3,7 @@
  * Copyright© 2017 北京金风易通科技有限公司
  * All rights reserved.
  * -----------------------------------------------
- * 2017-08-15 Created
+ * 2017-08-18 Created
  */
 package com.jfsoft.model;
 
@@ -13,7 +13,7 @@ import java.math.BigDecimal;
  * null
  * 
  * @author wanggang
- * @version 1.0 2017-08-15
+ * @version 1.0 2017-08-18
  */
 public class BaseDept {
 
@@ -38,7 +38,7 @@ public class BaseDept {
     private String type;
 
     /**
-     * 收费项目拼音码
+     * 科室项目拼音码
      */
     private String pycode;
 
@@ -51,11 +51,6 @@ public class BaseDept {
      * 是否使用(0:否,1:是)
      */
     private Short isuse;
-
-    /**
-     * 设备类型code
-     */
-    private BigDecimal equipcode;
 
     /**
      * 排序号
@@ -126,14 +121,6 @@ public class BaseDept {
 
     public void setIsuse(Short isuse) {
         this.isuse = isuse;
-    }
-
-    public BigDecimal getEquipcode() {
-        return equipcode;
-    }
-
-    public void setEquipcode(BigDecimal equipcode) {
-        this.equipcode = equipcode;
     }
 
     public BigDecimal getSortnum() {

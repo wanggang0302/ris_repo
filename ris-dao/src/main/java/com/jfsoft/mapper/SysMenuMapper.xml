@@ -18,6 +18,66 @@
 		<result column="ISUSE" property="isuse" jdbcType="VARCHAR" />
 	</resultMap>
 
+	<sql id="Example_Where_Clause" >
+		<where >
+			<foreach collection="oredCriteria" item="criteria" separator="or" >
+				<if test="criteria.valid" >
+					<trim prefix="(" suffix=")" prefixOverrides="and" >
+						<foreach collection="criteria.criteria" item="criterion" >
+							<choose >
+								<when test="criterion.noValue" >
+									and ${criterion.condition}
+								</when>
+								<when test="criterion.singleValue" >
+									and ${criterion.condition} #{criterion.value}
+								</when>
+								<when test="criterion.betweenValue" >
+									and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+								</when>
+								<when test="criterion.listValue" >
+									and ${criterion.condition}
+									<foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+										#{listItem}
+									</foreach>
+								</when>
+							</choose>
+						</foreach>
+					</trim>
+				</if>
+			</foreach>
+		</where>
+	</sql>
+
+	<sql id="Update_By_Example_Where_Clause" >
+		<where >
+			<foreach collection="example.oredCriteria" item="criteria" separator="or" >
+				<if test="criteria.valid" >
+					<trim prefix="(" suffix=")" prefixOverrides="and" >
+						<foreach collection="criteria.criteria" item="criterion" >
+							<choose >
+								<when test="criterion.noValue" >
+									and ${criterion.condition}
+								</when>
+								<when test="criterion.singleValue" >
+									and ${criterion.condition} #{criterion.value}
+								</when>
+								<when test="criterion.betweenValue" >
+									and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+								</when>
+								<when test="criterion.listValue" >
+									and ${criterion.condition}
+									<foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+										#{listItem}
+									</foreach>
+								</when>
+							</choose>
+						</foreach>
+					</trim>
+				</if>
+			</foreach>
+		</where>
+	</sql>
+
 	<sql id="Base_Column_List" >
 		ID, CODE, TITLE, DESCRIPTION, PARENTCODE, URL, CREATECODE, CREATETIME, MODIFYCODE, 
 		MODIFYTIME, SORTNUM, MEMO, AREACODE, ISUSE
@@ -139,6 +199,78 @@
 			</if>
 		</trim>
 	</insert>
+
+	<update id="updateByExampleSelective" parameterType="map" >
+		update SYS_MENU
+		<set >
+			<if test="record.id != null" >
+				ID = #{record.id,jdbcType=VARCHAR},
+			</if>
+			<if test="record.code != null" >
+				CODE = #{record.code,jdbcType=DECIMAL},
+			</if>
+			<if test="record.title != null" >
+				TITLE = #{record.title,jdbcType=VARCHAR},
+			</if>
+			<if test="record.description != null" >
+				DESCRIPTION = #{record.description,jdbcType=VARCHAR},
+			</if>
+			<if test="record.parentcode != null" >
+				PARENTCODE = #{record.parentcode,jdbcType=DECIMAL},
+			</if>
+			<if test="record.url != null" >
+				URL = #{record.url,jdbcType=VARCHAR},
+			</if>
+			<if test="record.createcode != null" >
+				CREATECODE = #{record.createcode,jdbcType=DECIMAL},
+			</if>
+			<if test="record.createtime != null" >
+				CREATETIME = #{record.createtime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="record.modifycode != null" >
+				MODIFYCODE = #{record.modifycode,jdbcType=DECIMAL},
+			</if>
+			<if test="record.modifytime != null" >
+				MODIFYTIME = #{record.modifytime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="record.sortnum != null" >
+				SORTNUM = #{record.sortnum,jdbcType=DECIMAL},
+			</if>
+			<if test="record.memo != null" >
+				MEMO = #{record.memo,jdbcType=VARCHAR},
+			</if>
+			<if test="record.areacode != null" >
+				AREACODE = #{record.areacode,jdbcType=VARCHAR},
+			</if>
+			<if test="record.isuse != null" >
+				ISUSE = #{record.isuse,jdbcType=VARCHAR},
+			</if>
+		</set>
+		<if test="_parameter != null" >
+			<include refid="Update_By_Example_Where_Clause" />
+		</if>
+	</update>
+
+	<update id="updateByExample" parameterType="map" >
+		update SYS_MENU
+		set ID = #{record.id,jdbcType=VARCHAR},
+			CODE = #{record.code,jdbcType=DECIMAL},
+			TITLE = #{record.title,jdbcType=VARCHAR},
+			DESCRIPTION = #{record.description,jdbcType=VARCHAR},
+			PARENTCODE = #{record.parentcode,jdbcType=DECIMAL},
+			URL = #{record.url,jdbcType=VARCHAR},
+			CREATECODE = #{record.createcode,jdbcType=DECIMAL},
+			CREATETIME = #{record.createtime,jdbcType=TIMESTAMP},
+			MODIFYCODE = #{record.modifycode,jdbcType=DECIMAL},
+			MODIFYTIME = #{record.modifytime,jdbcType=TIMESTAMP},
+			SORTNUM = #{record.sortnum,jdbcType=DECIMAL},
+			MEMO = #{record.memo,jdbcType=VARCHAR},
+			AREACODE = #{record.areacode,jdbcType=VARCHAR},
+			ISUSE = #{record.isuse,jdbcType=VARCHAR}
+		<if test="_parameter != null" >
+			<include refid="Update_By_Example_Where_Clause" />
+		</if>
+	</update>
 
 	<update id="updateByPrimaryKeySelective" parameterType="com.jfsoft.model.SysMenu" >
 		update SYS_MENU

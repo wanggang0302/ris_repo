@@ -3,15 +3,79 @@
 <mapper namespace="com.jfsoft.mapper.InsAreamapMapper" >
 	<resultMap id="BaseResultMap" type="com.jfsoft.model.InsAreamap" >
 		<result column="ID" property="id" jdbcType="VARCHAR" />
-		<result column="CHECKNO" property="checkno" jdbcType="DECIMAL" />
-		<result column="PUSHCODE" property="pushcode" jdbcType="DECIMAL" />
+		<result column="CHECKNO" property="checkno" jdbcType="VARCHAR" />
+		<result column="PUSHCODE" property="pushcode" jdbcType="VARCHAR" />
 		<result column="AREACODE" property="areacode" jdbcType="VARCHAR" />
 	</resultMap>
+
+	<sql id="Example_Where_Clause" >
+		<where >
+			<foreach collection="oredCriteria" item="criteria" separator="or" >
+				<if test="criteria.valid" >
+					<trim prefix="(" suffix=")" prefixOverrides="and" >
+						<foreach collection="criteria.criteria" item="criterion" >
+							<choose >
+								<when test="criterion.noValue" >
+									and ${criterion.condition}
+								</when>
+								<when test="criterion.singleValue" >
+									and ${criterion.condition} #{criterion.value}
+								</when>
+								<when test="criterion.betweenValue" >
+									and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+								</when>
+								<when test="criterion.listValue" >
+									and ${criterion.condition}
+									<foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+										#{listItem}
+									</foreach>
+								</when>
+							</choose>
+						</foreach>
+					</trim>
+				</if>
+			</foreach>
+		</where>
+	</sql>
+
+	<sql id="Update_By_Example_Where_Clause" >
+		<where >
+			<foreach collection="example.oredCriteria" item="criteria" separator="or" >
+				<if test="criteria.valid" >
+					<trim prefix="(" suffix=")" prefixOverrides="and" >
+						<foreach collection="criteria.criteria" item="criterion" >
+							<choose >
+								<when test="criterion.noValue" >
+									and ${criterion.condition}
+								</when>
+								<when test="criterion.singleValue" >
+									and ${criterion.condition} #{criterion.value}
+								</when>
+								<when test="criterion.betweenValue" >
+									and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+								</when>
+								<when test="criterion.listValue" >
+									and ${criterion.condition}
+									<foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+										#{listItem}
+									</foreach>
+								</when>
+							</choose>
+						</foreach>
+					</trim>
+				</if>
+			</foreach>
+		</where>
+	</sql>
+
+	<sql id="Base_Column_List" >
+		ID, CHECKNO, PUSHCODE, AREACODE
+	</sql>
 
 	<insert id="insert" parameterType="com.jfsoft.model.InsAreamap" >
 		insert into INS_AREAMAP (ID, CHECKNO, PUSHCODE, 
 			AREACODE)
-		values (#{id,jdbcType=VARCHAR}, #{checkno,jdbcType=DECIMAL}, #{pushcode,jdbcType=DECIMAL},
+		values (#{id,jdbcType=VARCHAR}, #{checkno,jdbcType=VARCHAR}, #{pushcode,jdbcType=VARCHAR},
 			#{areacode,jdbcType=VARCHAR})
 	</insert>
 
@@ -36,15 +100,47 @@
 				#{id,jdbcType=VARCHAR},
 			</if>
 			<if test="checkno != null" >
-				#{checkno,jdbcType=DECIMAL},
+				#{checkno,jdbcType=VARCHAR},
 			</if>
 			<if test="pushcode != null" >
-				#{pushcode,jdbcType=DECIMAL},
+				#{pushcode,jdbcType=VARCHAR},
 			</if>
 			<if test="areacode != null" >
 				#{areacode,jdbcType=VARCHAR},
 			</if>
 		</trim>
 	</insert>
+
+	<update id="updateByExampleSelective" parameterType="map" >
+		update INS_AREAMAP
+		<set >
+			<if test="record.id != null" >
+				ID = #{record.id,jdbcType=VARCHAR},
+			</if>
+			<if test="record.checkno != null" >
+				CHECKNO = #{record.checkno,jdbcType=VARCHAR},
+			</if>
+			<if test="record.pushcode != null" >
+				PUSHCODE = #{record.pushcode,jdbcType=VARCHAR},
+			</if>
+			<if test="record.areacode != null" >
+				AREACODE = #{record.areacode,jdbcType=VARCHAR},
+			</if>
+		</set>
+		<if test="_parameter != null" >
+			<include refid="Update_By_Example_Where_Clause" />
+		</if>
+	</update>
+
+	<update id="updateByExample" parameterType="map" >
+		update INS_AREAMAP
+		set ID = #{record.id,jdbcType=VARCHAR},
+			CHECKNO = #{record.checkno,jdbcType=VARCHAR},
+			PUSHCODE = #{record.pushcode,jdbcType=VARCHAR},
+			AREACODE = #{record.areacode,jdbcType=VARCHAR}
+		<if test="_parameter != null" >
+			<include refid="Update_By_Example_Where_Clause" />
+		</if>
+	</update>
 
 </mapper>

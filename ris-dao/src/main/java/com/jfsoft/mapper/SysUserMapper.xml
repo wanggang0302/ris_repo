@@ -20,10 +20,71 @@
 		<result column="ACTORCODE" property="actorcode" jdbcType="DECIMAL" />
 	</resultMap>
 
+	<sql id="Example_Where_Clause" >
+		<where >
+			<foreach collection="oredCriteria" item="criteria" separator="or" >
+				<if test="criteria.valid" >
+					<trim prefix="(" suffix=")" prefixOverrides="and" >
+						<foreach collection="criteria.criteria" item="criterion" >
+							<choose >
+								<when test="criterion.noValue" >
+									and ${criterion.condition}
+								</when>
+								<when test="criterion.singleValue" >
+									and ${criterion.condition} #{criterion.value}
+								</when>
+								<when test="criterion.betweenValue" >
+									and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+								</when>
+								<when test="criterion.listValue" >
+									and ${criterion.condition}
+									<foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+										#{listItem}
+									</foreach>
+								</when>
+							</choose>
+						</foreach>
+					</trim>
+				</if>
+			</foreach>
+		</where>
+	</sql>
+
+	<sql id="Update_By_Example_Where_Clause" >
+		<where >
+			<foreach collection="example.oredCriteria" item="criteria" separator="or" >
+				<if test="criteria.valid" >
+					<trim prefix="(" suffix=")" prefixOverrides="and" >
+						<foreach collection="criteria.criteria" item="criterion" >
+							<choose >
+								<when test="criterion.noValue" >
+									and ${criterion.condition}
+								</when>
+								<when test="criterion.singleValue" >
+									and ${criterion.condition} #{criterion.value}
+								</when>
+								<when test="criterion.betweenValue" >
+									and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+								</when>
+								<when test="criterion.listValue" >
+									and ${criterion.condition}
+									<foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+										#{listItem}
+									</foreach>
+								</when>
+							</choose>
+						</foreach>
+					</trim>
+				</if>
+			</foreach>
+		</where>
+	</sql>
+
 	<sql id="Base_Column_List" >
 		ID, CODE, ENTRYCODE, NAME, USERNAME, PASSWORD, EMAIL, CREATECODE, CREATETIME, MODIFYCODE, 
 		MODIFYTIME, SORTNUM, MEMO, AREACODE, ISUSE, ACTORCODE
 	</sql>
+
 
 	<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
 		select 
@@ -36,6 +97,7 @@
 		delete from SYS_USER
 		where ID = #{id,jdbcType=VARCHAR}
 	</delete>
+
 
 	<insert id="insert" parameterType="com.jfsoft.model.SysUser" >
 		insert into SYS_USER (ID, CODE, ENTRYCODE, 
@@ -156,6 +218,86 @@
 		</trim>
 	</insert>
 
+	<update id="updateByExampleSelective" parameterType="map" >
+		update SYS_USER
+		<set >
+			<if test="record.id != null" >
+				ID = #{record.id,jdbcType=VARCHAR},
+			</if>
+			<if test="record.code != null" >
+				CODE = #{record.code,jdbcType=DECIMAL},
+			</if>
+			<if test="record.entrycode != null" >
+				ENTRYCODE = #{record.entrycode,jdbcType=DECIMAL},
+			</if>
+			<if test="record.name != null" >
+				NAME = #{record.name,jdbcType=VARCHAR},
+			</if>
+			<if test="record.username != null" >
+				USERNAME = #{record.username,jdbcType=VARCHAR},
+			</if>
+			<if test="record.password != null" >
+				PASSWORD = #{record.password,jdbcType=VARCHAR},
+			</if>
+			<if test="record.email != null" >
+				EMAIL = #{record.email,jdbcType=VARCHAR},
+			</if>
+			<if test="record.createcode != null" >
+				CREATECODE = #{record.createcode,jdbcType=DECIMAL},
+			</if>
+			<if test="record.createtime != null" >
+				CREATETIME = #{record.createtime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="record.modifycode != null" >
+				MODIFYCODE = #{record.modifycode,jdbcType=DECIMAL},
+			</if>
+			<if test="record.modifytime != null" >
+				MODIFYTIME = #{record.modifytime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="record.sortnum != null" >
+				SORTNUM = #{record.sortnum,jdbcType=DECIMAL},
+			</if>
+			<if test="record.memo != null" >
+				MEMO = #{record.memo,jdbcType=VARCHAR},
+			</if>
+			<if test="record.areacode != null" >
+				AREACODE = #{record.areacode,jdbcType=VARCHAR},
+			</if>
+			<if test="record.isuse != null" >
+				ISUSE = #{record.isuse,jdbcType=VARCHAR},
+			</if>
+			<if test="record.actorcode != null" >
+				ACTORCODE = #{record.actorcode,jdbcType=DECIMAL},
+			</if>
+		</set>
+		<if test="_parameter != null" >
+			<include refid="Update_By_Example_Where_Clause" />
+		</if>
+	</update>
+
+	<update id="updateByExample" parameterType="map" >
+		update SYS_USER
+		set ID = #{record.id,jdbcType=VARCHAR},
+			CODE = #{record.code,jdbcType=DECIMAL},
+			ENTRYCODE = #{record.entrycode,jdbcType=DECIMAL},
+			NAME = #{record.name,jdbcType=VARCHAR},
+			USERNAME = #{record.username,jdbcType=VARCHAR},
+			PASSWORD = #{record.password,jdbcType=VARCHAR},
+			EMAIL = #{record.email,jdbcType=VARCHAR},
+			CREATECODE = #{record.createcode,jdbcType=DECIMAL},
+			CREATETIME = #{record.createtime,jdbcType=TIMESTAMP},
+			MODIFYCODE = #{record.modifycode,jdbcType=DECIMAL},
+			MODIFYTIME = #{record.modifytime,jdbcType=TIMESTAMP},
+			SORTNUM = #{record.sortnum,jdbcType=DECIMAL},
+			MEMO = #{record.memo,jdbcType=VARCHAR},
+			AREACODE = #{record.areacode,jdbcType=VARCHAR},
+			ISUSE = #{record.isuse,jdbcType=VARCHAR},
+			ACTORCODE = #{record.actorcode,jdbcType=DECIMAL}
+		<if test="_parameter != null" >
+			<include refid="Update_By_Example_Where_Clause" />
+		</if>
+	</update>
+
 	<update id="updateByPrimaryKeySelective" parameterType="com.jfsoft.model.SysUser" >
 		update SYS_USER
 		<set >
@@ -227,29 +369,5 @@
 			ACTORCODE = #{actorcode,jdbcType=DECIMAL}
 		where ID = #{id,jdbcType=VARCHAR}
 	</update>
-
-	<!-- 查询结果 -->
-	<resultMap id="BaseUserMap" type="com.jfsoft.model.SysUser">
-		<result column="code" property="code"/>
-		<result column="username" property="username"/>
-		<result column="actorcode" property="actorcode"/>
-		<collection property="deptList" ofType="com.jfsoft.model.SysActordeptmap">
-			<result property="deptcode" column="deptcode"/>
-		</collection>
-	</resultMap>
-
-	<!-- 根据账号查询用户信息 -->
-	<select id="findByName" parameterType="java.lang.String" resultMap="BaseUserMap">
-		select
-			su.code,su.username,sa.code as actorcode,ad.deptcode
-		from
-			sys_actordeptmap ad
-		left join sys_actor sa on sa.code=ad.actorcode and sa.areacode=ad.areacode
-		left join sys_user su on su.actorcode=sa.code and su.areacode=ad.areacode
-		where
-			su.username=#{username} and su.areacode=#{areacode}
-		order by
-			ad.deptcode
-	</select>
 
 </mapper>

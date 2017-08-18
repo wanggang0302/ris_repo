@@ -3,7 +3,7 @@
  * Copyright© 2017 北京金风易通科技有限公司
  * All rights reserved.
  * -----------------------------------------------
- * 2017-08-15 Created
+ * 2017-08-18 Created
  */
 package com.jfsoft.model;
 
@@ -11,10 +11,10 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 /**
- * 个人信息表
+ * null
  * 
  * @author wanggang
- * @version 1.0 2017-08-15
+ * @version 1.0 2017-08-18
  */
 public class InspectPerinfo {
 
@@ -26,7 +26,7 @@ public class InspectPerinfo {
     /**
      * Ris系统检查号(业务唯一)
      */
-    private BigDecimal checkno;
+    private String checkno;
 
     /**
      * 第三方数据标识号
@@ -234,6 +234,36 @@ public class InspectPerinfo {
     private String areacode;
 
     /**
+     * 危急值
+     */
+    private String urgentvalue;
+
+    /**
+     * 是否孕妇（1是、0否）
+     */
+    private Short ispregnant;
+
+    /**
+     * 收费项目名称
+     */
+    private String groupitem;
+
+    /**
+     * 收费项目编码
+     */
+    private String groupcode;
+
+    /**
+     * 设备编码
+     */
+    private BigDecimal equipmentcode;
+
+    /**
+     * 设备类型code
+     */
+    private BigDecimal equiptypecode;
+
+    /**
      */
     private String content1;
 
@@ -261,11 +291,11 @@ public class InspectPerinfo {
         this.id = id;
     }
 
-    public BigDecimal getCheckno() {
+    public String getCheckno() {
         return checkno;
     }
 
-    public void setCheckno(BigDecimal checkno) {
+    public void setCheckno(String checkno) {
         this.checkno = checkno;
     }
 
@@ -595,6 +625,54 @@ public class InspectPerinfo {
 
     public void setAreacode(String areacode) {
         this.areacode = areacode;
+    }
+
+    public String getUrgentvalue() {
+        return urgentvalue;
+    }
+
+    public void setUrgentvalue(String urgentvalue) {
+        this.urgentvalue = urgentvalue;
+    }
+
+    public Short getIspregnant() {
+        return ispregnant;
+    }
+
+    public void setIspregnant(Short ispregnant) {
+        this.ispregnant = ispregnant;
+    }
+
+    public String getGroupitem() {
+        return groupitem;
+    }
+
+    public void setGroupitem(String groupitem) {
+        this.groupitem = groupitem;
+    }
+
+    public String getGroupcode() {
+        return groupcode;
+    }
+
+    public void setGroupcode(String groupcode) {
+        this.groupcode = groupcode;
+    }
+
+    public BigDecimal getEquipmentcode() {
+        return equipmentcode;
+    }
+
+    public void setEquipmentcode(BigDecimal equipmentcode) {
+        this.equipmentcode = equipmentcode;
+    }
+
+    public BigDecimal getEquiptypecode() {
+        return equiptypecode;
+    }
+
+    public void setEquiptypecode(BigDecimal equiptypecode) {
+        this.equiptypecode = equiptypecode;
     }
 
     public String getContent1() {

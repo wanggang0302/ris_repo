@@ -3,7 +3,7 @@
  * Copyright© 2017 北京金风易通科技有限公司
  * All rights reserved.
  * -----------------------------------------------
- * 2017-08-15 Created
+ * 2017-08-18 Created
  */
 package com.jfsoft.model;
 
@@ -14,7 +14,7 @@ import java.util.Date;
  * null
  * 
  * @author wanggang
- * @version 1.0 2017-08-15
+ * @version 1.0 2017-08-18
  */
 public class InspectPicresult {
 
@@ -26,7 +26,7 @@ public class InspectPicresult {
     /**
      * 检查号(业务唯一)
      */
-    private BigDecimal inspectno;
+    private String inspectno;
 
     /**
      * 图片地址(相对地址)
@@ -81,11 +81,11 @@ public class InspectPicresult {
         this.id = id;
     }
 
-    public BigDecimal getInspectno() {
+    public String getInspectno() {
         return inspectno;
     }
 
-    public void setInspectno(BigDecimal inspectno) {
+    public void setInspectno(String inspectno) {
         this.inspectno = inspectno;
     }
 

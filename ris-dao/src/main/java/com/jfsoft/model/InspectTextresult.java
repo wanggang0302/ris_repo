@@ -3,7 +3,7 @@
  * Copyright© 2017 北京金风易通科技有限公司
  * All rights reserved.
  * -----------------------------------------------
- * 2017-08-15 Created
+ * 2017-08-18 Created
  */
 package com.jfsoft.model;
 
@@ -14,7 +14,7 @@ import java.util.Date;
  * null
  * 
  * @author wanggang
- * @version 1.0 2017-08-15
+ * @version 1.0 2017-08-18
  */
 public class InspectTextresult {
 
@@ -26,7 +26,7 @@ public class InspectTextresult {
     /**
      * 检查号(业务唯一)
      */
-    private BigDecimal inspectno;
+    private String inspectno;
 
     /**
      * 检查结论(富文本)
@@ -68,6 +68,10 @@ public class InspectTextresult {
      */
     private Date audittime;
 
+    /**
+     * 审核状态
+     */
+    private String auditstatus;
     /**
      * 是否阳性报告（正常：阴性   异常 ：阳性）
      */
@@ -116,11 +120,11 @@ public class InspectTextresult {
         this.id = id;
     }
 
-    public BigDecimal getInspectno() {
+    public String getInspectno() {
         return inspectno;
     }
 
-    public void setInspectno(BigDecimal inspectno) {
+    public void setInspectno(String inspectno) {
         this.inspectno = inspectno;
     }
 
@@ -176,6 +180,10 @@ public class InspectTextresult {
         return auditdocname;
     }
 
+    public String getReportnature() {
+        return reportnature;
+    }
+
     public void setAuditdocname(String auditdocname) {
         this.auditdocname = auditdocname;
     }
@@ -188,8 +196,12 @@ public class InspectTextresult {
         this.audittime = audittime;
     }
 
-    public String getReportnature() {
-        return reportnature;
+    public String getAuditstatus() {
+        return auditstatus;
+    }
+
+    public void setAuditstatus(String auditstatus) {
+        this.auditstatus = auditstatus;
     }
 
     public void setReportnature(String reportnature) {

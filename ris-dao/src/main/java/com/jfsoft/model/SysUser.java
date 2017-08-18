@@ -3,19 +3,18 @@
  * Copyright© 2017 北京金风易通科技有限公司
  * All rights reserved.
  * -----------------------------------------------
- * 2017-08-15 Created
+ * 2017-08-18 Created
  */
 package com.jfsoft.model;
 
 import java.math.BigDecimal;
 import java.util.Date;
-import java.util.List;
 
 /**
  * null
  * 
  * @author wanggang
- * @version 1.0 2017-08-15
+ * @version 1.0 2017-08-18
  */
 public class SysUser {
 
@@ -98,21 +97,6 @@ public class SysUser {
      * 角色code
      */
     private BigDecimal actorcode;
-
-    /**
-     * 用户所属角色对应的科室
-     * wanggang
-     * 2017年8月15日
-     */
-    public List<SysActordeptmap> deptList;
-
-    public List<SysActordeptmap> getDeptList() {
-        return deptList;
-    }
-
-    public void setDeptList(List<SysActordeptmap> deptList) {
-        this.deptList = deptList;
-    }
 
     public String getId() {
         return id;
