@@ -28,7 +28,7 @@ public class PerinfoServiceImpl implements IPerinfoService {
     }
 
     @Override
-    public List<InspectPerinfo> getPerinfoDetail(BigDecimal checkno, String statuscode, String company, String timeBegin, String timeEnd) throws Exception {
+    public List<InspectPerinfo> getPerinfoDetail(String checkno, String statuscode, String company, String timeBegin, String timeEnd) throws Exception {
         Map<String,Object> params = new HashMap<String,Object>();
         if(!StringUtils.isEmpty(checkno)){
             params.put("checkno",checkno);
@@ -57,7 +57,7 @@ public class PerinfoServiceImpl implements IPerinfoService {
         inspectPerinfo.setId(uuid.toString());
         inspectPerinfo.setAreacode("001");
         inspectPerinfo.setAge(new BigDecimal(14));
-        inspectPerinfo.setCheckno(new BigDecimal(222));
+        inspectPerinfo.setCheckno("123");
         inspectPerinfo.setApplydept("男");
         inspectPerinfo.setLinktel("12654284564");
         int count = inspectPerinfoMapper.insert(inspectPerinfo);

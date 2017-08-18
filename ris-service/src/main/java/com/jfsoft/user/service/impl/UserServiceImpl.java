@@ -1,6 +1,6 @@
 package com.jfsoft.user.service.impl;
 
-import com.jfsoft.mapper.TUserMapper;
+import com.jfsoft.mapper.SysUserMapper;
 import com.jfsoft.user.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,6 +13,6 @@ import org.springframework.stereotype.Service;
 public class UserServiceImpl implements IUserService {
 
     @Autowired
-    private TUserMapper userMapper;
+    private SysUserMapper sysUserMapper;
 
 }

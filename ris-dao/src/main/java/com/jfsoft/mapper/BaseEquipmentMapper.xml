@@ -5,6 +5,8 @@
 		<id column="ID" property="id" jdbcType="VARCHAR" />
 		<result column="CODE" property="code" jdbcType="DECIMAL" />
 		<result column="NAME" property="name" jdbcType="VARCHAR" />
+		<result column="TYPECODE" property="typecode" jdbcType="DECIMAL" />
+		<result column="DEPTCODE" property="deptcode" jdbcType="DECIMAL" />
 		<result column="PYCODE" property="pycode" jdbcType="VARCHAR" />
 		<result column="ISUSE" property="isuse" jdbcType="DECIMAL" />
 		<result column="SORTNUM" property="sortnum" jdbcType="DECIMAL" />
@@ -12,8 +14,68 @@
 		<result column="AREACODE" property="areacode" jdbcType="VARCHAR" />
 	</resultMap>
 
+	<sql id="Example_Where_Clause" >
+		<where >
+			<foreach collection="oredCriteria" item="criteria" separator="or" >
+				<if test="criteria.valid" >
+					<trim prefix="(" suffix=")" prefixOverrides="and" >
+						<foreach collection="criteria.criteria" item="criterion" >
+							<choose >
+								<when test="criterion.noValue" >
+									and ${criterion.condition}
+								</when>
+								<when test="criterion.singleValue" >
+									and ${criterion.condition} #{criterion.value}
+								</when>
+								<when test="criterion.betweenValue" >
+									and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+								</when>
+								<when test="criterion.listValue" >
+									and ${criterion.condition}
+									<foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+										#{listItem}
+									</foreach>
+								</when>
+							</choose>
+						</foreach>
+					</trim>
+				</if>
+			</foreach>
+		</where>
+	</sql>
+
+	<sql id="Update_By_Example_Where_Clause" >
+		<where >
+			<foreach collection="example.oredCriteria" item="criteria" separator="or" >
+				<if test="criteria.valid" >
+					<trim prefix="(" suffix=")" prefixOverrides="and" >
+						<foreach collection="criteria.criteria" item="criterion" >
+							<choose >
+								<when test="criterion.noValue" >
+									and ${criterion.condition}
+								</when>
+								<when test="criterion.singleValue" >
+									and ${criterion.condition} #{criterion.value}
+								</when>
+								<when test="criterion.betweenValue" >
+									and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+								</when>
+								<when test="criterion.listValue" >
+									and ${criterion.condition}
+									<foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+										#{listItem}
+									</foreach>
+								</when>
+							</choose>
+						</foreach>
+					</trim>
+				</if>
+			</foreach>
+		</where>
+	</sql>
+
 	<sql id="Base_Column_List" >
-		ID, CODE, NAME, PYCODE, ISUSE, SORTNUM, MEMO, AREACODE
+		ID, CODE, NAME, TYPECODE, DEPTCODE, PYCODE, ISUSE, SORTNUM, MEMO, AREACODE
 	</sql>
 
 	<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
@@ -28,13 +90,14 @@
 		where ID = #{id,jdbcType=VARCHAR}
 	</delete>
 
+
 	<insert id="insert" parameterType="com.jfsoft.model.BaseEquipment" >
-		insert into BASE_EQUIPMENT (ID, CODE, NAME, PYCODE, 
-			ISUSE, SORTNUM, MEMO, 
-			AREACODE)
-		values (#{id,jdbcType=VARCHAR}, #{code,jdbcType=DECIMAL}, #{name,jdbcType=VARCHAR}, #{pycode,jdbcType=VARCHAR},
-			#{isuse,jdbcType=DECIMAL}, #{sortnum,jdbcType=DECIMAL}, #{memo,jdbcType=VARCHAR},
-			#{areacode,jdbcType=VARCHAR})
+		insert into BASE_EQUIPMENT (ID, CODE, NAME, TYPECODE, 
+			DEPTCODE, PYCODE, ISUSE, 
+			SORTNUM, MEMO, AREACODE)
+		values (#{id,jdbcType=VARCHAR}, #{code,jdbcType=DECIMAL}, #{name,jdbcType=VARCHAR}, #{typecode,jdbcType=DECIMAL},
+			#{deptcode,jdbcType=DECIMAL}, #{pycode,jdbcType=VARCHAR}, #{isuse,jdbcType=DECIMAL},
+			#{sortnum,jdbcType=DECIMAL}, #{memo,jdbcType=VARCHAR}, #{areacode,jdbcType=VARCHAR})
 	</insert>
 
 	<insert id="insertSelective" parameterType="com.jfsoft.model.BaseEquipment" >
@@ -48,6 +111,12 @@
 			</if>
 			<if test="name != null" >
 				NAME,
+			</if>
+			<if test="typecode != null" >
+				TYPECODE,
+			</if>
+			<if test="deptcode != null" >
+				DEPTCODE,
 			</if>
 			<if test="pycode != null" >
 				PYCODE,
@@ -75,6 +144,12 @@
 			<if test="name != null" >
 				#{name,jdbcType=VARCHAR},
 			</if>
+			<if test="typecode != null" >
+				#{typecode,jdbcType=DECIMAL},
+			</if>
+			<if test="deptcode != null" >
+				#{deptcode,jdbcType=DECIMAL},
+			</if>
 			<if test="pycode != null" >
 				#{pycode,jdbcType=VARCHAR},
 			</if>
@@ -93,6 +168,62 @@
 		</trim>
 	</insert>
 
+	<update id="updateByExampleSelective" parameterType="map" >
+		update BASE_EQUIPMENT
+		<set >
+			<if test="record.id != null" >
+				ID = #{record.id,jdbcType=VARCHAR},
+			</if>
+			<if test="record.code != null" >
+				CODE = #{record.code,jdbcType=DECIMAL},
+			</if>
+			<if test="record.name != null" >
+				NAME = #{record.name,jdbcType=VARCHAR},
+			</if>
+			<if test="record.typecode != null" >
+				TYPECODE = #{record.typecode,jdbcType=DECIMAL},
+			</if>
+			<if test="record.deptcode != null" >
+				DEPTCODE = #{record.deptcode,jdbcType=DECIMAL},
+			</if>
+			<if test="record.pycode != null" >
+				PYCODE = #{record.pycode,jdbcType=VARCHAR},
+			</if>
+			<if test="record.isuse != null" >
+				ISUSE = #{record.isuse,jdbcType=DECIMAL},
+			</if>
+			<if test="record.sortnum != null" >
+				SORTNUM = #{record.sortnum,jdbcType=DECIMAL},
+			</if>
+			<if test="record.memo != null" >
+				MEMO = #{record.memo,jdbcType=VARCHAR},
+			</if>
+			<if test="record.areacode != null" >
+				AREACODE = #{record.areacode,jdbcType=VARCHAR},
+			</if>
+		</set>
+		<if test="_parameter != null" >
+			<include refid="Update_By_Example_Where_Clause" />
+		</if>
+	</update>
+
+	<update id="updateByExample" parameterType="map" >
+		update BASE_EQUIPMENT
+		set ID = #{record.id,jdbcType=VARCHAR},
+			CODE = #{record.code,jdbcType=DECIMAL},
+			NAME = #{record.name,jdbcType=VARCHAR},
+			TYPECODE = #{record.typecode,jdbcType=DECIMAL},
+			DEPTCODE = #{record.deptcode,jdbcType=DECIMAL},
+			PYCODE = #{record.pycode,jdbcType=VARCHAR},
+			ISUSE = #{record.isuse,jdbcType=DECIMAL},
+			SORTNUM = #{record.sortnum,jdbcType=DECIMAL},
+			MEMO = #{record.memo,jdbcType=VARCHAR},
+			AREACODE = #{record.areacode,jdbcType=VARCHAR}
+		<if test="_parameter != null" >
+			<include refid="Update_By_Example_Where_Clause" />
+		</if>
+	</update>
+
 	<update id="updateByPrimaryKeySelective" parameterType="com.jfsoft.model.BaseEquipment" >
 		update BASE_EQUIPMENT
 		<set >
@@ -101,6 +232,12 @@
 			</if>
 			<if test="name != null" >
 				NAME = #{name,jdbcType=VARCHAR},
+			</if>
+			<if test="typecode != null" >
+				TYPECODE = #{typecode,jdbcType=DECIMAL},
+			</if>
+			<if test="deptcode != null" >
+				DEPTCODE = #{deptcode,jdbcType=DECIMAL},
 			</if>
 			<if test="pycode != null" >
 				PYCODE = #{pycode,jdbcType=VARCHAR},
@@ -125,6 +262,8 @@
 		update BASE_EQUIPMENT
 		set CODE = #{code,jdbcType=DECIMAL},
 			NAME = #{name,jdbcType=VARCHAR},
+			TYPECODE = #{typecode,jdbcType=DECIMAL},
+			DEPTCODE = #{deptcode,jdbcType=DECIMAL},
 			PYCODE = #{pycode,jdbcType=VARCHAR},
 			ISUSE = #{isuse,jdbcType=DECIMAL},
 			SORTNUM = #{sortnum,jdbcType=DECIMAL},

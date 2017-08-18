@@ -8,6 +8,66 @@
 		<result column="AREACODE" property="areacode" jdbcType="VARCHAR" />
 	</resultMap>
 
+	<sql id="Example_Where_Clause" >
+		<where >
+			<foreach collection="oredCriteria" item="criteria" separator="or" >
+				<if test="criteria.valid" >
+					<trim prefix="(" suffix=")" prefixOverrides="and" >
+						<foreach collection="criteria.criteria" item="criterion" >
+							<choose >
+								<when test="criterion.noValue" >
+									and ${criterion.condition}
+								</when>
+								<when test="criterion.singleValue" >
+									and ${criterion.condition} #{criterion.value}
+								</when>
+								<when test="criterion.betweenValue" >
+									and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+								</when>
+								<when test="criterion.listValue" >
+									and ${criterion.condition}
+									<foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+										#{listItem}
+									</foreach>
+								</when>
+							</choose>
+						</foreach>
+					</trim>
+				</if>
+			</foreach>
+		</where>
+	</sql>
+
+	<sql id="Update_By_Example_Where_Clause" >
+		<where >
+			<foreach collection="example.oredCriteria" item="criteria" separator="or" >
+				<if test="criteria.valid" >
+					<trim prefix="(" suffix=")" prefixOverrides="and" >
+						<foreach collection="criteria.criteria" item="criterion" >
+							<choose >
+								<when test="criterion.noValue" >
+									and ${criterion.condition}
+								</when>
+								<when test="criterion.singleValue" >
+									and ${criterion.condition} #{criterion.value}
+								</when>
+								<when test="criterion.betweenValue" >
+									and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+								</when>
+								<when test="criterion.listValue" >
+									and ${criterion.condition}
+									<foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+										#{listItem}
+									</foreach>
+								</when>
+							</choose>
+						</foreach>
+					</trim>
+				</if>
+			</foreach>
+		</where>
+	</sql>
+
 	<sql id="Base_Column_List" >
 		ID, ACTORCODE, DEPTCODE, AREACODE
 	</sql>
@@ -62,6 +122,38 @@
 			</if>
 		</trim>
 	</insert>
+
+	<update id="updateByExampleSelective" parameterType="map" >
+		update SYS_ACTORDEPTMAP
+		<set >
+			<if test="record.id != null" >
+				ID = #{record.id,jdbcType=VARCHAR},
+			</if>
+			<if test="record.actorcode != null" >
+				ACTORCODE = #{record.actorcode,jdbcType=DECIMAL},
+			</if>
+			<if test="record.deptcode != null" >
+				DEPTCODE = #{record.deptcode,jdbcType=DECIMAL},
+			</if>
+			<if test="record.areacode != null" >
+				AREACODE = #{record.areacode,jdbcType=VARCHAR},
+			</if>
+		</set>
+		<if test="_parameter != null" >
+			<include refid="Update_By_Example_Where_Clause" />
+		</if>
+	</update>
+
+	<update id="updateByExample" parameterType="map" >
+		update SYS_ACTORDEPTMAP
+		set ID = #{record.id,jdbcType=VARCHAR},
+			ACTORCODE = #{record.actorcode,jdbcType=DECIMAL},
+			DEPTCODE = #{record.deptcode,jdbcType=DECIMAL},
+			AREACODE = #{record.areacode,jdbcType=VARCHAR}
+		<if test="_parameter != null" >
+			<include refid="Update_By_Example_Where_Clause" />
+		</if>
+	</update>
 
 	<update id="updateByPrimaryKeySelective" parameterType="com.jfsoft.model.SysActordeptmap" >
 		update SYS_ACTORDEPTMAP

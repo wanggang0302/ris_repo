@@ -3,7 +3,7 @@
  * Copyright© 2017 北京金风易通科技有限公司
  * All rights reserved.
  * -----------------------------------------------
- * 2017-08-15 Created
+ * 2017-08-18 Created
  */
 package com.jfsoft.model;
 
@@ -13,7 +13,7 @@ import java.math.BigDecimal;
  * null
  * 
  * @author wanggang
- * @version 1.0 2017-08-15
+ * @version 1.0 2017-08-18
  */
 public class BaseEquipment {
 
@@ -23,14 +23,24 @@ public class BaseEquipment {
     private String id;
 
     /**
-     * 类型编号
+     * 设备编号
      */
     private BigDecimal code;
 
     /**
-     * 类型名称
+     * 设备名称
      */
     private String name;
+
+    /**
+     * 所属设备类型编码
+     */
+    private BigDecimal typecode;
+
+    /**
+     * 所属科室编码
+     */
+    private BigDecimal deptcode;
 
     /**
      * 拼音码
@@ -79,6 +89,22 @@ public class BaseEquipment {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public BigDecimal getTypecode() {
+        return typecode;
+    }
+
+    public void setTypecode(BigDecimal typecode) {
+        this.typecode = typecode;
+    }
+
+    public BigDecimal getDeptcode() {
+        return deptcode;
+    }
+
+    public void setDeptcode(BigDecimal deptcode) {
+        this.deptcode = deptcode;
     }
 
     public String getPycode() {

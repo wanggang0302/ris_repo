@@ -3,7 +3,7 @@
  * Copyright© 2017 北京金风易通科技有限公司
  * All rights reserved.
  * -----------------------------------------------
- * 2017-08-15 Created
+ * 2017-08-18 Created
  */
 package com.jfsoft.model;
 
@@ -13,7 +13,7 @@ import java.math.BigDecimal;
  * null
  * 
  * @author wanggang
- * @version 1.0 2017-08-15
+ * @version 1.0 2017-08-18
  */
 public class BaseCheckpart {
 
@@ -31,6 +31,11 @@ public class BaseCheckpart {
      * 部位名称
      */
     private String name;
+
+    /**
+     * 部位组code
+     */
+    private BigDecimal positioncode;
 
     /**
      * 拼音码
@@ -84,6 +89,14 @@ public class BaseCheckpart {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public BigDecimal getPositioncode() {
+        return positioncode;
+    }
+
+    public void setPositioncode(BigDecimal positioncode) {
+        this.positioncode = positioncode;
     }
 
     public String getPycode() {

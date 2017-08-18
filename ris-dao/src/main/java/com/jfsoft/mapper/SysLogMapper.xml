@@ -12,6 +12,66 @@
 		<result column="AREACODE" property="areacode" jdbcType="VARCHAR" />
 	</resultMap>
 
+	<sql id="Example_Where_Clause" >
+		<where >
+			<foreach collection="oredCriteria" item="criteria" separator="or" >
+				<if test="criteria.valid" >
+					<trim prefix="(" suffix=")" prefixOverrides="and" >
+						<foreach collection="criteria.criteria" item="criterion" >
+							<choose >
+								<when test="criterion.noValue" >
+									and ${criterion.condition}
+								</when>
+								<when test="criterion.singleValue" >
+									and ${criterion.condition} #{criterion.value}
+								</when>
+								<when test="criterion.betweenValue" >
+									and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+								</when>
+								<when test="criterion.listValue" >
+									and ${criterion.condition}
+									<foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+										#{listItem}
+									</foreach>
+								</when>
+							</choose>
+						</foreach>
+					</trim>
+				</if>
+			</foreach>
+		</where>
+	</sql>
+
+	<sql id="Update_By_Example_Where_Clause" >
+		<where >
+			<foreach collection="example.oredCriteria" item="criteria" separator="or" >
+				<if test="criteria.valid" >
+					<trim prefix="(" suffix=")" prefixOverrides="and" >
+						<foreach collection="criteria.criteria" item="criterion" >
+							<choose >
+								<when test="criterion.noValue" >
+									and ${criterion.condition}
+								</when>
+								<when test="criterion.singleValue" >
+									and ${criterion.condition} #{criterion.value}
+								</when>
+								<when test="criterion.betweenValue" >
+									and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+								</when>
+								<when test="criterion.listValue" >
+									and ${criterion.condition}
+									<foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+										#{listItem}
+									</foreach>
+								</when>
+							</choose>
+						</foreach>
+					</trim>
+				</if>
+			</foreach>
+		</where>
+	</sql>
+
 	<sql id="Base_Column_List" >
 		ID, LOG_LEVEL, USERCODE, MESSAGE, LOGDATE, MODULE, EXCEPTION, AREACODE
 	</sql>
@@ -92,6 +152,54 @@
 			</if>
 		</trim>
 	</insert>
+
+	<update id="updateByExampleSelective" parameterType="map" >
+		update SYS_LOG
+		<set >
+			<if test="record.id != null" >
+				ID = #{record.id,jdbcType=VARCHAR},
+			</if>
+			<if test="record.logLevel != null" >
+				LOG_LEVEL = #{record.logLevel,jdbcType=VARCHAR},
+			</if>
+			<if test="record.usercode != null" >
+				USERCODE = #{record.usercode,jdbcType=DECIMAL},
+			</if>
+			<if test="record.message != null" >
+				MESSAGE = #{record.message,jdbcType=VARCHAR},
+			</if>
+			<if test="record.logdate != null" >
+				LOGDATE = #{record.logdate,jdbcType=TIMESTAMP},
+			</if>
+			<if test="record.module != null" >
+				MODULE = #{record.module,jdbcType=VARCHAR},
+			</if>
+			<if test="record.exception != null" >
+				EXCEPTION = #{record.exception,jdbcType=CLOB},
+			</if>
+			<if test="record.areacode != null" >
+				AREACODE = #{record.areacode,jdbcType=VARCHAR},
+			</if>
+		</set>
+		<if test="_parameter != null" >
+			<include refid="Update_By_Example_Where_Clause" />
+		</if>
+	</update>
+
+	<update id="updateByExample" parameterType="map" >
+		update SYS_LOG
+		set ID = #{record.id,jdbcType=VARCHAR},
+			LOG_LEVEL = #{record.logLevel,jdbcType=VARCHAR},
+			USERCODE = #{record.usercode,jdbcType=DECIMAL},
+			MESSAGE = #{record.message,jdbcType=VARCHAR},
+			LOGDATE = #{record.logdate,jdbcType=TIMESTAMP},
+			MODULE = #{record.module,jdbcType=VARCHAR},
+			EXCEPTION = #{record.exception,jdbcType=CLOB},
+			AREACODE = #{record.areacode,jdbcType=VARCHAR}
+		<if test="_parameter != null" >
+			<include refid="Update_By_Example_Where_Clause" />
+		</if>
+	</update>
 
 	<update id="updateByPrimaryKeySelective" parameterType="com.jfsoft.model.SysLog" >
 		update SYS_LOG

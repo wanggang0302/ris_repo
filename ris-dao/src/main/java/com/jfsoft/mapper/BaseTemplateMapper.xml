@@ -3,8 +3,9 @@
 <mapper namespace="com.jfsoft.mapper.BaseTemplateMapper" >
 	<resultMap id="BaseResultMap" type="com.jfsoft.model.BaseTemplate" >
 		<id column="ID" property="id" jdbcType="VARCHAR" />
-		<result column="NAME" property="name" jdbcType="VARCHAR" />
+		<result column="positioncode" property="positioncode" jdbcType="DECIMAL" />
 		<result column="CODE" property="code" jdbcType="DECIMAL" />
+		<result column="partcode" property="partcode" jdbcType="DECIMAL" />
 		<result column="PYCODE" property="pycode" jdbcType="VARCHAR" />
 		<result column="TYPE" property="type" jdbcType="VARCHAR" />
 		<result column="PERTEMPLATEID" property="pertemplateid" jdbcType="VARCHAR" />
@@ -19,9 +20,69 @@
 		<result column="AREACODE" property="areacode" jdbcType="VARCHAR" />
 	</resultMap>
 
+	<sql id="Example_Where_Clause" >
+		<where >
+			<foreach collection="oredCriteria" item="criteria" separator="or" >
+				<if test="criteria.valid" >
+					<trim prefix="(" suffix=")" prefixOverrides="and" >
+						<foreach collection="criteria.criteria" item="criterion" >
+							<choose >
+								<when test="criterion.noValue" >
+									and ${criterion.condition}
+								</when>
+								<when test="criterion.singleValue" >
+									and ${criterion.condition} #{criterion.value}
+								</when>
+								<when test="criterion.betweenValue" >
+									and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+								</when>
+								<when test="criterion.listValue" >
+									and ${criterion.condition}
+									<foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+										#{listItem}
+									</foreach>
+								</when>
+							</choose>
+						</foreach>
+					</trim>
+				</if>
+			</foreach>
+		</where>
+	</sql>
+
+	<sql id="Update_By_Example_Where_Clause" >
+		<where >
+			<foreach collection="example.oredCriteria" item="criteria" separator="or" >
+				<if test="criteria.valid" >
+					<trim prefix="(" suffix=")" prefixOverrides="and" >
+						<foreach collection="criteria.criteria" item="criterion" >
+							<choose >
+								<when test="criterion.noValue" >
+									and ${criterion.condition}
+								</when>
+								<when test="criterion.singleValue" >
+									and ${criterion.condition} #{criterion.value}
+								</when>
+								<when test="criterion.betweenValue" >
+									and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+								</when>
+								<when test="criterion.listValue" >
+									and ${criterion.condition}
+									<foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+										#{listItem}
+									</foreach>
+								</when>
+							</choose>
+						</foreach>
+					</trim>
+				</if>
+			</foreach>
+		</where>
+	</sql>
+
 	<sql id="Base_Column_List" >
-		ID, NAME, CODE, PYCODE, TYPE, PERTEMPLATEID, URGENTVALUE, POLARITY, PATHOLOGY, SUGGEST, 
-		ADAPTSEX, ISUSE, SORTNUM, MEMO, AREACODE
+		ID, positioncode, CODE, partcode, PYCODE, TYPE, PERTEMPLATEID, URGENTVALUE, POLARITY, 
+		PATHOLOGY, SUGGEST, ADAPTSEX, ISUSE, SORTNUM, MEMO, AREACODE
 	</sql>
 
 	<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
@@ -37,16 +98,18 @@
 	</delete>
 
 	<insert id="insert" parameterType="com.jfsoft.model.BaseTemplate" >
-		insert into BASE_TEMPLATE (ID, NAME, CODE, PYCODE, 
-			TYPE, PERTEMPLATEID, URGENTVALUE, 
-			POLARITY, PATHOLOGY, SUGGEST, 
-			ADAPTSEX, ISUSE, SORTNUM, 
-			MEMO, AREACODE)
-		values (#{id,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{code,jdbcType=DECIMAL}, #{pycode,jdbcType=VARCHAR},
-			#{type,jdbcType=VARCHAR}, #{pertemplateid,jdbcType=VARCHAR}, #{urgentvalue,jdbcType=VARCHAR},
-			#{polarity,jdbcType=VARCHAR}, #{pathology,jdbcType=VARCHAR}, #{suggest,jdbcType=VARCHAR},
-			#{adaptsex,jdbcType=VARCHAR}, #{isuse,jdbcType=DECIMAL}, #{sortnum,jdbcType=DECIMAL},
-			#{memo,jdbcType=VARCHAR}, #{areacode,jdbcType=VARCHAR})
+		insert into BASE_TEMPLATE (ID, positioncode, CODE, 
+			partcode, PYCODE, TYPE, 
+			PERTEMPLATEID, URGENTVALUE, POLARITY, 
+			PATHOLOGY, SUGGEST, ADAPTSEX, 
+			ISUSE, SORTNUM, MEMO, 
+			AREACODE)
+		values (#{id,jdbcType=VARCHAR}, #{positioncode,jdbcType=DECIMAL}, #{code,jdbcType=DECIMAL},
+			#{partcode,jdbcType=DECIMAL}, #{pycode,jdbcType=VARCHAR}, #{type,jdbcType=VARCHAR},
+			#{pertemplateid,jdbcType=VARCHAR}, #{urgentvalue,jdbcType=VARCHAR}, #{polarity,jdbcType=VARCHAR},
+			#{pathology,jdbcType=VARCHAR}, #{suggest,jdbcType=VARCHAR}, #{adaptsex,jdbcType=VARCHAR},
+			#{isuse,jdbcType=DECIMAL}, #{sortnum,jdbcType=DECIMAL}, #{memo,jdbcType=VARCHAR},
+			#{areacode,jdbcType=VARCHAR})
 	</insert>
 
 	<insert id="insertSelective" parameterType="com.jfsoft.model.BaseTemplate" >
@@ -55,11 +118,14 @@
 			<if test="id != null" >
 				ID,
 			</if>
-			<if test="name != null" >
-				NAME,
+			<if test="positioncode != null" >
+				positioncode,
 			</if>
 			<if test="code != null" >
 				CODE,
+			</if>
+			<if test="partcode != null" >
+				partcode,
 			</if>
 			<if test="pycode != null" >
 				PYCODE,
@@ -102,11 +168,14 @@
 			<if test="id != null" >
 				#{id,jdbcType=VARCHAR},
 			</if>
-			<if test="name != null" >
-				#{name,jdbcType=VARCHAR},
+			<if test="positioncode != null" >
+				#{positioncode,jdbcType=DECIMAL},
 			</if>
 			<if test="code != null" >
 				#{code,jdbcType=DECIMAL},
+			</if>
+			<if test="partcode != null" >
+				#{partcode,jdbcType=DECIMAL},
 			</if>
 			<if test="pycode != null" >
 				#{pycode,jdbcType=VARCHAR},
@@ -147,14 +216,97 @@
 		</trim>
 	</insert>
 
+	<update id="updateByExampleSelective" parameterType="map" >
+		update BASE_TEMPLATE
+		<set >
+			<if test="record.id != null" >
+				ID = #{record.id,jdbcType=VARCHAR},
+			</if>
+			<if test="record.positioncode != null" >
+				positioncode = #{record.positioncode,jdbcType=DECIMAL},
+			</if>
+			<if test="record.code != null" >
+				CODE = #{record.code,jdbcType=DECIMAL},
+			</if>
+			<if test="record.partcode != null" >
+				partcode = #{record.partcode,jdbcType=DECIMAL},
+			</if>
+			<if test="record.pycode != null" >
+				PYCODE = #{record.pycode,jdbcType=VARCHAR},
+			</if>
+			<if test="record.type != null" >
+				TYPE = #{record.type,jdbcType=VARCHAR},
+			</if>
+			<if test="record.pertemplateid != null" >
+				PERTEMPLATEID = #{record.pertemplateid,jdbcType=VARCHAR},
+			</if>
+			<if test="record.urgentvalue != null" >
+				URGENTVALUE = #{record.urgentvalue,jdbcType=VARCHAR},
+			</if>
+			<if test="record.polarity != null" >
+				POLARITY = #{record.polarity,jdbcType=VARCHAR},
+			</if>
+			<if test="record.pathology != null" >
+				PATHOLOGY = #{record.pathology,jdbcType=VARCHAR},
+			</if>
+			<if test="record.suggest != null" >
+				SUGGEST = #{record.suggest,jdbcType=VARCHAR},
+			</if>
+			<if test="record.adaptsex != null" >
+				ADAPTSEX = #{record.adaptsex,jdbcType=VARCHAR},
+			</if>
+			<if test="record.isuse != null" >
+				ISUSE = #{record.isuse,jdbcType=DECIMAL},
+			</if>
+			<if test="record.sortnum != null" >
+				SORTNUM = #{record.sortnum,jdbcType=DECIMAL},
+			</if>
+			<if test="record.memo != null" >
+				MEMO = #{record.memo,jdbcType=VARCHAR},
+			</if>
+			<if test="record.areacode != null" >
+				AREACODE = #{record.areacode,jdbcType=VARCHAR},
+			</if>
+		</set>
+		<if test="_parameter != null" >
+			<include refid="Update_By_Example_Where_Clause" />
+		</if>
+	</update>
+
+	<update id="updateByExample" parameterType="map" >
+		update BASE_TEMPLATE
+		set ID = #{record.id,jdbcType=VARCHAR},
+			positioncode = #{record.positioncode,jdbcType=DECIMAL},
+			CODE = #{record.code,jdbcType=DECIMAL},
+			partcode = #{record.partcode,jdbcType=DECIMAL},
+			PYCODE = #{record.pycode,jdbcType=VARCHAR},
+			TYPE = #{record.type,jdbcType=VARCHAR},
+			PERTEMPLATEID = #{record.pertemplateid,jdbcType=VARCHAR},
+			URGENTVALUE = #{record.urgentvalue,jdbcType=VARCHAR},
+			POLARITY = #{record.polarity,jdbcType=VARCHAR},
+			PATHOLOGY = #{record.pathology,jdbcType=VARCHAR},
+			SUGGEST = #{record.suggest,jdbcType=VARCHAR},
+			ADAPTSEX = #{record.adaptsex,jdbcType=VARCHAR},
+			ISUSE = #{record.isuse,jdbcType=DECIMAL},
+			SORTNUM = #{record.sortnum,jdbcType=DECIMAL},
+			MEMO = #{record.memo,jdbcType=VARCHAR},
+			AREACODE = #{record.areacode,jdbcType=VARCHAR}
+		<if test="_parameter != null" >
+			<include refid="Update_By_Example_Where_Clause" />
+		</if>
+	</update>
+
 	<update id="updateByPrimaryKeySelective" parameterType="com.jfsoft.model.BaseTemplate" >
 		update BASE_TEMPLATE
 		<set >
-			<if test="name != null" >
-				NAME = #{name,jdbcType=VARCHAR},
+			<if test="positioncode != null" >
+				positioncode = #{positioncode,jdbcType=DECIMAL},
 			</if>
 			<if test="code != null" >
 				CODE = #{code,jdbcType=DECIMAL},
+			</if>
+			<if test="partcode != null" >
+				partcode = #{partcode,jdbcType=DECIMAL},
 			</if>
 			<if test="pycode != null" >
 				PYCODE = #{pycode,jdbcType=VARCHAR},
@@ -198,8 +350,9 @@
 
 	<update id="updateByPrimaryKey" parameterType="com.jfsoft.model.BaseTemplate" >
 		update BASE_TEMPLATE
-		set NAME = #{name,jdbcType=VARCHAR},
+		set positioncode = #{positioncode,jdbcType=DECIMAL},
 			CODE = #{code,jdbcType=DECIMAL},
+			partcode = #{partcode,jdbcType=DECIMAL},
 			PYCODE = #{pycode,jdbcType=VARCHAR},
 			TYPE = #{type,jdbcType=VARCHAR},
 			PERTEMPLATEID = #{pertemplateid,jdbcType=VARCHAR},
@@ -216,12 +369,28 @@
 	</update>
 	<select id="getTemplateList" resultMap="BaseResultMap">
 		select
-		<include refid="Base_Column_List" />
-		from BASE_TEMPLATE
+		bt.ID, bt.positioncode, bt.CODE, bt.partcode, bt.PYCODE, bt.TYPE, bt.PERTEMPLATEID, bt.URGENTVALUE, bt.POLARITY,
+		bt.PATHOLOGY, bt.SUGGEST, bt.ADAPTSEX, bt.ISUSE, bt.SORTNUM, bt.MEMO, bt.AREACODE
+		from BASE_TEMPLATE bt
+		left join base_checkpart bc  on bt.partcode =bc.code and bt.areacode=bc.areacode
+		left join base_position bp on bt.positioncode=bp.code and bt.areacode =bp.areacode
+		WHERE
+		1=1
+
 	</select>
 	<select id="getMaxCode" resultType="java.math.BigDecimal">
 		select nvl2(max(code),max(code),20000)from BASE_TEMPLATE
 
+	</select>
+	<select id="getTemplateByType" parameterType="java.lang.String" resultMap="BaseResultMap">
+			select
+		bt.ID, bt.positioncode, bt.CODE, bt.partcode, bt.PYCODE, bt.TYPE, bt.PERTEMPLATEID, bt.URGENTVALUE, bt.POLARITY,
+		bt.PATHOLOGY, bt.SUGGEST, bt.ADAPTSEX, bt.ISUSE, bt.SORTNUM, bt.MEMO, bt.AREACODE
+		from BASE_TEMPLATE bt
+		left join base_checkpart bc  on bt.partcode =bc.code and bt.areacode=bc.areacode
+		left join base_position bp on bt.positioncode=bp.code and bt.areacode =bp.areacode
+		WHERE
+		bt.type=#{byte,jdbcType=VARCHAR}
 	</select>
 
 </mapper>

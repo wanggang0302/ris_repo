@@ -3,7 +3,7 @@
 <mapper namespace="com.jfsoft.mapper.InspectTextresultMapper" >
 	<resultMap id="BaseResultMap" type="com.jfsoft.model.InspectTextresult" >
 		<id column="ID" property="id" jdbcType="VARCHAR" />
-		<result column="INSPECTNO" property="inspectno" jdbcType="DECIMAL" />
+		<result column="INSPECTNO" property="inspectno" jdbcType="VARCHAR" />
 		<result column="INSPECTRESULT" property="inspectresult" jdbcType="CLOB" />
 		<result column="INSPECTDESC" property="inspectdesc" jdbcType="CLOB" />
 		<result column="CHECKDOCCODE" property="checkdoccode" jdbcType="DECIMAL" />
@@ -20,12 +20,73 @@
 		<result column="SORTNUM" property="sortnum" jdbcType="DECIMAL" />
 		<result column="MEMO" property="memo" jdbcType="VARCHAR" />
 		<result column="AREACODE" property="areacode" jdbcType="VARCHAR" />
+		<result column="AUDITSTATUS" property="auditstatus" jdbcType="VARCHAR"/>
 	</resultMap>
+
+	<sql id="Example_Where_Clause" >
+		<where >
+			<foreach collection="oredCriteria" item="criteria" separator="or" >
+				<if test="criteria.valid" >
+					<trim prefix="(" suffix=")" prefixOverrides="and" >
+						<foreach collection="criteria.criteria" item="criterion" >
+							<choose >
+								<when test="criterion.noValue" >
+									and ${criterion.condition}
+								</when>
+								<when test="criterion.singleValue" >
+									and ${criterion.condition} #{criterion.value}
+								</when>
+								<when test="criterion.betweenValue" >
+									and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+								</when>
+								<when test="criterion.listValue" >
+									and ${criterion.condition}
+									<foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+										#{listItem}
+									</foreach>
+								</when>
+							</choose>
+						</foreach>
+					</trim>
+				</if>
+			</foreach>
+		</where>
+	</sql>
+
+	<sql id="Update_By_Example_Where_Clause" >
+		<where >
+			<foreach collection="example.oredCriteria" item="criteria" separator="or" >
+				<if test="criteria.valid" >
+					<trim prefix="(" suffix=")" prefixOverrides="and" >
+						<foreach collection="criteria.criteria" item="criterion" >
+							<choose >
+								<when test="criterion.noValue" >
+									and ${criterion.condition}
+								</when>
+								<when test="criterion.singleValue" >
+									and ${criterion.condition} #{criterion.value}
+								</when>
+								<when test="criterion.betweenValue" >
+									and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+								</when>
+								<when test="criterion.listValue" >
+									and ${criterion.condition}
+									<foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+										#{listItem}
+									</foreach>
+								</when>
+							</choose>
+						</foreach>
+					</trim>
+				</if>
+			</foreach>
+		</where>
+	</sql>
 
 	<sql id="Base_Column_List" >
 		ID, INSPECTNO, INSPECTRESULT, INSPECTDESC, CHECKDOCCODE, CHECKDOCNAME, CHECKTIME, 
 		AUDITDOCCODE, AUDITDOCNAME, AUDITTIME, REPORTNATURE, CREATECODE, CREATETIME, MODIFYCODE, 
-		MODIFYTIME, SORTNUM, MEMO, AREACODE
+		MODIFYTIME, SORTNUM, MEMO, AREACODE,AUDITSTATUS
 	</sql>
 
 	<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
@@ -46,13 +107,13 @@
 			CHECKTIME, AUDITDOCCODE, AUDITDOCNAME, 
 			AUDITTIME, REPORTNATURE, CREATECODE, 
 			CREATETIME, MODIFYCODE, MODIFYTIME, 
-			SORTNUM, MEMO, AREACODE)
-		values (#{id,jdbcType=VARCHAR}, #{inspectno,jdbcType=DECIMAL}, #{inspectresult,jdbcType=CLOB},
+			SORTNUM, MEMO, AREACODE,AUDITSTATUS)
+		values (#{id,jdbcType=VARCHAR}, #{inspectno,jdbcType=VARCHAR}, #{inspectresult,jdbcType=CLOB},
 			#{inspectdesc,jdbcType=CLOB}, #{checkdoccode,jdbcType=DECIMAL}, #{checkdocname,jdbcType=VARCHAR},
 			#{checktime,jdbcType=TIMESTAMP}, #{auditdoccode,jdbcType=DECIMAL}, #{auditdocname,jdbcType=VARCHAR},
 			#{audittime,jdbcType=TIMESTAMP}, #{reportnature,jdbcType=VARCHAR}, #{createcode,jdbcType=DECIMAL},
 			#{createtime,jdbcType=TIMESTAMP}, #{modifycode,jdbcType=DECIMAL}, #{modifytime,jdbcType=TIMESTAMP}, 
-			#{sortnum,jdbcType=DECIMAL}, #{memo,jdbcType=VARCHAR}, #{areacode,jdbcType=VARCHAR})
+			#{sortnum,jdbcType=DECIMAL}, #{memo,jdbcType=VARCHAR}, #{areacode,jdbcType=VARCHAR},#{auditstatus,jdbcType=VARCHAR})
 	</insert>
 
 	<insert id="insertSelective" parameterType="com.jfsoft.model.InspectTextresult" >
@@ -112,13 +173,16 @@
 			<if test="areacode != null" >
 				AREACODE,
 			</if>
+			<if test="auditstatus != null" >
+				AUDITSTATUS,
+			</if>
 		</trim>
 		<trim prefix="values (" suffix=")" suffixOverrides="," >
 			<if test="id != null" >
 				#{id,jdbcType=VARCHAR},
 			</if>
 			<if test="inspectno != null" >
-				#{inspectno,jdbcType=DECIMAL},
+				#{inspectno,jdbcType=VARCHAR},
 			</if>
 			<if test="inspectresult != null" >
 				#{inspectresult,jdbcType=CLOB},
@@ -168,14 +232,111 @@
 			<if test="areacode != null" >
 				#{areacode,jdbcType=VARCHAR},
 			</if>
+			<if test="auditstatus != null" >
+				#{AUDITSTATUS,jdbcType=VARCHAR},
+			</if>
+
 		</trim>
 	</insert>
+
+	<update id="updateByExampleSelective" parameterType="map" >
+		update INSPECT_TEXTRESULT
+		<set >
+			<if test="record.id != null" >
+				ID = #{record.id,jdbcType=VARCHAR},
+			</if>
+			<if test="record.inspectno != null" >
+				INSPECTNO = #{record.inspectno,jdbcType=VARCHAR},
+			</if>
+			<if test="record.inspectresult != null" >
+				INSPECTRESULT = #{record.inspectresult,jdbcType=CLOB},
+			</if>
+			<if test="record.inspectdesc != null" >
+				INSPECTDESC = #{record.inspectdesc,jdbcType=CLOB},
+			</if>
+			<if test="record.checkdoccode != null" >
+				CHECKDOCCODE = #{record.checkdoccode,jdbcType=DECIMAL},
+			</if>
+			<if test="record.checkdocname != null" >
+				CHECKDOCNAME = #{record.checkdocname,jdbcType=VARCHAR},
+			</if>
+			<if test="record.checktime != null" >
+				CHECKTIME = #{record.checktime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="record.auditdoccode != null" >
+				AUDITDOCCODE = #{record.auditdoccode,jdbcType=DECIMAL},
+			</if>
+			<if test="record.auditdocname != null" >
+				AUDITDOCNAME = #{record.auditdocname,jdbcType=VARCHAR},
+			</if>
+			<if test="record.audittime != null" >
+				AUDITTIME = #{record.audittime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="record.reportnature != null" >
+				REPORTNATURE = #{record.reportnature,jdbcType=VARCHAR},
+			</if>
+			<if test="record.createcode != null" >
+				CREATECODE = #{record.createcode,jdbcType=DECIMAL},
+			</if>
+			<if test="record.createtime != null" >
+				CREATETIME = #{record.createtime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="record.modifycode != null" >
+				MODIFYCODE = #{record.modifycode,jdbcType=DECIMAL},
+			</if>
+			<if test="record.modifytime != null" >
+				MODIFYTIME = #{record.modifytime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="record.sortnum != null" >
+				SORTNUM = #{record.sortnum,jdbcType=DECIMAL},
+			</if>
+			<if test="record.memo != null" >
+				MEMO = #{record.memo,jdbcType=VARCHAR},
+			</if>
+			<if test="record.areacode != null" >
+				AREACODE = #{record.areacode,jdbcType=VARCHAR},
+			</if>
+			<if test="record.auditstatus != null" >
+				AUDITSTATUS = #{record.auditstatus,jdbcType=VARCHAR},
+			</if>
+
+		</set>
+		<if test="_parameter != null" >
+			<include refid="Update_By_Example_Where_Clause" />
+		</if>
+	</update>
+
+	<update id="updateByExample" parameterType="map" >
+		update INSPECT_TEXTRESULT
+		set ID = #{record.id,jdbcType=VARCHAR},
+			INSPECTNO = #{record.inspectno,jdbcType=VARCHAR},
+			INSPECTRESULT = #{record.inspectresult,jdbcType=CLOB},
+			INSPECTDESC = #{record.inspectdesc,jdbcType=CLOB},
+			CHECKDOCCODE = #{record.checkdoccode,jdbcType=DECIMAL},
+			CHECKDOCNAME = #{record.checkdocname,jdbcType=VARCHAR},
+			CHECKTIME = #{record.checktime,jdbcType=TIMESTAMP},
+			AUDITDOCCODE = #{record.auditdoccode,jdbcType=DECIMAL},
+			AUDITDOCNAME = #{record.auditdocname,jdbcType=VARCHAR},
+			AUDITTIME = #{record.audittime,jdbcType=TIMESTAMP},
+			REPORTNATURE = #{record.reportnature,jdbcType=VARCHAR},
+			CREATECODE = #{record.createcode,jdbcType=DECIMAL},
+			CREATETIME = #{record.createtime,jdbcType=TIMESTAMP},
+			MODIFYCODE = #{record.modifycode,jdbcType=DECIMAL},
+			MODIFYTIME = #{record.modifytime,jdbcType=TIMESTAMP},
+			SORTNUM = #{record.sortnum,jdbcType=DECIMAL},
+			MEMO = #{record.memo,jdbcType=VARCHAR},
+			AREACODE = #{record.areacode,jdbcType=VARCHAR},
+			AUDITSTATUS = #{record.auditstatus,jdbcType=VARCHAR}
+		<if test="_parameter != null" >
+			<include refid="Update_By_Example_Where_Clause" />
+		</if>
+	</update>
 
 	<update id="updateByPrimaryKeySelective" parameterType="com.jfsoft.model.InspectTextresult" >
 		update INSPECT_TEXTRESULT
 		<set >
 			<if test="inspectno != null" >
-				INSPECTNO = #{inspectno,jdbcType=DECIMAL},
+				INSPECTNO = #{inspectno,jdbcType=VARCHAR},
 			</if>
 			<if test="inspectresult != null" >
 				INSPECTRESULT = #{inspectresult,jdbcType=CLOB},
@@ -225,13 +386,16 @@
 			<if test="areacode != null" >
 				AREACODE = #{areacode,jdbcType=VARCHAR},
 			</if>
+			<if test="auditstatus != null" >
+				AUDITSTATUS = #{auditstatus,jdbcType=VARCHAR},
+			</if>
 		</set>
 		where ID = #{id,jdbcType=VARCHAR}
 	</update>
 
 	<update id="updateByPrimaryKey" parameterType="com.jfsoft.model.InspectTextresult" >
 		update INSPECT_TEXTRESULT
-		set INSPECTNO = #{inspectno,jdbcType=DECIMAL},
+		set INSPECTNO = #{inspectno,jdbcType=VARCHAR},
 			INSPECTRESULT = #{inspectresult,jdbcType=CLOB},
 			INSPECTDESC = #{inspectdesc,jdbcType=CLOB},
 			CHECKDOCCODE = #{checkdoccode,jdbcType=DECIMAL},
@@ -247,8 +411,15 @@
 			MODIFYTIME = #{modifytime,jdbcType=TIMESTAMP},
 			SORTNUM = #{sortnum,jdbcType=DECIMAL},
 			MEMO = #{memo,jdbcType=VARCHAR},
-			AREACODE = #{areacode,jdbcType=VARCHAR}
+			AREACODE = #{areacode,jdbcType=VARCHAR},
+			AUDITSTATUS = #{auditstatus,jdbcType=VARCHAR}
 		where ID = #{id,jdbcType=VARCHAR}
 	</update>
+	<select id="getTextresultDetail" parameterType="java.lang.String" resultMap="BaseResultMap">
+		select
+		<include refid="Base_Column_List" />
+		from INSPECT_TEXTRESULT
+		where checkno = #{checkno,jdbcType=VARCHAR} and areacode=#{areacode}
+	</select>
 
 </mapper>

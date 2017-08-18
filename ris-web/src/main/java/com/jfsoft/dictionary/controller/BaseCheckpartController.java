@@ -4,7 +4,6 @@ import com.alibaba.fastjson.JSON;
 import com.base.BaseController;
 import com.jfsoft.checkpart.service.ICheckpartService;
 import com.jfsoft.model.BaseCheckpart;
-import com.jfsoft.model.BaseTemplate;
 import com.jfsoft.model.SysLog;
 import com.jfsoft.utils.Constants;
 import org.slf4j.Logger;
@@ -16,7 +15,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpSession;
-import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -132,7 +130,7 @@ public class BaseCheckpartController extends BaseController {
      * 修改
      * @return
      */
-    @RequestMapping(value="/update",method = RequestMethod.PUT)
+    @RequestMapping(value="/update")
     public String update(HttpSession session,BaseCheckpart baseCheckpart) {
         Map<String,Object> map =new HashMap<String,Object>();
 
@@ -150,7 +148,7 @@ public class BaseCheckpartController extends BaseController {
     /**
      * 删除
      */
-    @RequestMapping(value = "delete/{id}", method = RequestMethod.DELETE)
+    @RequestMapping(value = "delete/{id}")
     public String delete(@PathVariable String id) {
 
         Map<String,Object> map = new HashMap<String,Object>();

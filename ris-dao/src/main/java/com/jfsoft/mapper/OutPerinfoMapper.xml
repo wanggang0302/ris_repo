@@ -41,18 +41,84 @@
 		<result column="MEMO" property="memo" jdbcType="VARCHAR" />
 		<result column="AREACODE" property="areacode" jdbcType="VARCHAR" />
 		<result column="UNGENTVALUE" property="ungentvalue" jdbcType="VARCHAR" />
+		<result column="ISPREGNANT" property="ispregnant" jdbcType="DECIMAL" />
+		<result column="GROUPITEM" property="groupitem" jdbcType="VARCHAR" />
+		<result column="EQUIPMENTCODE" property="equipmentcode" jdbcType="VARCHAR" />
+		<result column="EQUIPTYPECODE" property="equiptypecode" jdbcType="VARCHAR" />
 		<result column="CONTENT1" property="content1" jdbcType="VARCHAR" />
 		<result column="CONTENT2" property="content2" jdbcType="VARCHAR" />
 		<result column="CONTENT3" property="content3" jdbcType="VARCHAR" />
 		<result column="CONTENT4" property="content4" jdbcType="VARCHAR" />
+		<result column="CONTENT5" property="content5" jdbcType="VARCHAR" />
 	</resultMap>
+
+	<sql id="Example_Where_Clause" >
+		<where >
+			<foreach collection="oredCriteria" item="criteria" separator="or" >
+				<if test="criteria.valid" >
+					<trim prefix="(" suffix=")" prefixOverrides="and" >
+						<foreach collection="criteria.criteria" item="criterion" >
+							<choose >
+								<when test="criterion.noValue" >
+									and ${criterion.condition}
+								</when>
+								<when test="criterion.singleValue" >
+									and ${criterion.condition} #{criterion.value}
+								</when>
+								<when test="criterion.betweenValue" >
+									and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+								</when>
+								<when test="criterion.listValue" >
+									and ${criterion.condition}
+									<foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+										#{listItem}
+									</foreach>
+								</when>
+							</choose>
+						</foreach>
+					</trim>
+				</if>
+			</foreach>
+		</where>
+	</sql>
+
+	<sql id="Update_By_Example_Where_Clause" >
+		<where >
+			<foreach collection="example.oredCriteria" item="criteria" separator="or" >
+				<if test="criteria.valid" >
+					<trim prefix="(" suffix=")" prefixOverrides="and" >
+						<foreach collection="criteria.criteria" item="criterion" >
+							<choose >
+								<when test="criterion.noValue" >
+									and ${criterion.condition}
+								</when>
+								<when test="criterion.singleValue" >
+									and ${criterion.condition} #{criterion.value}
+								</when>
+								<when test="criterion.betweenValue" >
+									and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+								</when>
+								<when test="criterion.listValue" >
+									and ${criterion.condition}
+									<foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+										#{listItem}
+									</foreach>
+								</when>
+							</choose>
+						</foreach>
+					</trim>
+				</if>
+			</foreach>
+		</where>
+	</sql>
 
 	<sql id="Base_Column_List" >
 		ID, INFOID, NAME, PYCODE, REGTIME, SEX, AGE, NATION, BIRTHDAY, SSID, TEL, LINKTEL, 
 		COMPANY, WEIGHT, POSTCODE, PROFESSION, TABOOS, MEDICALHISTORY, DOCADVICE, DIAGNOSIS, 
 		ISEMERGENCY, GROUPCODE, STATUSCODE, APPLYDOCCODE, APPLYDOCNAME, APPLYDEPT, APPLYTIME, 
 		PERTYPE, WARD, BEDNUM, CREATECODE, CREATETIME, PAYSTATUS, PAYTIME, MODIFYCODE, MODIFYTIME, 
-		MEMO, AREACODE, UNGENTVALUE, CONTENT1, CONTENT2, CONTENT3, CONTENT4
+		MEMO, AREACODE, UNGENTVALUE, ISPREGNANT, GROUPITEM, EQUIPMENTCODE, EQUIPTYPECODE, 
+		CONTENT1, CONTENT2, CONTENT3, CONTENT4, CONTENT5
 	</sql>
 
 	<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
@@ -79,9 +145,10 @@
 			PERTYPE, WARD, BEDNUM, CREATECODE, 
 			CREATETIME, PAYSTATUS, PAYTIME, 
 			MODIFYCODE, MODIFYTIME, MEMO, 
-			AREACODE, UNGENTVALUE, CONTENT1, 
-			CONTENT2, CONTENT3, CONTENT4
-			)
+			AREACODE, UNGENTVALUE, ISPREGNANT, 
+			GROUPITEM, EQUIPMENTCODE, EQUIPTYPECODE, 
+			CONTENT1, CONTENT2, CONTENT3, 
+			CONTENT4, CONTENT5)
 		values (#{id,jdbcType=VARCHAR}, #{infoid,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{pycode,jdbcType=VARCHAR},
 			#{regtime,jdbcType=TIMESTAMP}, #{sex,jdbcType=VARCHAR}, #{age,jdbcType=DECIMAL}, #{nation,jdbcType=VARCHAR},
 			#{birthday,jdbcType=TIMESTAMP}, #{ssid,jdbcType=VARCHAR}, #{tel,jdbcType=VARCHAR}, #{linktel,jdbcType=VARCHAR},
@@ -93,9 +160,10 @@
 			#{pertype,jdbcType=VARCHAR}, #{ward,jdbcType=VARCHAR}, #{bednum,jdbcType=VARCHAR}, #{createcode,jdbcType=DECIMAL},
 			#{createtime,jdbcType=TIMESTAMP}, #{paystatus,jdbcType=VARCHAR}, #{paytime,jdbcType=TIMESTAMP},
 			#{modifycode,jdbcType=DECIMAL}, #{modifytime,jdbcType=TIMESTAMP}, #{memo,jdbcType=VARCHAR},
-			#{areacode,jdbcType=VARCHAR}, #{ungentvalue,jdbcType=VARCHAR}, #{content1,jdbcType=VARCHAR},
-			#{content2,jdbcType=VARCHAR}, #{content3,jdbcType=VARCHAR}, #{content4,jdbcType=VARCHAR}
-			)
+			#{areacode,jdbcType=VARCHAR}, #{ungentvalue,jdbcType=VARCHAR}, #{ispregnant,jdbcType=DECIMAL},
+			#{groupitem,jdbcType=VARCHAR}, #{equipmentcode,jdbcType=VARCHAR}, #{equiptypecode,jdbcType=VARCHAR},
+			#{content1,jdbcType=VARCHAR}, #{content2,jdbcType=VARCHAR}, #{content3,jdbcType=VARCHAR},
+			#{content4,jdbcType=VARCHAR}, #{content5,jdbcType=VARCHAR})
 	</insert>
 
 	<insert id="insertSelective" parameterType="com.jfsoft.model.OutPerinfo" >
@@ -218,6 +286,18 @@
 			<if test="ungentvalue != null" >
 				UNGENTVALUE,
 			</if>
+			<if test="ispregnant != null" >
+				ISPREGNANT,
+			</if>
+			<if test="groupitem != null" >
+				GROUPITEM,
+			</if>
+			<if test="equipmentcode != null" >
+				EQUIPMENTCODE,
+			</if>
+			<if test="equiptypecode != null" >
+				EQUIPTYPECODE,
+			</if>
 			<if test="content1 != null" >
 				CONTENT1,
 			</if>
@@ -229,6 +309,9 @@
 			</if>
 			<if test="content4 != null" >
 				CONTENT4,
+			</if>
+			<if test="content5 != null" >
+				CONTENT5,
 			</if>
 		</trim>
 		<trim prefix="values (" suffix=")" suffixOverrides="," >
@@ -349,6 +432,18 @@
 			<if test="ungentvalue != null" >
 				#{ungentvalue,jdbcType=VARCHAR},
 			</if>
+			<if test="ispregnant != null" >
+				#{ispregnant,jdbcType=DECIMAL},
+			</if>
+			<if test="groupitem != null" >
+				#{groupitem,jdbcType=VARCHAR},
+			</if>
+			<if test="equipmentcode != null" >
+				#{equipmentcode,jdbcType=VARCHAR},
+			</if>
+			<if test="equiptypecode != null" >
+				#{equiptypecode,jdbcType=VARCHAR},
+			</if>
 			<if test="content1 != null" >
 				#{content1,jdbcType=VARCHAR},
 			</if>
@@ -361,8 +456,219 @@
 			<if test="content4 != null" >
 				#{content4,jdbcType=VARCHAR},
 			</if>
+			<if test="content5 != null" >
+				#{content5,jdbcType=VARCHAR},
+			</if>
 		</trim>
 	</insert>
+
+	<update id="updateByExampleSelective" parameterType="map" >
+		update OUT_PERINFO
+		<set >
+			<if test="record.id != null" >
+				ID = #{record.id,jdbcType=VARCHAR},
+			</if>
+			<if test="record.infoid != null" >
+				INFOID = #{record.infoid,jdbcType=VARCHAR},
+			</if>
+			<if test="record.name != null" >
+				NAME = #{record.name,jdbcType=VARCHAR},
+			</if>
+			<if test="record.pycode != null" >
+				PYCODE = #{record.pycode,jdbcType=VARCHAR},
+			</if>
+			<if test="record.regtime != null" >
+				REGTIME = #{record.regtime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="record.sex != null" >
+				SEX = #{record.sex,jdbcType=VARCHAR},
+			</if>
+			<if test="record.age != null" >
+				AGE = #{record.age,jdbcType=DECIMAL},
+			</if>
+			<if test="record.nation != null" >
+				NATION = #{record.nation,jdbcType=VARCHAR},
+			</if>
+			<if test="record.birthday != null" >
+				BIRTHDAY = #{record.birthday,jdbcType=TIMESTAMP},
+			</if>
+			<if test="record.ssid != null" >
+				SSID = #{record.ssid,jdbcType=VARCHAR},
+			</if>
+			<if test="record.tel != null" >
+				TEL = #{record.tel,jdbcType=VARCHAR},
+			</if>
+			<if test="record.linktel != null" >
+				LINKTEL = #{record.linktel,jdbcType=VARCHAR},
+			</if>
+			<if test="record.company != null" >
+				COMPANY = #{record.company,jdbcType=VARCHAR},
+			</if>
+			<if test="record.weight != null" >
+				WEIGHT = #{record.weight,jdbcType=VARCHAR},
+			</if>
+			<if test="record.postcode != null" >
+				POSTCODE = #{record.postcode,jdbcType=VARCHAR},
+			</if>
+			<if test="record.profession != null" >
+				PROFESSION = #{record.profession,jdbcType=VARCHAR},
+			</if>
+			<if test="record.taboos != null" >
+				TABOOS = #{record.taboos,jdbcType=VARCHAR},
+			</if>
+			<if test="record.medicalhistory != null" >
+				MEDICALHISTORY = #{record.medicalhistory,jdbcType=VARCHAR},
+			</if>
+			<if test="record.docadvice != null" >
+				DOCADVICE = #{record.docadvice,jdbcType=CLOB},
+			</if>
+			<if test="record.diagnosis != null" >
+				DIAGNOSIS = #{record.diagnosis,jdbcType=VARCHAR},
+			</if>
+			<if test="record.isemergency != null" >
+				ISEMERGENCY = #{record.isemergency,jdbcType=DECIMAL},
+			</if>
+			<if test="record.groupcode != null" >
+				GROUPCODE = #{record.groupcode,jdbcType=DECIMAL},
+			</if>
+			<if test="record.statuscode != null" >
+				STATUSCODE = #{record.statuscode,jdbcType=VARCHAR},
+			</if>
+			<if test="record.applydoccode != null" >
+				APPLYDOCCODE = #{record.applydoccode,jdbcType=DECIMAL},
+			</if>
+			<if test="record.applydocname != null" >
+				APPLYDOCNAME = #{record.applydocname,jdbcType=VARCHAR},
+			</if>
+			<if test="record.applydept != null" >
+				APPLYDEPT = #{record.applydept,jdbcType=VARCHAR},
+			</if>
+			<if test="record.applytime != null" >
+				APPLYTIME = #{record.applytime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="record.pertype != null" >
+				PERTYPE = #{record.pertype,jdbcType=VARCHAR},
+			</if>
+			<if test="record.ward != null" >
+				WARD = #{record.ward,jdbcType=VARCHAR},
+			</if>
+			<if test="record.bednum != null" >
+				BEDNUM = #{record.bednum,jdbcType=VARCHAR},
+			</if>
+			<if test="record.createcode != null" >
+				CREATECODE = #{record.createcode,jdbcType=DECIMAL},
+			</if>
+			<if test="record.createtime != null" >
+				CREATETIME = #{record.createtime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="record.paystatus != null" >
+				PAYSTATUS = #{record.paystatus,jdbcType=VARCHAR},
+			</if>
+			<if test="record.paytime != null" >
+				PAYTIME = #{record.paytime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="record.modifycode != null" >
+				MODIFYCODE = #{record.modifycode,jdbcType=DECIMAL},
+			</if>
+			<if test="record.modifytime != null" >
+				MODIFYTIME = #{record.modifytime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="record.memo != null" >
+				MEMO = #{record.memo,jdbcType=VARCHAR},
+			</if>
+			<if test="record.areacode != null" >
+				AREACODE = #{record.areacode,jdbcType=VARCHAR},
+			</if>
+			<if test="record.ungentvalue != null" >
+				UNGENTVALUE = #{record.ungentvalue,jdbcType=VARCHAR},
+			</if>
+			<if test="record.ispregnant != null" >
+				ISPREGNANT = #{record.ispregnant,jdbcType=DECIMAL},
+			</if>
+			<if test="record.groupitem != null" >
+				GROUPITEM = #{record.groupitem,jdbcType=VARCHAR},
+			</if>
+			<if test="record.equipmentcode != null" >
+				EQUIPMENTCODE = #{record.equipmentcode,jdbcType=VARCHAR},
+			</if>
+			<if test="record.equiptypecode != null" >
+				EQUIPTYPECODE = #{record.equiptypecode,jdbcType=VARCHAR},
+			</if>
+			<if test="record.content1 != null" >
+				CONTENT1 = #{record.content1,jdbcType=VARCHAR},
+			</if>
+			<if test="record.content2 != null" >
+				CONTENT2 = #{record.content2,jdbcType=VARCHAR},
+			</if>
+			<if test="record.content3 != null" >
+				CONTENT3 = #{record.content3,jdbcType=VARCHAR},
+			</if>
+			<if test="record.content4 != null" >
+				CONTENT4 = #{record.content4,jdbcType=VARCHAR},
+			</if>
+			<if test="record.content5 != null" >
+				CONTENT5 = #{record.content5,jdbcType=VARCHAR},
+			</if>
+		</set>
+		<if test="_parameter != null" >
+			<include refid="Update_By_Example_Where_Clause" />
+		</if>
+	</update>
+
+	<update id="updateByExample" parameterType="map" >
+		update OUT_PERINFO
+		set ID = #{record.id,jdbcType=VARCHAR},
+			INFOID = #{record.infoid,jdbcType=VARCHAR},
+			NAME = #{record.name,jdbcType=VARCHAR},
+			PYCODE = #{record.pycode,jdbcType=VARCHAR},
+			REGTIME = #{record.regtime,jdbcType=TIMESTAMP},
+			SEX = #{record.sex,jdbcType=VARCHAR},
+			AGE = #{record.age,jdbcType=DECIMAL},
+			NATION = #{record.nation,jdbcType=VARCHAR},
+			BIRTHDAY = #{record.birthday,jdbcType=TIMESTAMP},
+			SSID = #{record.ssid,jdbcType=VARCHAR},
+			TEL = #{record.tel,jdbcType=VARCHAR},
+			LINKTEL = #{record.linktel,jdbcType=VARCHAR},
+			COMPANY = #{record.company,jdbcType=VARCHAR},
+			WEIGHT = #{record.weight,jdbcType=VARCHAR},
+			POSTCODE = #{record.postcode,jdbcType=VARCHAR},
+			PROFESSION = #{record.profession,jdbcType=VARCHAR},
+			TABOOS = #{record.taboos,jdbcType=VARCHAR},
+			MEDICALHISTORY = #{record.medicalhistory,jdbcType=VARCHAR},
+			DOCADVICE = #{record.docadvice,jdbcType=CLOB},
+			DIAGNOSIS = #{record.diagnosis,jdbcType=VARCHAR},
+			ISEMERGENCY = #{record.isemergency,jdbcType=DECIMAL},
+			GROUPCODE = #{record.groupcode,jdbcType=DECIMAL},
+			STATUSCODE = #{record.statuscode,jdbcType=VARCHAR},
+			APPLYDOCCODE = #{record.applydoccode,jdbcType=DECIMAL},
+			APPLYDOCNAME = #{record.applydocname,jdbcType=VARCHAR},
+			APPLYDEPT = #{record.applydept,jdbcType=VARCHAR},
+			APPLYTIME = #{record.applytime,jdbcType=TIMESTAMP},
+			PERTYPE = #{record.pertype,jdbcType=VARCHAR},
+			WARD = #{record.ward,jdbcType=VARCHAR},
+			BEDNUM = #{record.bednum,jdbcType=VARCHAR},
+			CREATECODE = #{record.createcode,jdbcType=DECIMAL},
+			CREATETIME = #{record.createtime,jdbcType=TIMESTAMP},
+			PAYSTATUS = #{record.paystatus,jdbcType=VARCHAR},
+			PAYTIME = #{record.paytime,jdbcType=TIMESTAMP},
+			MODIFYCODE = #{record.modifycode,jdbcType=DECIMAL},
+			MODIFYTIME = #{record.modifytime,jdbcType=TIMESTAMP},
+			MEMO = #{record.memo,jdbcType=VARCHAR},
+			AREACODE = #{record.areacode,jdbcType=VARCHAR},
+			UNGENTVALUE = #{record.ungentvalue,jdbcType=VARCHAR},
+			ISPREGNANT = #{record.ispregnant,jdbcType=DECIMAL},
+			GROUPITEM = #{record.groupitem,jdbcType=VARCHAR},
+			EQUIPMENTCODE = #{record.equipmentcode,jdbcType=VARCHAR},
+			EQUIPTYPECODE = #{record.equiptypecode,jdbcType=VARCHAR},
+			CONTENT1 = #{record.content1,jdbcType=VARCHAR},
+			CONTENT2 = #{record.content2,jdbcType=VARCHAR},
+			CONTENT3 = #{record.content3,jdbcType=VARCHAR},
+			CONTENT4 = #{record.content4,jdbcType=VARCHAR},
+			CONTENT5 = #{record.content5,jdbcType=VARCHAR}
+		<if test="_parameter != null" >
+			<include refid="Update_By_Example_Where_Clause" />
+		</if>
+	</update>
 
 	<update id="updateByPrimaryKeySelective" parameterType="com.jfsoft.model.OutPerinfo" >
 		update OUT_PERINFO
@@ -481,6 +787,18 @@
 			<if test="ungentvalue != null" >
 				UNGENTVALUE = #{ungentvalue,jdbcType=VARCHAR},
 			</if>
+			<if test="ispregnant != null" >
+				ISPREGNANT = #{ispregnant,jdbcType=DECIMAL},
+			</if>
+			<if test="groupitem != null" >
+				GROUPITEM = #{groupitem,jdbcType=VARCHAR},
+			</if>
+			<if test="equipmentcode != null" >
+				EQUIPMENTCODE = #{equipmentcode,jdbcType=VARCHAR},
+			</if>
+			<if test="equiptypecode != null" >
+				EQUIPTYPECODE = #{equiptypecode,jdbcType=VARCHAR},
+			</if>
 			<if test="content1 != null" >
 				CONTENT1 = #{content1,jdbcType=VARCHAR},
 			</if>
@@ -492,6 +810,9 @@
 			</if>
 			<if test="content4 != null" >
 				CONTENT4 = #{content4,jdbcType=VARCHAR},
+			</if>
+			<if test="content5 != null" >
+				CONTENT5 = #{content5,jdbcType=VARCHAR},
 			</if>
 		</set>
 		where ID = #{id,jdbcType=VARCHAR}
@@ -537,10 +858,15 @@
 			MEMO = #{memo,jdbcType=VARCHAR},
 			AREACODE = #{areacode,jdbcType=VARCHAR},
 			UNGENTVALUE = #{ungentvalue,jdbcType=VARCHAR},
+			ISPREGNANT = #{ispregnant,jdbcType=DECIMAL},
+			GROUPITEM = #{groupitem,jdbcType=VARCHAR},
+			EQUIPMENTCODE = #{equipmentcode,jdbcType=VARCHAR},
+			EQUIPTYPECODE = #{equiptypecode,jdbcType=VARCHAR},
 			CONTENT1 = #{content1,jdbcType=VARCHAR},
 			CONTENT2 = #{content2,jdbcType=VARCHAR},
 			CONTENT3 = #{content3,jdbcType=VARCHAR},
-			CONTENT4 = #{content4,jdbcType=VARCHAR}
+			CONTENT4 = #{content4,jdbcType=VARCHAR},
+			CONTENT5 = #{content5,jdbcType=VARCHAR}
 		where ID = #{id,jdbcType=VARCHAR}
 	</update>
 

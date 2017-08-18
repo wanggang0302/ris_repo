@@ -1,8 +1,8 @@
 package com.jfsoft.shiro.controller;
 
 import com.base.BaseController;
-import com.jfsoft.mapper.TUserMapper;
-import com.jfsoft.model.User;
+import com.jfsoft.mapper.SysUserMapper;
+import com.jfsoft.model.SysUser;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.subject.Subject;
@@ -32,16 +32,16 @@ public class ShiroController extends BaseController {
     private static final Logger logger = LoggerFactory.getLogger(ShiroController.class);
 
     @Autowired
-    private TUserMapper userDao;
+    private SysUserMapper userDao;
 
     @RequestMapping(value="/login",method=RequestMethod.GET)
     public String loginForm(Model model){
-        model.addAttribute("user", new User());
+        model.addAttribute("user", new SysUser());
         return "login";
     }
 
     @RequestMapping(value="/login",method=RequestMethod.POST)
-    public String login(@Valid User user, BindingResult bindingResult, RedirectAttributes redirectAttributes){
+    public String login(@Valid SysUser user, BindingResult bindingResult, RedirectAttributes redirectAttributes){
         if(bindingResult.hasErrors()){
             return "login";
         }
@@ -99,13 +99,13 @@ public class ShiroController extends BaseController {
         return "403";
     }
 
-    @RequestMapping("/user")
-    public String getUserList(Map<String, Object> model){
-        Map<String, String> params = new HashMap<String, String>();
-        List<User> userList = userDao.findPage(params);
-        model.put("userList", userList);
-        return "user";
-    }
+//    @RequestMapping("/user")
+//    public String getUserList(Map<String, Object> model){
+//        Map<String, Object> params = new HashMap<String, Object>();
+//        List<SysUser> userList = userDao.findPage(params);
+//        model.put("userList", userList);
+//        return "user";
+//    }
 
     @RequestMapping("/user/edit/{userid}")
     public String getUserList(@PathVariable int userid){

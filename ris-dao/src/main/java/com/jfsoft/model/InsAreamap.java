@@ -3,17 +3,15 @@
  * Copyright© 2017 北京金风易通科技有限公司
  * All rights reserved.
  * -----------------------------------------------
- * 2017-08-15 Created
+ * 2017-08-18 Created
  */
 package com.jfsoft.model;
-
-import java.math.BigDecimal;
 
 /**
  * null
  * 
  * @author wanggang
- * @version 1.0 2017-08-15
+ * @version 1.0 2017-08-18
  */
 public class InsAreamap {
 
@@ -25,12 +23,12 @@ public class InsAreamap {
     /**
      * 检查号
      */
-    private BigDecimal checkno;
+    private String checkno;
 
     /**
      * 推送区域号
      */
-    private BigDecimal pushcode;
+    private String pushcode;
 
     /**
      * 区域编码
@@ -45,19 +43,19 @@ public class InsAreamap {
         this.id = id;
     }
 
-    public BigDecimal getCheckno() {
+    public String getCheckno() {
         return checkno;
     }
 
-    public void setCheckno(BigDecimal checkno) {
+    public void setCheckno(String checkno) {
         this.checkno = checkno;
     }
 
-    public BigDecimal getPushcode() {
+    public String getPushcode() {
         return pushcode;
     }
 
-    public void setPushcode(BigDecimal pushcode) {
+    public void setPushcode(String pushcode) {
         this.pushcode = pushcode;
     }
 

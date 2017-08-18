@@ -10,7 +10,9 @@ import groovy.util.logging.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
@@ -52,8 +54,8 @@ public class BaseTemplateController extends BaseController {
 
         return JSON.toJSONString(map);
     }
-    @RequestMapping("/getTemplatedetail")
-    public String getTemplatedetail(HttpSession session,String id){
+    @RequestMapping(value = "/getTemplatedetail/{id}",method = RequestMethod.GET)
+    public String getTemplatedetail(HttpSession session,@PathVariable String id){
         Map<String, Object> map = new HashMap<String, Object>();
         try {
             BaseTemplate baseTemplate =templateService.getTemplatedetail(id);
@@ -75,8 +77,8 @@ public class BaseTemplateController extends BaseController {
         }
         return JSON.toJSONString(map);
     }
-    @RequestMapping("/delete")
-    public  String delete(HttpSession session,String id){
+    @RequestMapping(value="/delete/{id}")
+    public  String delete(HttpSession session,@PathVariable String id){
         Map<String,Object> map = new HashMap<String,Object>();
 
         try {
@@ -98,5 +100,18 @@ public class BaseTemplateController extends BaseController {
         }
         return JSON.toJSONString(map);
     }
+    @RequestMapping(value = "/getTemplateByType/{type}",method = RequestMethod.GET)
+    public String getTemplateByType(@PathVariable String type,HttpSession session){
+        Map<String, Object> map = new HashMap<String, Object>();
 
+        try {
+            List<BaseTemplate>  baseTemplateList =templateService.getTemplateByType(type);
+            map.put("status",Constants.RETURN_STATUS_SUCCESS);
+        } catch (Exception e) {
+            map.put("status",Constants.RETURN_STATUS_FAILURE);
+            e.printStackTrace();
+        }
+
+        return JSON.toJSONString(map);
+    }
 }

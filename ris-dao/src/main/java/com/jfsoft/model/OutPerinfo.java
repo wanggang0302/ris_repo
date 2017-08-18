@@ -3,7 +3,7 @@
  * Copyright© 2017 北京金风易通科技有限公司
  * All rights reserved.
  * -----------------------------------------------
- * 2017-08-15 Created
+ * 2017-08-18 Created
  */
 package com.jfsoft.model;
 
@@ -14,7 +14,7 @@ import java.util.Date;
  * null
  * 
  * @author wanggang
- * @version 1.0 2017-08-15
+ * @version 1.0 2017-08-18
  */
 public class OutPerinfo {
 
@@ -214,6 +214,26 @@ public class OutPerinfo {
     private String ungentvalue;
 
     /**
+     * 是否孕妇（1是、0否）
+     */
+    private Short ispregnant;
+
+    /**
+     * 收费项目名称
+     */
+    private String groupitem;
+
+    /**
+     * 设备编码
+     */
+    private String equipmentcode;
+
+    /**
+     * 设备类型code
+     */
+    private String equiptypecode;
+
+    /**
      */
     private String content1;
 
@@ -228,6 +248,10 @@ public class OutPerinfo {
     /**
      */
     private String content4;
+
+    /**
+     */
+    private String content5;
 
     public String getId() {
         return id;
@@ -541,6 +565,38 @@ public class OutPerinfo {
         this.ungentvalue = ungentvalue;
     }
 
+    public Short getIspregnant() {
+        return ispregnant;
+    }
+
+    public void setIspregnant(Short ispregnant) {
+        this.ispregnant = ispregnant;
+    }
+
+    public String getGroupitem() {
+        return groupitem;
+    }
+
+    public void setGroupitem(String groupitem) {
+        this.groupitem = groupitem;
+    }
+
+    public String getEquipmentcode() {
+        return equipmentcode;
+    }
+
+    public void setEquipmentcode(String equipmentcode) {
+        this.equipmentcode = equipmentcode;
+    }
+
+    public String getEquiptypecode() {
+        return equiptypecode;
+    }
+
+    public void setEquiptypecode(String equiptypecode) {
+        this.equiptypecode = equiptypecode;
+    }
+
     public String getContent1() {
         return content1;
     }
@@ -571,6 +627,14 @@ public class OutPerinfo {
 
     public void setContent4(String content4) {
         this.content4 = content4;
+    }
+
+    public String getContent5() {
+        return content5;
+    }
+
+    public void setContent5(String content5) {
+        this.content5 = content5;
     }
 
 }
